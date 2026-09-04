@@ -1,0 +1,1323 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"68 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INDF `Vuc  1 e@0 ]
+"71 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCL `Vuc  1 e@2 ]
+"74 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _STATUS `Vuc  1 e@3 ]
+"75 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _IRP `Vb  1 e@31 ]
+"76 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _RP1 `Vb  1 e@30 ]
+"77 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _RP0 `Vb  1 e@29 ]
+"78 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TO `Vb  1 e@28 ]
+"79 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PD `Vb  1 e@27 ]
+"80 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _Z `Vb  1 e@26 ]
+"81 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _DC `Vb  1 e@25 ]
+"82 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _C `Vb  1 e@24 ]
+"84 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FIRP `Vb  1 e@31 ]
+"85 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FRP1 `Vb  1 e@30 ]
+"86 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FRP0 `Vb  1 e@29 ]
+"87 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTO `Vb  1 e@28 ]
+"88 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPD `Vb  1 e@27 ]
+"89 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FZ `Vb  1 e@26 ]
+"90 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FDC `Vb  1 e@25 ]
+"91 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FC `Vb  1 e@24 ]
+"94 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FSR `Vuc  1 e@4 ]
+"95 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FSR7 `Vb  1 e@39 ]
+"97 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FFSR7 `Vb  1 e@39 ]
+"100 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCLATH `Vuc  1 e@10 ]
+"101 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCH2 `Vb  1 e@82 ]
+"102 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCH1 `Vb  1 e@81 ]
+"103 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCH0 `Vb  1 e@80 ]
+"105 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPCH2 `Vb  1 e@82 ]
+"106 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPCH1 `Vb  1 e@81 ]
+"107 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPCH0 `Vb  1 e@80 ]
+"110 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INTCON `Vuc  1 e@11 ]
+"111 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _GIE `Vb  1 e@95 ]
+"112 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PEIE `Vb  1 e@94 ]
+"113 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INTIE `Vb  1 e@92 ]
+"114 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PAIE `Vb  1 e@91 ]
+"115 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INTIF `Vb  1 e@89 ]
+"116 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PAIF `Vb  1 e@88 ]
+"118 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FGIE `Vb  1 e@95 ]
+"119 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPEIE `Vb  1 e@94 ]
+"120 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FINTIE `Vb  1 e@92 ]
+"121 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPAIE `Vb  1 e@91 ]
+"122 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FINTIF `Vb  1 e@89 ]
+"123 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPAIF `Vb  1 e@88 ]
+"131 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PORTA `Vuc  1 e@5 ]
+"132 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA7 `Vb  1 e@47 ]
+"133 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA6 `Vb  1 e@46 ]
+"134 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA5 `Vb  1 e@45 ]
+"135 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA4 `Vb  1 e@44 ]
+"136 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA3 `Vb  1 e@43 ]
+"137 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA2 `Vb  1 e@42 ]
+"138 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA1 `Vb  1 e@41 ]
+"139 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PA0 `Vb  1 e@40 ]
+"141 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA7 `Vb  1 e@47 ]
+"142 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA6 `Vb  1 e@46 ]
+"143 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA5 `Vb  1 e@45 ]
+"144 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA4 `Vb  1 e@44 ]
+"145 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA3 `Vb  1 e@43 ]
+"146 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA2 `Vb  1 e@42 ]
+"147 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA1 `Vb  1 e@41 ]
+"148 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPA0 `Vb  1 e@40 ]
+"151 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PORTC `Vuc  1 e@7 ]
+"152 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC5 `Vb  1 e@61 ]
+"153 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC4 `Vb  1 e@60 ]
+"154 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC3 `Vb  1 e@59 ]
+"155 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC2 `Vb  1 e@58 ]
+"156 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC1 `Vb  1 e@57 ]
+"157 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PC0 `Vb  1 e@56 ]
+"159 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC5 `Vb  1 e@61 ]
+"160 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC4 `Vb  1 e@60 ]
+"161 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC3 `Vb  1 e@59 ]
+"162 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC2 `Vb  1 e@58 ]
+"163 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC1 `Vb  1 e@57 ]
+"164 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPC0 `Vb  1 e@56 ]
+"167 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PIR1 `Vuc  1 e@12 ]
+"168 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADCIF `Vb  1 e@102 ]
+"169 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1IF `Vb  1 e@96 ]
+"171 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADCIF `Vb  1 e@102 ]
+"172 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1IF `Vb  1 e@96 ]
+"175 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PIR2 `Vuc  1 e@13 ]
+"176 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _C1IF `Vb  1 e@109 ]
+"177 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4IF `Vb  1 e@106 ]
+"178 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3IF `Vb  1 e@105 ]
+"180 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FC1IF `Vb  1 e@109 ]
+"181 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4IF `Vb  1 e@106 ]
+"182 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3IF `Vb  1 e@105 ]
+"185 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCHCON `Vuc  1 e@18 ]
+"186 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC5 `Vb  1 e@149 ]
+"187 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC4 `Vb  1 e@148 ]
+"188 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC3 `Vb  1 e@147 ]
+"189 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC2 `Vb  1 e@146 ]
+"190 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC1 `Vb  1 e@145 ]
+"191 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHC0 `Vb  1 e@144 ]
+"193 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC5 `Vb  1 e@149 ]
+"194 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC4 `Vb  1 e@148 ]
+"195 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC3 `Vb  1 e@147 ]
+"196 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC2 `Vb  1 e@146 ]
+"197 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC1 `Vb  1 e@145 ]
+"198 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHC0 `Vb  1 e@144 ]
+"202 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCDCON `Vuc  1 e@19 ]
+"203 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC5 `Vb  1 e@157 ]
+"204 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC4 `Vb  1 e@156 ]
+"205 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC3 `Vb  1 e@155 ]
+"206 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC2 `Vb  1 e@154 ]
+"207 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC1 `Vb  1 e@153 ]
+"208 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDC0 `Vb  1 e@152 ]
+"210 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC5 `Vb  1 e@157 ]
+"211 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC4 `Vb  1 e@156 ]
+"212 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC3 `Vb  1 e@155 ]
+"213 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC2 `Vb  1 e@154 ]
+"214 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC1 `Vb  1 e@153 ]
+"215 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDC0 `Vb  1 e@152 ]
+"218 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADBBUF `Vuc  1 e@22 ]
+"221 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADPCON1 `Vuc  1 e@25 ]
+"224 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADPCON `Vuc  1 e@26 ]
+"227 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADM `Vuc  1 e@27 ]
+"228 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADENB `Vb  1 e@223 ]
+"229 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADS `Vb  1 e@222 ]
+"230 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _EOC `Vb  1 e@221 ]
+"231 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _GCHS `Vb  1 e@220 ]
+"232 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CHS3 `Vb  1 e@219 ]
+"233 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CHS2 `Vb  1 e@218 ]
+"234 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CHS1 `Vb  1 e@217 ]
+"235 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CHS0 `Vb  1 e@216 ]
+"237 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADENB `Vb  1 e@223 ]
+"238 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADS `Vb  1 e@222 ]
+"239 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FEOC `Vb  1 e@221 ]
+"240 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FGCHS `Vb  1 e@220 ]
+"241 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCHS3 `Vb  1 e@219 ]
+"242 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCHS2 `Vb  1 e@218 ]
+"243 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCHS1 `Vb  1 e@217 ]
+"244 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCHS0 `Vb  1 e@216 ]
+"247 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADB `Vuc  1 e@28 ]
+"250 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADR `Vuc  1 e@29 ]
+"251 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADCKS1 `Vb  1 e@238 ]
+"252 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADCKS0 `Vb  1 e@236 ]
+"254 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADCKS1 `Vb  1 e@238 ]
+"255 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADCKS0 `Vb  1 e@236 ]
+"258 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADT `Vuc  1 e@30 ]
+"261 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VREFH `Vuc  1 e@31 ]
+"263 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _EVHENB `Vb  1 e@255 ]
+"264 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VHS1 `Vb  1 e@249 ]
+"265 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VHS0 `Vb  1 e@248 ]
+"267 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FEVHENB `Vb  1 e@255 ]
+"268 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVHS1 `Vb  1 e@249 ]
+"269 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVHS0 `Vb  1 e@248 ]
+"277 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _OPTIONR `Vuc  1 e@129 ]
+"280 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INTEDGE `Vb  1 e@1038 ]
+"282 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FINTEDGE `Vb  1 e@1038 ]
+"285 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA `Vuc  1 e@133 ]
+"286 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA7 `Vb  1 e@1071 ]
+"287 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA6 `Vb  1 e@1070 ]
+"288 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA5 `Vb  1 e@1069 ]
+"289 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA4 `Vb  1 e@1068 ]
+"290 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA3 `Vb  1 e@1067 ]
+"291 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA2 `Vb  1 e@1066 ]
+"292 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA1 `Vb  1 e@1065 ]
+"293 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISA0 `Vb  1 e@1064 ]
+"295 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA7 `Vb  1 e@1071 ]
+"296 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA6 `Vb  1 e@1070 ]
+"297 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA5 `Vb  1 e@1069 ]
+"298 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA4 `Vb  1 e@1068 ]
+"299 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA3 `Vb  1 e@1067 ]
+"300 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA2 `Vb  1 e@1066 ]
+"301 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA1 `Vb  1 e@1065 ]
+"302 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISA0 `Vb  1 e@1064 ]
+"305 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC `Vuc  1 e@135 ]
+"306 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC5 `Vb  1 e@1085 ]
+"307 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC4 `Vb  1 e@1084 ]
+"308 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC3 `Vb  1 e@1083 ]
+"309 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC2 `Vb  1 e@1082 ]
+"310 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC1 `Vb  1 e@1081 ]
+"311 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _TRISC0 `Vb  1 e@1080 ]
+"313 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC5 `Vb  1 e@1085 ]
+"314 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC4 `Vb  1 e@1084 ]
+"315 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC3 `Vb  1 e@1083 ]
+"316 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC2 `Vb  1 e@1082 ]
+"317 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC1 `Vb  1 e@1081 ]
+"318 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FTRISC0 `Vb  1 e@1080 ]
+"321 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PIE1 `Vuc  1 e@140 ]
+"322 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ADCIE `Vb  1 e@1126 ]
+"323 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1IE `Vb  1 e@1120 ]
+"325 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FADCIE `Vb  1 e@1126 ]
+"326 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1IE `Vb  1 e@1120 ]
+"329 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PIE2 `Vuc  1 e@141 ]
+"330 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _C1IE `Vb  1 e@1133 ]
+"331 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4IE `Vb  1 e@1130 ]
+"332 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3IE `Vb  1 e@1129 ]
+"334 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FC1IE `Vb  1 e@1133 ]
+"335 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4IE `Vb  1 e@1130 ]
+"336 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3IE `Vb  1 e@1129 ]
+"339 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PCON `Vuc  1 e@142 ]
+"340 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WDTE `Vb  1 e@1143 ]
+"341 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _LVDTE `Vb  1 e@1141 ]
+"343 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWDTE `Vb  1 e@1143 ]
+"344 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FLVDTE `Vb  1 e@1141 ]
+"347 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUACON `Vuc  1 e@143 ]
+"348 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA7 `Vb  1 e@1151 ]
+"349 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA6 `Vb  1 e@1150 ]
+"350 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA5 `Vb  1 e@1149 ]
+"351 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA4 `Vb  1 e@1148 ]
+"352 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA3 `Vb  1 e@1147 ]
+"353 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA2 `Vb  1 e@1146 ]
+"354 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA1 `Vb  1 e@1145 ]
+"355 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WUA0 `Vb  1 e@1144 ]
+"357 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA7 `Vb  1 e@1151 ]
+"358 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA6 `Vb  1 e@1150 ]
+"359 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA5 `Vb  1 e@1149 ]
+"360 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA4 `Vb  1 e@1148 ]
+"361 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA3 `Vb  1 e@1147 ]
+"362 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA2 `Vb  1 e@1146 ]
+"363 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA1 `Vb  1 e@1145 ]
+"364 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWUA0 `Vb  1 e@1144 ]
+"367 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PAHCON `Vuc  1 e@146 ]
+"368 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA7 `Vb  1 e@1175 ]
+"369 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA6 `Vb  1 e@1174 ]
+"370 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA5 `Vb  1 e@1173 ]
+"371 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA4 `Vb  1 e@1172 ]
+"372 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA3 `Vb  1 e@1171 ]
+"373 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA2 `Vb  1 e@1170 ]
+"374 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA1 `Vb  1 e@1169 ]
+"375 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PHA0 `Vb  1 e@1168 ]
+"377 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA7 `Vb  1 e@1175 ]
+"378 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA6 `Vb  1 e@1174 ]
+"379 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA5 `Vb  1 e@1173 ]
+"380 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA4 `Vb  1 e@1172 ]
+"381 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA3 `Vb  1 e@1171 ]
+"382 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA2 `Vb  1 e@1170 ]
+"383 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA1 `Vb  1 e@1169 ]
+"384 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPHA0 `Vb  1 e@1168 ]
+"387 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PADCON `Vuc  1 e@147 ]
+"388 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA7 `Vb  1 e@1183 ]
+"389 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA6 `Vb  1 e@1182 ]
+"390 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA5 `Vb  1 e@1181 ]
+"391 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA4 `Vb  1 e@1180 ]
+"392 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA3 `Vb  1 e@1179 ]
+"393 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA2 `Vb  1 e@1178 ]
+"394 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA1 `Vb  1 e@1177 ]
+"395 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDA0 `Vb  1 e@1176 ]
+"397 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA7 `Vb  1 e@1183 ]
+"398 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA6 `Vb  1 e@1182 ]
+"399 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA5 `Vb  1 e@1181 ]
+"400 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA4 `Vb  1 e@1180 ]
+"401 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA3 `Vb  1 e@1179 ]
+"402 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA2 `Vb  1 e@1178 ]
+"403 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA1 `Vb  1 e@1177 ]
+"404 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDA0 `Vb  1 e@1176 ]
+"407 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _OSCM `Vuc  1 e@148 ]
+"408 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _WAKEMODE `Vb  1 e@1190 ]
+"409 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _GREENEN `Vb  1 e@1189 ]
+"410 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _SLCON `Vb  1 e@1187 ]
+"411 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _STPHX `Vb  1 e@1185 ]
+"412 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CLKMD `Vb  1 e@1184 ]
+"414 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FWAKEMODE `Vb  1 e@1190 ]
+"415 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FGREENEN `Vb  1 e@1189 ]
+"416 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FSLCON `Vb  1 e@1187 ]
+"417 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FSTPHX `Vb  1 e@1185 ]
+"418 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCLKMD `Vb  1 e@1184 ]
+"421 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PAODCON `Vuc  1 e@149 ]
+"422 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA7 `Vb  1 e@1199 ]
+"423 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA6 `Vb  1 e@1198 ]
+"424 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA5 `Vb  1 e@1197 ]
+"425 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA4 `Vb  1 e@1196 ]
+"426 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA3 `Vb  1 e@1195 ]
+"427 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA2 `Vb  1 e@1194 ]
+"428 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA1 `Vb  1 e@1193 ]
+"429 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _ODA0 `Vb  1 e@1192 ]
+"431 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA7 `Vb  1 e@1199 ]
+"432 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA6 `Vb  1 e@1198 ]
+"433 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA5 `Vb  1 e@1197 ]
+"434 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA4 `Vb  1 e@1196 ]
+"435 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA3 `Vb  1 e@1195 ]
+"436 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA2 `Vb  1 e@1194 ]
+"437 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA1 `Vb  1 e@1193 ]
+"438 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FODA0 `Vb  1 e@1192 ]
+"441 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1CON `Vuc  1 e@155 ]
+"442 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1CK1 `Vb  1 e@1245 ]
+"443 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1CK0 `Vb  1 e@1244 ]
+"444 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1CKS1 `Vb  1 e@1243 ]
+"445 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1SYNC `Vb  1 e@1242 ]
+"446 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1CKS0 `Vb  1 e@1241 ]
+"447 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1REN `Vb  1 e@1240 ]
+"449 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1CK1 `Vb  1 e@1245 ]
+"450 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1CK0 `Vb  1 e@1244 ]
+"451 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1CKS1 `Vb  1 e@1243 ]
+"452 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1SYNC `Vb  1 e@1242 ]
+"453 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1CKS0 `Vb  1 e@1241 ]
+"454 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT1REN `Vb  1 e@1240 ]
+"457 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1TH `Vuc  1 e@156 ]
+"460 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T1TL `Vuc  1 e@157 ]
+"463 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D4L `Vuc  1 e@158 ]
+"466 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D4H `Vuc  1 e@159 ]
+"473 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3C0 `Vuc  1 e@272 ]
+"474 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3REN `Vb  1 e@2183 ]
+"475 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM1INV `Vb  1 e@2181 ]
+"476 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM0INV `Vb  1 e@2180 ]
+"477 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM1EN `Vb  1 e@2178 ]
+"478 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM0EN `Vb  1 e@2177 ]
+"480 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3REN `Vb  1 e@2183 ]
+"481 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM1INV `Vb  1 e@2181 ]
+"482 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM0INV `Vb  1 e@2180 ]
+"483 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM1EN `Vb  1 e@2178 ]
+"484 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM0EN `Vb  1 e@2177 ]
+"487 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3C1 `Vuc  1 e@273 ]
+"488 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3OUT0 `Vb  1 e@2190 ]
+"489 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3CKS0 `Vb  1 e@2188 ]
+"490 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3CK2 `Vb  1 e@2186 ]
+"491 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3CK1 `Vb  1 e@2185 ]
+"492 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3CK0 `Vb  1 e@2184 ]
+"494 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3OUT0 `Vb  1 e@2190 ]
+"495 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3CKS0 `Vb  1 e@2188 ]
+"496 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3CK2 `Vb  1 e@2186 ]
+"497 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3CK1 `Vb  1 e@2185 ]
+"498 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3CK0 `Vb  1 e@2184 ]
+"501 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3TL `Vuc  1 e@274 ]
+"504 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3TH `Vuc  1 e@275 ]
+"507 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PL `Vuc  1 e@276 ]
+"510 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PH `Vuc  1 e@277 ]
+"513 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D0L `Vuc  1 e@278 ]
+"516 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D0H `Vuc  1 e@279 ]
+"519 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3C2 `Vuc  1 e@281 ]
+"520 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDTM2 `Vb  1 e@2255 ]
+"521 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PDTM0 `Vb  1 e@2254 ]
+"522 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM4INV `Vb  1 e@2253 ]
+"523 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM3INV `Vb  1 e@2252 ]
+"524 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM2INV `Vb  1 e@2251 ]
+"525 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM4EN `Vb  1 e@2250 ]
+"526 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM3EN `Vb  1 e@2249 ]
+"527 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM2EN `Vb  1 e@2248 ]
+"529 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDTM2 `Vb  1 e@2255 ]
+"530 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FPDTM0 `Vb  1 e@2254 ]
+"531 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM4INV `Vb  1 e@2253 ]
+"532 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM3INV `Vb  1 e@2252 ]
+"533 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM2INV `Vb  1 e@2251 ]
+"534 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM4EN `Vb  1 e@2250 ]
+"535 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM3EN `Vb  1 e@2249 ]
+"536 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM2EN `Vb  1 e@2248 ]
+"539 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D1L `Vuc  1 e@282 ]
+"542 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D1H `Vuc  1 e@283 ]
+"545 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D2L `Vuc  1 e@284 ]
+"548 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D2H `Vuc  1 e@285 ]
+"551 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D3L `Vuc  1 e@286 ]
+"554 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3D3H `Vuc  1 e@287 ]
+"561 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PWMSEL1 `Vuc  1 e@393 ]
+"562 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PWMS1 `Vb  1 e@3147 ]
+"563 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PWMS0 `Vb  1 e@3146 ]
+"564 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM4S1 `Vb  1 e@3145 ]
+"565 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM4S0 `Vb  1 e@3144 ]
+"567 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4PWMS1 `Vb  1 e@3147 ]
+"568 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4PWMS0 `Vb  1 e@3146 ]
+"569 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM4S1 `Vb  1 e@3145 ]
+"570 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM4S0 `Vb  1 e@3144 ]
+"573 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _PWMSEL `Vuc  1 e@396 ]
+"574 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM3S1 `Vb  1 e@3175 ]
+"575 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM3S0 `Vb  1 e@3174 ]
+"576 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM2S1 `Vb  1 e@3173 ]
+"577 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM2S0 `Vb  1 e@3172 ]
+"578 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM1S1 `Vb  1 e@3171 ]
+"579 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM1S0 `Vb  1 e@3170 ]
+"580 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM0S1 `Vb  1 e@3169 ]
+"581 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T3PWM0S0 `Vb  1 e@3168 ]
+"583 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM3S1 `Vb  1 e@3175 ]
+"584 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM3S0 `Vb  1 e@3174 ]
+"585 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM2S1 `Vb  1 e@3173 ]
+"586 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM2S0 `Vb  1 e@3172 ]
+"587 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM1S1 `Vb  1 e@3171 ]
+"588 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM1S0 `Vb  1 e@3170 ]
+"589 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM0S1 `Vb  1 e@3169 ]
+"590 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT3PWM0S0 `Vb  1 e@3168 ]
+"593 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4C0 `Vuc  1 e@397 ]
+"594 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4REN `Vb  1 e@3183 ]
+"595 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PWMINV `Vb  1 e@3180 ]
+"596 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4BUZEN `Vb  1 e@3179 ]
+"597 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PWMEN `Vb  1 e@3177 ]
+"599 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4REN `Vb  1 e@3183 ]
+"600 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4PWMINV `Vb  1 e@3180 ]
+"601 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4BUZEN `Vb  1 e@3179 ]
+"602 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4PWMEN `Vb  1 e@3177 ]
+"605 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4C1 `Vuc  1 e@398 ]
+"606 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4OUT0 `Vb  1 e@3190 ]
+"607 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4CKS0 `Vb  1 e@3188 ]
+"608 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4CK2 `Vb  1 e@3186 ]
+"609 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4CK1 `Vb  1 e@3185 ]
+"610 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4CK0 `Vb  1 e@3184 ]
+"612 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4OUT0 `Vb  1 e@3190 ]
+"613 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4CKS0 `Vb  1 e@3188 ]
+"614 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4CK2 `Vb  1 e@3186 ]
+"615 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4CK1 `Vb  1 e@3185 ]
+"616 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FT4CK0 `Vb  1 e@3184 ]
+"619 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4TL `Vuc  1 e@399 ]
+"622 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4TH `Vuc  1 e@400 ]
+"625 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PL `Vuc  1 e@401 ]
+"628 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4PH `Vuc  1 e@402 ]
+"631 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4DL `Vuc  1 e@403 ]
+"634 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _T4DH `Vuc  1 e@404 ]
+"637 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CMCON0 `Vuc  1 e@413 ]
+"639 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _C1OUT `Vb  1 e@3310 ]
+"641 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _C1INV `Vb  1 e@3308 ]
+"642 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CIS `Vb  1 e@3307 ]
+"643 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CMCH2 `Vb  1 e@3306 ]
+"644 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CMCH1 `Vb  1 e@3305 ]
+"645 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _CMCH0 `Vb  1 e@3304 ]
+"648 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FC1OUT `Vb  1 e@3310 ]
+"650 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FC1INV `Vb  1 e@3308 ]
+"651 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCIS `Vb  1 e@3307 ]
+"652 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCMCH2 `Vb  1 e@3306 ]
+"653 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCMCH1 `Vb  1 e@3305 ]
+"654 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FCMCH0 `Vb  1 e@3304 ]
+"657 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VRCON `Vuc  1 e@415 ]
+"658 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VREN `Vb  1 e@3327 ]
+"659 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VRR1 `Vb  1 e@3326 ]
+"660 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VRR0 `Vb  1 e@3325 ]
+"661 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VRS `Vb  1 e@3324 ]
+"662 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VR3 `Vb  1 e@3323 ]
+"663 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VR2 `Vb  1 e@3322 ]
+"664 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VR1 `Vb  1 e@3321 ]
+"665 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _VR0 `Vb  1 e@3320 ]
+"667 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVREN `Vb  1 e@3327 ]
+"668 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVRR1 `Vb  1 e@3326 ]
+"669 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVRR0 `Vb  1 e@3325 ]
+"670 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVRS `Vb  1 e@3324 ]
+"671 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVR3 `Vb  1 e@3323 ]
+"672 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVR2 `Vb  1 e@3322 ]
+"673 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVR1 `Vb  1 e@3321 ]
+"674 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _FVR0 `Vb  1 e@3320 ]
+[; ;pen_pwr_ctl.h: 5: void pen_pwr_on(void);
+[; ;pen_pwr_ctl.h: 6: void pen_pwr_off(void);
+[; ;hs16p2811.h: 39: typedef signed char s8;
+[; ;hs16p2811.h: 40: typedef signed int s16;
+[; ;hs16p2811.h: 41: typedef signed long s32;
+[; ;hs16p2811.h: 43: typedef unsigned char u8;
+[; ;hs16p2811.h: 44: typedef unsigned int u16;
+[; ;hs16p2811.h: 45: typedef unsigned long u32;
+[; ;hs16p2811.h: 47: typedef volatile unsigned char vu8;
+[; ;hs16p2811.h: 48: typedef volatile unsigned int vu16;
+[; ;hs16p2811.h: 49: typedef volatile unsigned long vu32;
+[; ;hs16p2811.h: 68: volatile unsigned char INDF @ 0x000;
+[; ;hs16p2811.h: 71: volatile unsigned char PCL @ 0x002;
+[; ;hs16p2811.h: 74: volatile unsigned char STATUS @ 0x003;
+[; ;hs16p2811.h: 75: volatile bit IRP @ ((unsigned) & STATUS * 8) + 7;
+[; ;hs16p2811.h: 76: volatile bit RP1 @ ((unsigned) & STATUS * 8) + 6;
+[; ;hs16p2811.h: 77: volatile bit RP0 @ ((unsigned) & STATUS * 8) + 5;
+[; ;hs16p2811.h: 78: volatile bit TO @ ((unsigned) & STATUS * 8) + 4;
+[; ;hs16p2811.h: 79: volatile bit PD @ ((unsigned) & STATUS * 8) + 3;
+[; ;hs16p2811.h: 80: volatile bit Z @ ((unsigned) & STATUS * 8) + 2;
+[; ;hs16p2811.h: 81: volatile bit DC @ ((unsigned) & STATUS * 8) + 1;
+[; ;hs16p2811.h: 82: volatile bit C @ ((unsigned) & STATUS * 8) + 0;
+[; ;hs16p2811.h: 84: volatile bit FIRP @ ((unsigned) & STATUS * 8) + 7;
+[; ;hs16p2811.h: 85: volatile bit FRP1 @ ((unsigned) & STATUS * 8) + 6;
+[; ;hs16p2811.h: 86: volatile bit FRP0 @ ((unsigned) & STATUS * 8) + 5;
+[; ;hs16p2811.h: 87: volatile bit FTO @ ((unsigned) & STATUS * 8) + 4;
+[; ;hs16p2811.h: 88: volatile bit FPD @ ((unsigned) & STATUS * 8) + 3;
+[; ;hs16p2811.h: 89: volatile bit FZ @ ((unsigned) & STATUS * 8) + 2;
+[; ;hs16p2811.h: 90: volatile bit FDC @ ((unsigned) & STATUS * 8) + 1;
+[; ;hs16p2811.h: 91: volatile bit FC @ ((unsigned) & STATUS * 8) + 0;
+[; ;hs16p2811.h: 94: volatile unsigned char FSR @ 0x004;
+[; ;hs16p2811.h: 95: volatile bit FSR7 @ ((unsigned) & FSR * 8) + 7;
+[; ;hs16p2811.h: 97: volatile bit FFSR7 @ ((unsigned) & FSR * 8) + 7;
+[; ;hs16p2811.h: 100: volatile unsigned char PCLATH @ 0x00A;
+[; ;hs16p2811.h: 101: volatile bit PCH2 @ ((unsigned) & PCLATH * 8) + 2;
+[; ;hs16p2811.h: 102: volatile bit PCH1 @ ((unsigned) & PCLATH * 8) + 1;
+[; ;hs16p2811.h: 103: volatile bit PCH0 @ ((unsigned) & PCLATH * 8) + 0;
+[; ;hs16p2811.h: 105: volatile bit FPCH2 @ ((unsigned) & PCLATH * 8) + 2;
+[; ;hs16p2811.h: 106: volatile bit FPCH1 @ ((unsigned) & PCLATH * 8) + 1;
+[; ;hs16p2811.h: 107: volatile bit FPCH0 @ ((unsigned) & PCLATH * 8) + 0;
+[; ;hs16p2811.h: 110: volatile unsigned char INTCON @ 0x00B;
+[; ;hs16p2811.h: 111: volatile bit GIE @ ((unsigned) & INTCON * 8) + 7;
+[; ;hs16p2811.h: 112: volatile bit PEIE @ ((unsigned) & INTCON * 8) + 6;
+[; ;hs16p2811.h: 113: volatile bit INTIE @ ((unsigned) & INTCON * 8) + 4;
+[; ;hs16p2811.h: 114: volatile bit PAIE @ ((unsigned) & INTCON * 8) + 3;
+[; ;hs16p2811.h: 115: volatile bit INTIF @ ((unsigned) & INTCON * 8) + 1;
+[; ;hs16p2811.h: 116: volatile bit PAIF @ ((unsigned) & INTCON * 8) + 0;
+[; ;hs16p2811.h: 118: volatile bit FGIE @ ((unsigned) & INTCON * 8) + 7;
+[; ;hs16p2811.h: 119: volatile bit FPEIE @ ((unsigned) & INTCON * 8) + 6;
+[; ;hs16p2811.h: 120: volatile bit FINTIE @ ((unsigned) & INTCON * 8) + 4;
+[; ;hs16p2811.h: 121: volatile bit FPAIE @ ((unsigned) & INTCON * 8) + 3;
+[; ;hs16p2811.h: 122: volatile bit FINTIF @ ((unsigned) & INTCON * 8) + 1;
+[; ;hs16p2811.h: 123: volatile bit FPAIF @ ((unsigned) & INTCON * 8) + 0;
+[; ;hs16p2811.h: 131: volatile unsigned char PORTA @ 0x005;
+[; ;hs16p2811.h: 132: volatile bit PA7 @ ((unsigned) & PORTA * 8) + 7;
+[; ;hs16p2811.h: 133: volatile bit PA6 @ ((unsigned) & PORTA * 8) + 6;
+[; ;hs16p2811.h: 134: volatile bit PA5 @ ((unsigned) & PORTA * 8) + 5;
+[; ;hs16p2811.h: 135: volatile bit PA4 @ ((unsigned) & PORTA * 8) + 4;
+[; ;hs16p2811.h: 136: volatile bit PA3 @ ((unsigned) & PORTA * 8) + 3;
+[; ;hs16p2811.h: 137: volatile bit PA2 @ ((unsigned) & PORTA * 8) + 2;
+[; ;hs16p2811.h: 138: volatile bit PA1 @ ((unsigned) & PORTA * 8) + 1;
+[; ;hs16p2811.h: 139: volatile bit PA0 @ ((unsigned) & PORTA * 8) + 0;
+[; ;hs16p2811.h: 141: volatile bit FPA7 @ ((unsigned) & PORTA * 8) + 7;
+[; ;hs16p2811.h: 142: volatile bit FPA6 @ ((unsigned) & PORTA * 8) + 6;
+[; ;hs16p2811.h: 143: volatile bit FPA5 @ ((unsigned) & PORTA * 8) + 5;
+[; ;hs16p2811.h: 144: volatile bit FPA4 @ ((unsigned) & PORTA * 8) + 4;
+[; ;hs16p2811.h: 145: volatile bit FPA3 @ ((unsigned) & PORTA * 8) + 3;
+[; ;hs16p2811.h: 146: volatile bit FPA2 @ ((unsigned) & PORTA * 8) + 2;
+[; ;hs16p2811.h: 147: volatile bit FPA1 @ ((unsigned) & PORTA * 8) + 1;
+[; ;hs16p2811.h: 148: volatile bit FPA0 @ ((unsigned) & PORTA * 8) + 0;
+[; ;hs16p2811.h: 151: volatile unsigned char PORTC @ 0x007;
+[; ;hs16p2811.h: 152: volatile bit PC5 @ ((unsigned) & PORTC * 8) + 5;
+[; ;hs16p2811.h: 153: volatile bit PC4 @ ((unsigned) & PORTC * 8) + 4;
+[; ;hs16p2811.h: 154: volatile bit PC3 @ ((unsigned) & PORTC * 8) + 3;
+[; ;hs16p2811.h: 155: volatile bit PC2 @ ((unsigned) & PORTC * 8) + 2;
+[; ;hs16p2811.h: 156: volatile bit PC1 @ ((unsigned) & PORTC * 8) + 1;
+[; ;hs16p2811.h: 157: volatile bit PC0 @ ((unsigned) & PORTC * 8) + 0;
+[; ;hs16p2811.h: 159: volatile bit FPC5 @ ((unsigned) & PORTC * 8) + 5;
+[; ;hs16p2811.h: 160: volatile bit FPC4 @ ((unsigned) & PORTC * 8) + 4;
+[; ;hs16p2811.h: 161: volatile bit FPC3 @ ((unsigned) & PORTC * 8) + 3;
+[; ;hs16p2811.h: 162: volatile bit FPC2 @ ((unsigned) & PORTC * 8) + 2;
+[; ;hs16p2811.h: 163: volatile bit FPC1 @ ((unsigned) & PORTC * 8) + 1;
+[; ;hs16p2811.h: 164: volatile bit FPC0 @ ((unsigned) & PORTC * 8) + 0;
+[; ;hs16p2811.h: 167: volatile unsigned char PIR1 @ 0x00C;
+[; ;hs16p2811.h: 168: volatile bit ADCIF @ ((unsigned) & PIR1 * 8) + 6;
+[; ;hs16p2811.h: 169: volatile bit T1IF @ ((unsigned) & PIR1 * 8) + 0;
+[; ;hs16p2811.h: 171: volatile bit FADCIF @ ((unsigned) & PIR1 * 8) + 6;
+[; ;hs16p2811.h: 172: volatile bit FT1IF @ ((unsigned) & PIR1 * 8) + 0;
+[; ;hs16p2811.h: 175: volatile unsigned char PIR2 @ 0x00D;
+[; ;hs16p2811.h: 176: volatile bit C1IF @ ((unsigned) & PIR2 * 8) + 5;
+[; ;hs16p2811.h: 177: volatile bit T4IF @ ((unsigned) & PIR2 * 8) + 2;
+[; ;hs16p2811.h: 178: volatile bit T3IF @ ((unsigned) & PIR2 * 8) + 1;
+[; ;hs16p2811.h: 180: volatile bit FC1IF @ ((unsigned) & PIR2 * 8) + 5;
+[; ;hs16p2811.h: 181: volatile bit FT4IF @ ((unsigned) & PIR2 * 8) + 2;
+[; ;hs16p2811.h: 182: volatile bit FT3IF @ ((unsigned) & PIR2 * 8) + 1;
+[; ;hs16p2811.h: 185: volatile unsigned char PCHCON @ 0x012;
+[; ;hs16p2811.h: 186: volatile bit PHC5 @ ((unsigned) & PCHCON * 8) + 5;
+[; ;hs16p2811.h: 187: volatile bit PHC4 @ ((unsigned) & PCHCON * 8) + 4;
+[; ;hs16p2811.h: 188: volatile bit PHC3 @ ((unsigned) & PCHCON * 8) + 3;
+[; ;hs16p2811.h: 189: volatile bit PHC2 @ ((unsigned) & PCHCON * 8) + 2;
+[; ;hs16p2811.h: 190: volatile bit PHC1 @ ((unsigned) & PCHCON * 8) + 1;
+[; ;hs16p2811.h: 191: volatile bit PHC0 @ ((unsigned) & PCHCON * 8) + 0;
+[; ;hs16p2811.h: 193: volatile bit FPHC5 @ ((unsigned) & PCHCON * 8) + 5;
+[; ;hs16p2811.h: 194: volatile bit FPHC4 @ ((unsigned) & PCHCON * 8) + 4;
+[; ;hs16p2811.h: 195: volatile bit FPHC3 @ ((unsigned) & PCHCON * 8) + 3;
+[; ;hs16p2811.h: 196: volatile bit FPHC2 @ ((unsigned) & PCHCON * 8) + 2;
+[; ;hs16p2811.h: 197: volatile bit FPHC1 @ ((unsigned) & PCHCON * 8) + 1;
+[; ;hs16p2811.h: 198: volatile bit FPHC0 @ ((unsigned) & PCHCON * 8) + 0;
+[; ;hs16p2811.h: 202: volatile unsigned char PCDCON @ 0x013;
+[; ;hs16p2811.h: 203: volatile bit PDC5 @ ((unsigned) & PCDCON * 8) + 5;
+[; ;hs16p2811.h: 204: volatile bit PDC4 @ ((unsigned) & PCDCON * 8) + 4;
+[; ;hs16p2811.h: 205: volatile bit PDC3 @ ((unsigned) & PCDCON * 8) + 3;
+[; ;hs16p2811.h: 206: volatile bit PDC2 @ ((unsigned) & PCDCON * 8) + 2;
+[; ;hs16p2811.h: 207: volatile bit PDC1 @ ((unsigned) & PCDCON * 8) + 1;
+[; ;hs16p2811.h: 208: volatile bit PDC0 @ ((unsigned) & PCDCON * 8) + 0;
+[; ;hs16p2811.h: 210: volatile bit FPDC5 @ ((unsigned) & PCDCON * 8) + 5;
+[; ;hs16p2811.h: 211: volatile bit FPDC4 @ ((unsigned) & PCDCON * 8) + 4;
+[; ;hs16p2811.h: 212: volatile bit FPDC3 @ ((unsigned) & PCDCON * 8) + 3;
+[; ;hs16p2811.h: 213: volatile bit FPDC2 @ ((unsigned) & PCDCON * 8) + 2;
+[; ;hs16p2811.h: 214: volatile bit FPDC1 @ ((unsigned) & PCDCON * 8) + 1;
+[; ;hs16p2811.h: 215: volatile bit FPDC0 @ ((unsigned) & PCDCON * 8) + 0;
+[; ;hs16p2811.h: 218: volatile unsigned char ADBBUF @ 0x016;
+[; ;hs16p2811.h: 221: volatile unsigned char ADPCON1 @ 0x019;
+[; ;hs16p2811.h: 224: volatile unsigned char ADPCON @ 0x01A;
+[; ;hs16p2811.h: 227: volatile unsigned char ADM @ 0x01B;
+[; ;hs16p2811.h: 228: volatile bit ADENB @ ((unsigned) & ADM * 8) + 7;
+[; ;hs16p2811.h: 229: volatile bit ADS @ ((unsigned) & ADM * 8) + 6;
+[; ;hs16p2811.h: 230: volatile bit EOC @ ((unsigned) & ADM * 8) + 5;
+[; ;hs16p2811.h: 231: volatile bit GCHS @ ((unsigned) & ADM * 8) + 4;
+[; ;hs16p2811.h: 232: volatile bit CHS3 @ ((unsigned) & ADM * 8) + 3;
+[; ;hs16p2811.h: 233: volatile bit CHS2 @ ((unsigned) & ADM * 8) + 2;
+[; ;hs16p2811.h: 234: volatile bit CHS1 @ ((unsigned) & ADM * 8) + 1;
+[; ;hs16p2811.h: 235: volatile bit CHS0 @ ((unsigned) & ADM * 8) + 0;
+[; ;hs16p2811.h: 237: volatile bit FADENB @ ((unsigned) & ADM * 8) + 7;
+[; ;hs16p2811.h: 238: volatile bit FADS @ ((unsigned) & ADM * 8) + 6;
+[; ;hs16p2811.h: 239: volatile bit FEOC @ ((unsigned) & ADM * 8) + 5;
+[; ;hs16p2811.h: 240: volatile bit FGCHS @ ((unsigned) & ADM * 8) + 4;
+[; ;hs16p2811.h: 241: volatile bit FCHS3 @ ((unsigned) & ADM * 8) + 3;
+[; ;hs16p2811.h: 242: volatile bit FCHS2 @ ((unsigned) & ADM * 8) + 2;
+[; ;hs16p2811.h: 243: volatile bit FCHS1 @ ((unsigned) & ADM * 8) + 1;
+[; ;hs16p2811.h: 244: volatile bit FCHS0 @ ((unsigned) & ADM * 8) + 0;
+[; ;hs16p2811.h: 247: volatile unsigned char ADB @ 0x01C;
+[; ;hs16p2811.h: 250: volatile unsigned char ADR @ 0x01D;
+[; ;hs16p2811.h: 251: volatile bit ADCKS1 @ ((unsigned) & ADR * 8) + 6;
+[; ;hs16p2811.h: 252: volatile bit ADCKS0 @ ((unsigned) & ADR * 8) + 4;
+[; ;hs16p2811.h: 254: volatile bit FADCKS1 @ ((unsigned) & ADR * 8) + 6;
+[; ;hs16p2811.h: 255: volatile bit FADCKS0 @ ((unsigned) & ADR * 8) + 4;
+[; ;hs16p2811.h: 258: volatile unsigned char ADT @ 0x01E;
+[; ;hs16p2811.h: 261: volatile unsigned char VREFH @ 0x01F;
+[; ;hs16p2811.h: 263: volatile bit EVHENB @ ((unsigned) & VREFH * 8) + 7;
+[; ;hs16p2811.h: 264: volatile bit VHS1 @ ((unsigned) & VREFH * 8) + 1;
+[; ;hs16p2811.h: 265: volatile bit VHS0 @ ((unsigned) & VREFH * 8) + 0;
+[; ;hs16p2811.h: 267: volatile bit FEVHENB @ ((unsigned) & VREFH * 8) + 7;
+[; ;hs16p2811.h: 268: volatile bit FVHS1 @ ((unsigned) & VREFH * 8) + 1;
+[; ;hs16p2811.h: 269: volatile bit FVHS0 @ ((unsigned) & VREFH * 8) + 0;
+[; ;hs16p2811.h: 277: volatile unsigned char OPTIONR @ 0x081;
+[; ;hs16p2811.h: 280: volatile bit INTEDGE @ ((unsigned) & OPTIONR * 8) + 6;
+[; ;hs16p2811.h: 282: volatile bit FINTEDGE @ ((unsigned) & OPTIONR * 8) + 6;
+[; ;hs16p2811.h: 285: volatile unsigned char TRISA @ 0x085;
+[; ;hs16p2811.h: 286: volatile bit TRISA7 @ ((unsigned) & TRISA * 8) + 7;
+[; ;hs16p2811.h: 287: volatile bit TRISA6 @ ((unsigned) & TRISA * 8) + 6;
+[; ;hs16p2811.h: 288: volatile bit TRISA5 @ ((unsigned) & TRISA * 8) + 5;
+[; ;hs16p2811.h: 289: volatile bit TRISA4 @ ((unsigned) & TRISA * 8) + 4;
+[; ;hs16p2811.h: 290: volatile bit TRISA3 @ ((unsigned) & TRISA * 8) + 3;
+[; ;hs16p2811.h: 291: volatile bit TRISA2 @ ((unsigned) & TRISA * 8) + 2;
+[; ;hs16p2811.h: 292: volatile bit TRISA1 @ ((unsigned) & TRISA * 8) + 1;
+[; ;hs16p2811.h: 293: volatile bit TRISA0 @ ((unsigned) & TRISA * 8) + 0;
+[; ;hs16p2811.h: 295: volatile bit FTRISA7 @ ((unsigned) & TRISA * 8) + 7;
+[; ;hs16p2811.h: 296: volatile bit FTRISA6 @ ((unsigned) & TRISA * 8) + 6;
+[; ;hs16p2811.h: 297: volatile bit FTRISA5 @ ((unsigned) & TRISA * 8) + 5;
+[; ;hs16p2811.h: 298: volatile bit FTRISA4 @ ((unsigned) & TRISA * 8) + 4;
+[; ;hs16p2811.h: 299: volatile bit FTRISA3 @ ((unsigned) & TRISA * 8) + 3;
+[; ;hs16p2811.h: 300: volatile bit FTRISA2 @ ((unsigned) & TRISA * 8) + 2;
+[; ;hs16p2811.h: 301: volatile bit FTRISA1 @ ((unsigned) & TRISA * 8) + 1;
+[; ;hs16p2811.h: 302: volatile bit FTRISA0 @ ((unsigned) & TRISA * 8) + 0;
+[; ;hs16p2811.h: 305: volatile unsigned char TRISC @ 0x087;
+[; ;hs16p2811.h: 306: volatile bit TRISC5 @ ((unsigned) & TRISC * 8) + 5;
+[; ;hs16p2811.h: 307: volatile bit TRISC4 @ ((unsigned) & TRISC * 8) + 4;
+[; ;hs16p2811.h: 308: volatile bit TRISC3 @ ((unsigned) & TRISC * 8) + 3;
+[; ;hs16p2811.h: 309: volatile bit TRISC2 @ ((unsigned) & TRISC * 8) + 2;
+[; ;hs16p2811.h: 310: volatile bit TRISC1 @ ((unsigned) & TRISC * 8) + 1;
+[; ;hs16p2811.h: 311: volatile bit TRISC0 @ ((unsigned) & TRISC * 8) + 0;
+[; ;hs16p2811.h: 313: volatile bit FTRISC5 @ ((unsigned) & TRISC * 8) + 5;
+[; ;hs16p2811.h: 314: volatile bit FTRISC4 @ ((unsigned) & TRISC * 8) + 4;
+[; ;hs16p2811.h: 315: volatile bit FTRISC3 @ ((unsigned) & TRISC * 8) + 3;
+[; ;hs16p2811.h: 316: volatile bit FTRISC2 @ ((unsigned) & TRISC * 8) + 2;
+[; ;hs16p2811.h: 317: volatile bit FTRISC1 @ ((unsigned) & TRISC * 8) + 1;
+[; ;hs16p2811.h: 318: volatile bit FTRISC0 @ ((unsigned) & TRISC * 8) + 0;
+[; ;hs16p2811.h: 321: volatile unsigned char PIE1 @ 0x08C;
+[; ;hs16p2811.h: 322: volatile bit ADCIE @ ((unsigned) & PIE1 * 8) + 6;
+[; ;hs16p2811.h: 323: volatile bit T1IE @ ((unsigned) & PIE1 * 8) + 0;
+[; ;hs16p2811.h: 325: volatile bit FADCIE @ ((unsigned) & PIE1 * 8) + 6;
+[; ;hs16p2811.h: 326: volatile bit FT1IE @ ((unsigned) & PIE1 * 8) + 0;
+[; ;hs16p2811.h: 329: volatile unsigned char PIE2 @ 0x08D;
+[; ;hs16p2811.h: 330: volatile bit C1IE @ ((unsigned) & PIE2 * 8) + 5;
+[; ;hs16p2811.h: 331: volatile bit T4IE @ ((unsigned) & PIE2 * 8) + 2;
+[; ;hs16p2811.h: 332: volatile bit T3IE @ ((unsigned) & PIE2 * 8) + 1;
+[; ;hs16p2811.h: 334: volatile bit FC1IE @ ((unsigned) & PIE2 * 8) + 5;
+[; ;hs16p2811.h: 335: volatile bit FT4IE @ ((unsigned) & PIE2 * 8) + 2;
+[; ;hs16p2811.h: 336: volatile bit FT3IE @ ((unsigned) & PIE2 * 8) + 1;
+[; ;hs16p2811.h: 339: volatile unsigned char PCON @ 0x08E;
+[; ;hs16p2811.h: 340: volatile bit WDTE @ ((unsigned) & PCON * 8) + 7;
+[; ;hs16p2811.h: 341: volatile bit LVDTE @ ((unsigned) & PCON * 8) + 5;
+[; ;hs16p2811.h: 343: volatile bit FWDTE @ ((unsigned) & PCON * 8) + 7;
+[; ;hs16p2811.h: 344: volatile bit FLVDTE @ ((unsigned) & PCON * 8) + 5;
+[; ;hs16p2811.h: 347: volatile unsigned char WUACON @ 0x08F;
+[; ;hs16p2811.h: 348: volatile bit WUA7 @ ((unsigned) & WUACON * 8) + 7;
+[; ;hs16p2811.h: 349: volatile bit WUA6 @ ((unsigned) & WUACON * 8) + 6;
+[; ;hs16p2811.h: 350: volatile bit WUA5 @ ((unsigned) & WUACON * 8) + 5;
+[; ;hs16p2811.h: 351: volatile bit WUA4 @ ((unsigned) & WUACON * 8) + 4;
+[; ;hs16p2811.h: 352: volatile bit WUA3 @ ((unsigned) & WUACON * 8) + 3;
+[; ;hs16p2811.h: 353: volatile bit WUA2 @ ((unsigned) & WUACON * 8) + 2;
+[; ;hs16p2811.h: 354: volatile bit WUA1 @ ((unsigned) & WUACON * 8) + 1;
+[; ;hs16p2811.h: 355: volatile bit WUA0 @ ((unsigned) & WUACON * 8) + 0;
+[; ;hs16p2811.h: 357: volatile bit FWUA7 @ ((unsigned) & WUACON * 8) + 7;
+[; ;hs16p2811.h: 358: volatile bit FWUA6 @ ((unsigned) & WUACON * 8) + 6;
+[; ;hs16p2811.h: 359: volatile bit FWUA5 @ ((unsigned) & WUACON * 8) + 5;
+[; ;hs16p2811.h: 360: volatile bit FWUA4 @ ((unsigned) & WUACON * 8) + 4;
+[; ;hs16p2811.h: 361: volatile bit FWUA3 @ ((unsigned) & WUACON * 8) + 3;
+[; ;hs16p2811.h: 362: volatile bit FWUA2 @ ((unsigned) & WUACON * 8) + 2;
+[; ;hs16p2811.h: 363: volatile bit FWUA1 @ ((unsigned) & WUACON * 8) + 1;
+[; ;hs16p2811.h: 364: volatile bit FWUA0 @ ((unsigned) & WUACON * 8) + 0;
+[; ;hs16p2811.h: 367: volatile unsigned char PAHCON @ 0x092;
+[; ;hs16p2811.h: 368: volatile bit PHA7 @ ((unsigned) & PAHCON * 8) + 7;
+[; ;hs16p2811.h: 369: volatile bit PHA6 @ ((unsigned) & PAHCON * 8) + 6;
+[; ;hs16p2811.h: 370: volatile bit PHA5 @ ((unsigned) & PAHCON * 8) + 5;
+[; ;hs16p2811.h: 371: volatile bit PHA4 @ ((unsigned) & PAHCON * 8) + 4;
+[; ;hs16p2811.h: 372: volatile bit PHA3 @ ((unsigned) & PAHCON * 8) + 3;
+[; ;hs16p2811.h: 373: volatile bit PHA2 @ ((unsigned) & PAHCON * 8) + 2;
+[; ;hs16p2811.h: 374: volatile bit PHA1 @ ((unsigned) & PAHCON * 8) + 1;
+[; ;hs16p2811.h: 375: volatile bit PHA0 @ ((unsigned) & PAHCON * 8) + 0;
+[; ;hs16p2811.h: 377: volatile bit FPHA7 @ ((unsigned) & PAHCON * 8) + 7;
+[; ;hs16p2811.h: 378: volatile bit FPHA6 @ ((unsigned) & PAHCON * 8) + 6;
+[; ;hs16p2811.h: 379: volatile bit FPHA5 @ ((unsigned) & PAHCON * 8) + 5;
+[; ;hs16p2811.h: 380: volatile bit FPHA4 @ ((unsigned) & PAHCON * 8) + 4;
+[; ;hs16p2811.h: 381: volatile bit FPHA3 @ ((unsigned) & PAHCON * 8) + 3;
+[; ;hs16p2811.h: 382: volatile bit FPHA2 @ ((unsigned) & PAHCON * 8) + 2;
+[; ;hs16p2811.h: 383: volatile bit FPHA1 @ ((unsigned) & PAHCON * 8) + 1;
+[; ;hs16p2811.h: 384: volatile bit FPHA0 @ ((unsigned) & PAHCON * 8) + 0;
+[; ;hs16p2811.h: 387: volatile unsigned char PADCON @ 0x093;
+[; ;hs16p2811.h: 388: volatile bit PDA7 @ ((unsigned) & PADCON * 8) + 7;
+[; ;hs16p2811.h: 389: volatile bit PDA6 @ ((unsigned) & PADCON * 8) + 6;
+[; ;hs16p2811.h: 390: volatile bit PDA5 @ ((unsigned) & PADCON * 8) + 5;
+[; ;hs16p2811.h: 391: volatile bit PDA4 @ ((unsigned) & PADCON * 8) + 4;
+[; ;hs16p2811.h: 392: volatile bit PDA3 @ ((unsigned) & PADCON * 8) + 3;
+[; ;hs16p2811.h: 393: volatile bit PDA2 @ ((unsigned) & PADCON * 8) + 2;
+[; ;hs16p2811.h: 394: volatile bit PDA1 @ ((unsigned) & PADCON * 8) + 1;
+[; ;hs16p2811.h: 395: volatile bit PDA0 @ ((unsigned) & PADCON * 8) + 0;
+[; ;hs16p2811.h: 397: volatile bit FPDA7 @ ((unsigned) & PADCON * 8) + 7;
+[; ;hs16p2811.h: 398: volatile bit FPDA6 @ ((unsigned) & PADCON * 8) + 6;
+[; ;hs16p2811.h: 399: volatile bit FPDA5 @ ((unsigned) & PADCON * 8) + 5;
+[; ;hs16p2811.h: 400: volatile bit FPDA4 @ ((unsigned) & PADCON * 8) + 4;
+[; ;hs16p2811.h: 401: volatile bit FPDA3 @ ((unsigned) & PADCON * 8) + 3;
+[; ;hs16p2811.h: 402: volatile bit FPDA2 @ ((unsigned) & PADCON * 8) + 2;
+[; ;hs16p2811.h: 403: volatile bit FPDA1 @ ((unsigned) & PADCON * 8) + 1;
+[; ;hs16p2811.h: 404: volatile bit FPDA0 @ ((unsigned) & PADCON * 8) + 0;
+[; ;hs16p2811.h: 407: volatile unsigned char OSCM @ 0x094;
+[; ;hs16p2811.h: 408: volatile bit WAKEMODE @ ((unsigned) & OSCM * 8) + 6;
+[; ;hs16p2811.h: 409: volatile bit GREENEN @ ((unsigned) & OSCM * 8) + 5;
+[; ;hs16p2811.h: 410: volatile bit SLCON @ ((unsigned) & OSCM * 8) + 3;
+[; ;hs16p2811.h: 411: volatile bit STPHX @ ((unsigned) & OSCM * 8) + 1;
+[; ;hs16p2811.h: 412: volatile bit CLKMD @ ((unsigned) & OSCM * 8) + 0;
+[; ;hs16p2811.h: 414: volatile bit FWAKEMODE @ ((unsigned) & OSCM * 8) + 6;
+[; ;hs16p2811.h: 415: volatile bit FGREENEN @ ((unsigned) & OSCM * 8) + 5;
+[; ;hs16p2811.h: 416: volatile bit FSLCON @ ((unsigned) & OSCM * 8) + 3;
+[; ;hs16p2811.h: 417: volatile bit FSTPHX @ ((unsigned) & OSCM * 8) + 1;
+[; ;hs16p2811.h: 418: volatile bit FCLKMD @ ((unsigned) & OSCM * 8) + 0;
+[; ;hs16p2811.h: 421: volatile unsigned char PAODCON @ 0x095;
+[; ;hs16p2811.h: 422: volatile bit ODA7 @ ((unsigned) & PAODCON * 8) + 7;
+[; ;hs16p2811.h: 423: volatile bit ODA6 @ ((unsigned) & PAODCON * 8) + 6;
+[; ;hs16p2811.h: 424: volatile bit ODA5 @ ((unsigned) & PAODCON * 8) + 5;
+[; ;hs16p2811.h: 425: volatile bit ODA4 @ ((unsigned) & PAODCON * 8) + 4;
+[; ;hs16p2811.h: 426: volatile bit ODA3 @ ((unsigned) & PAODCON * 8) + 3;
+[; ;hs16p2811.h: 427: volatile bit ODA2 @ ((unsigned) & PAODCON * 8) + 2;
+[; ;hs16p2811.h: 428: volatile bit ODA1 @ ((unsigned) & PAODCON * 8) + 1;
+[; ;hs16p2811.h: 429: volatile bit ODA0 @ ((unsigned) & PAODCON * 8) + 0;
+[; ;hs16p2811.h: 431: volatile bit FODA7 @ ((unsigned) & PAODCON * 8) + 7;
+[; ;hs16p2811.h: 432: volatile bit FODA6 @ ((unsigned) & PAODCON * 8) + 6;
+[; ;hs16p2811.h: 433: volatile bit FODA5 @ ((unsigned) & PAODCON * 8) + 5;
+[; ;hs16p2811.h: 434: volatile bit FODA4 @ ((unsigned) & PAODCON * 8) + 4;
+[; ;hs16p2811.h: 435: volatile bit FODA3 @ ((unsigned) & PAODCON * 8) + 3;
+[; ;hs16p2811.h: 436: volatile bit FODA2 @ ((unsigned) & PAODCON * 8) + 2;
+[; ;hs16p2811.h: 437: volatile bit FODA1 @ ((unsigned) & PAODCON * 8) + 1;
+[; ;hs16p2811.h: 438: volatile bit FODA0 @ ((unsigned) & PAODCON * 8) + 0;
+[; ;hs16p2811.h: 441: volatile unsigned char T1CON @ 0x09B;
+[; ;hs16p2811.h: 442: volatile bit T1CK1 @ ((unsigned) & T1CON * 8) + 5;
+[; ;hs16p2811.h: 443: volatile bit T1CK0 @ ((unsigned) & T1CON * 8) + 4;
+[; ;hs16p2811.h: 444: volatile bit T1CKS1 @ ((unsigned) & T1CON * 8) + 3;
+[; ;hs16p2811.h: 445: volatile bit T1SYNC @ ((unsigned) & T1CON * 8) + 2;
+[; ;hs16p2811.h: 446: volatile bit T1CKS0 @ ((unsigned) & T1CON * 8) + 1;
+[; ;hs16p2811.h: 447: volatile bit T1REN @ ((unsigned) & T1CON * 8) + 0;
+[; ;hs16p2811.h: 449: volatile bit FT1CK1 @ ((unsigned) & T1CON * 8) + 5;
+[; ;hs16p2811.h: 450: volatile bit FT1CK0 @ ((unsigned) & T1CON * 8) + 4;
+[; ;hs16p2811.h: 451: volatile bit FT1CKS1 @ ((unsigned) & T1CON * 8) + 3;
+[; ;hs16p2811.h: 452: volatile bit FT1SYNC @ ((unsigned) & T1CON * 8) + 2;
+[; ;hs16p2811.h: 453: volatile bit FT1CKS0 @ ((unsigned) & T1CON * 8) + 1;
+[; ;hs16p2811.h: 454: volatile bit FT1REN @ ((unsigned) & T1CON * 8) + 0;
+[; ;hs16p2811.h: 457: volatile unsigned char T1TH @ 0x09C;
+[; ;hs16p2811.h: 460: volatile unsigned char T1TL @ 0x09D;
+[; ;hs16p2811.h: 463: volatile unsigned char T3D4L @ 0x09E;
+[; ;hs16p2811.h: 466: volatile unsigned char T3D4H @ 0x09F;
+[; ;hs16p2811.h: 473: volatile unsigned char T3C0 @ 0x110;
+[; ;hs16p2811.h: 474: volatile bit T3REN @ ((unsigned) & T3C0 * 8) + 7;
+[; ;hs16p2811.h: 475: volatile bit T3PWM1INV @ ((unsigned) & T3C0 * 8) + 5;
+[; ;hs16p2811.h: 476: volatile bit T3PWM0INV @ ((unsigned) & T3C0 * 8) + 4;
+[; ;hs16p2811.h: 477: volatile bit T3PWM1EN @ ((unsigned) & T3C0 * 8) + 2;
+[; ;hs16p2811.h: 478: volatile bit T3PWM0EN @ ((unsigned) & T3C0 * 8) + 1;
+[; ;hs16p2811.h: 480: volatile bit FT3REN @ ((unsigned) & T3C0 * 8) + 7;
+[; ;hs16p2811.h: 481: volatile bit FT3PWM1INV @ ((unsigned) & T3C0 * 8) + 5;
+[; ;hs16p2811.h: 482: volatile bit FT3PWM0INV @ ((unsigned) & T3C0 * 8) + 4;
+[; ;hs16p2811.h: 483: volatile bit FT3PWM1EN @ ((unsigned) & T3C0 * 8) + 2;
+[; ;hs16p2811.h: 484: volatile bit FT3PWM0EN @ ((unsigned) & T3C0 * 8) + 1;
+[; ;hs16p2811.h: 487: volatile unsigned char T3C1 @ 0x111;
+[; ;hs16p2811.h: 488: volatile bit T3OUT0 @ ((unsigned) & T3C1 * 8) + 6;
+[; ;hs16p2811.h: 489: volatile bit T3CKS0 @ ((unsigned) & T3C1 * 8) + 4;
+[; ;hs16p2811.h: 490: volatile bit T3CK2 @ ((unsigned) & T3C1 * 8) + 2;
+[; ;hs16p2811.h: 491: volatile bit T3CK1 @ ((unsigned) & T3C1 * 8) + 1;
+[; ;hs16p2811.h: 492: volatile bit T3CK0 @ ((unsigned) & T3C1 * 8) + 0;
+[; ;hs16p2811.h: 494: volatile bit FT3OUT0 @ ((unsigned) & T3C1 * 8) + 6;
+[; ;hs16p2811.h: 495: volatile bit FT3CKS0 @ ((unsigned) & T3C1 * 8) + 4;
+[; ;hs16p2811.h: 496: volatile bit FT3CK2 @ ((unsigned) & T3C1 * 8) + 2;
+[; ;hs16p2811.h: 497: volatile bit FT3CK1 @ ((unsigned) & T3C1 * 8) + 1;
+[; ;hs16p2811.h: 498: volatile bit FT3CK0 @ ((unsigned) & T3C1 * 8) + 0;
+[; ;hs16p2811.h: 501: volatile unsigned char T3TL @ 0x112;
+[; ;hs16p2811.h: 504: volatile unsigned char T3TH @ 0x113;
+[; ;hs16p2811.h: 507: volatile unsigned char T3PL @ 0x114;
+[; ;hs16p2811.h: 510: volatile unsigned char T3PH @ 0x115;
+[; ;hs16p2811.h: 513: volatile unsigned char T3D0L @ 0x116;
+[; ;hs16p2811.h: 516: volatile unsigned char T3D0H @ 0x117;
+[; ;hs16p2811.h: 519: volatile unsigned char T3C2 @ 0x119;
+[; ;hs16p2811.h: 520: volatile bit PDTM2 @ ((unsigned) & T3C2 * 8) + 7;
+[; ;hs16p2811.h: 521: volatile bit PDTM0 @ ((unsigned) & T3C2 * 8) + 6;
+[; ;hs16p2811.h: 522: volatile bit T3PWM4INV @ ((unsigned) & T3C2 * 8) + 5;
+[; ;hs16p2811.h: 523: volatile bit T3PWM3INV @ ((unsigned) & T3C2 * 8) + 4;
+[; ;hs16p2811.h: 524: volatile bit T3PWM2INV @ ((unsigned) & T3C2 * 8) + 3;
+[; ;hs16p2811.h: 525: volatile bit T3PWM4EN @ ((unsigned) & T3C2 * 8) + 2;
+[; ;hs16p2811.h: 526: volatile bit T3PWM3EN @ ((unsigned) & T3C2 * 8) + 1;
+[; ;hs16p2811.h: 527: volatile bit T3PWM2EN @ ((unsigned) & T3C2 * 8) + 0;
+[; ;hs16p2811.h: 529: volatile bit FPDTM2 @ ((unsigned) & T3C2 * 8) + 7;
+[; ;hs16p2811.h: 530: volatile bit FPDTM0 @ ((unsigned) & T3C2 * 8) + 6;
+[; ;hs16p2811.h: 531: volatile bit FT3PWM4INV @ ((unsigned) & T3C2 * 8) + 5;
+[; ;hs16p2811.h: 532: volatile bit FT3PWM3INV @ ((unsigned) & T3C2 * 8) + 4;
+[; ;hs16p2811.h: 533: volatile bit FT3PWM2INV @ ((unsigned) & T3C2 * 8) + 3;
+[; ;hs16p2811.h: 534: volatile bit FT3PWM4EN @ ((unsigned) & T3C2 * 8) + 2;
+[; ;hs16p2811.h: 535: volatile bit FT3PWM3EN @ ((unsigned) & T3C2 * 8) + 1;
+[; ;hs16p2811.h: 536: volatile bit FT3PWM2EN @ ((unsigned) & T3C2 * 8) + 0;
+[; ;hs16p2811.h: 539: volatile unsigned char T3D1L @ 0x11A;
+[; ;hs16p2811.h: 542: volatile unsigned char T3D1H @ 0x11B;
+[; ;hs16p2811.h: 545: volatile unsigned char T3D2L @ 0x11C;
+[; ;hs16p2811.h: 548: volatile unsigned char T3D2H @ 0x11D;
+[; ;hs16p2811.h: 551: volatile unsigned char T3D3L @ 0x11E;
+[; ;hs16p2811.h: 554: volatile unsigned char T3D3H @ 0x11F;
+[; ;hs16p2811.h: 561: volatile unsigned char PWMSEL1 @ 0x189;
+[; ;hs16p2811.h: 562: volatile bit T4PWMS1 @ ((unsigned) & PWMSEL1 * 8) + 3;
+[; ;hs16p2811.h: 563: volatile bit T4PWMS0 @ ((unsigned) & PWMSEL1 * 8) + 2;
+[; ;hs16p2811.h: 564: volatile bit T3PWM4S1 @ ((unsigned) & PWMSEL1 * 8) + 1;
+[; ;hs16p2811.h: 565: volatile bit T3PWM4S0 @ ((unsigned) & PWMSEL1 * 8) + 0;
+[; ;hs16p2811.h: 567: volatile bit FT4PWMS1 @ ((unsigned) & PWMSEL1 * 8) + 3;
+[; ;hs16p2811.h: 568: volatile bit FT4PWMS0 @ ((unsigned) & PWMSEL1 * 8) + 2;
+[; ;hs16p2811.h: 569: volatile bit FT3PWM4S1 @ ((unsigned) & PWMSEL1 * 8) + 1;
+[; ;hs16p2811.h: 570: volatile bit FT3PWM4S0 @ ((unsigned) & PWMSEL1 * 8) + 0;
+[; ;hs16p2811.h: 573: volatile unsigned char PWMSEL @ 0x18C;
+[; ;hs16p2811.h: 574: volatile bit T3PWM3S1 @ ((unsigned) & PWMSEL * 8) + 7;
+[; ;hs16p2811.h: 575: volatile bit T3PWM3S0 @ ((unsigned) & PWMSEL * 8) + 6;
+[; ;hs16p2811.h: 576: volatile bit T3PWM2S1 @ ((unsigned) & PWMSEL * 8) + 5;
+[; ;hs16p2811.h: 577: volatile bit T3PWM2S0 @ ((unsigned) & PWMSEL * 8) + 4;
+[; ;hs16p2811.h: 578: volatile bit T3PWM1S1 @ ((unsigned) & PWMSEL * 8) + 3;
+[; ;hs16p2811.h: 579: volatile bit T3PWM1S0 @ ((unsigned) & PWMSEL * 8) + 2;
+[; ;hs16p2811.h: 580: volatile bit T3PWM0S1 @ ((unsigned) & PWMSEL * 8) + 1;
+[; ;hs16p2811.h: 581: volatile bit T3PWM0S0 @ ((unsigned) & PWMSEL * 8) + 0;
+[; ;hs16p2811.h: 583: volatile bit FT3PWM3S1 @ ((unsigned) & PWMSEL * 8) + 7;
+[; ;hs16p2811.h: 584: volatile bit FT3PWM3S0 @ ((unsigned) & PWMSEL * 8) + 6;
+[; ;hs16p2811.h: 585: volatile bit FT3PWM2S1 @ ((unsigned) & PWMSEL * 8) + 5;
+[; ;hs16p2811.h: 586: volatile bit FT3PWM2S0 @ ((unsigned) & PWMSEL * 8) + 4;
+[; ;hs16p2811.h: 587: volatile bit FT3PWM1S1 @ ((unsigned) & PWMSEL * 8) + 3;
+[; ;hs16p2811.h: 588: volatile bit FT3PWM1S0 @ ((unsigned) & PWMSEL * 8) + 2;
+[; ;hs16p2811.h: 589: volatile bit FT3PWM0S1 @ ((unsigned) & PWMSEL * 8) + 1;
+[; ;hs16p2811.h: 590: volatile bit FT3PWM0S0 @ ((unsigned) & PWMSEL * 8) + 0;
+[; ;hs16p2811.h: 593: volatile unsigned char T4C0 @ 0x18D;
+[; ;hs16p2811.h: 594: volatile bit T4REN @ ((unsigned) & T4C0 * 8) + 7;
+[; ;hs16p2811.h: 595: volatile bit T4PWMINV @ ((unsigned) & T4C0 * 8) + 4;
+[; ;hs16p2811.h: 596: volatile bit T4BUZEN @ ((unsigned) & T4C0 * 8) + 3;
+[; ;hs16p2811.h: 597: volatile bit T4PWMEN @ ((unsigned) & T4C0 * 8) + 1;
+[; ;hs16p2811.h: 599: volatile bit FT4REN @ ((unsigned) & T4C0 * 8) + 7;
+[; ;hs16p2811.h: 600: volatile bit FT4PWMINV @ ((unsigned) & T4C0 * 8) + 4;
+[; ;hs16p2811.h: 601: volatile bit FT4BUZEN @ ((unsigned) & T4C0 * 8) + 3;
+[; ;hs16p2811.h: 602: volatile bit FT4PWMEN @ ((unsigned) & T4C0 * 8) + 1;
+[; ;hs16p2811.h: 605: volatile unsigned char T4C1 @ 0x18E;
+[; ;hs16p2811.h: 606: volatile bit T4OUT0 @ ((unsigned) & T4C1 * 8) + 6;
+[; ;hs16p2811.h: 607: volatile bit T4CKS0 @ ((unsigned) & T4C1 * 8) + 4;
+[; ;hs16p2811.h: 608: volatile bit T4CK2 @ ((unsigned) & T4C1 * 8) + 2;
+[; ;hs16p2811.h: 609: volatile bit T4CK1 @ ((unsigned) & T4C1 * 8) + 1;
+[; ;hs16p2811.h: 610: volatile bit T4CK0 @ ((unsigned) & T4C1 * 8) + 0;
+[; ;hs16p2811.h: 612: volatile bit FT4OUT0 @ ((unsigned) & T4C1 * 8) + 6;
+[; ;hs16p2811.h: 613: volatile bit FT4CKS0 @ ((unsigned) & T4C1 * 8) + 4;
+[; ;hs16p2811.h: 614: volatile bit FT4CK2 @ ((unsigned) & T4C1 * 8) + 2;
+[; ;hs16p2811.h: 615: volatile bit FT4CK1 @ ((unsigned) & T4C1 * 8) + 1;
+[; ;hs16p2811.h: 616: volatile bit FT4CK0 @ ((unsigned) & T4C1 * 8) + 0;
+[; ;hs16p2811.h: 619: volatile unsigned char T4TL @ 0x18F;
+[; ;hs16p2811.h: 622: volatile unsigned char T4TH @ 0x190;
+[; ;hs16p2811.h: 625: volatile unsigned char T4PL @ 0x191;
+[; ;hs16p2811.h: 628: volatile unsigned char T4PH @ 0x192;
+[; ;hs16p2811.h: 631: volatile unsigned char T4DL @ 0x193;
+[; ;hs16p2811.h: 634: volatile unsigned char T4DH @ 0x194;
+[; ;hs16p2811.h: 637: volatile unsigned char CMCON0 @ 0x19D;
+[; ;hs16p2811.h: 639: volatile bit C1OUT @ ((unsigned) & CMCON0 * 8) + 6;
+[; ;hs16p2811.h: 641: volatile bit C1INV @ ((unsigned) & CMCON0 * 8) + 4;
+[; ;hs16p2811.h: 642: volatile bit CIS @ ((unsigned) & CMCON0 * 8) + 3;
+[; ;hs16p2811.h: 643: volatile bit CMCH2 @ ((unsigned) & CMCON0 * 8) + 2;
+[; ;hs16p2811.h: 644: volatile bit CMCH1 @ ((unsigned) & CMCON0 * 8) + 1;
+[; ;hs16p2811.h: 645: volatile bit CMCH0 @ ((unsigned) & CMCON0 * 8) + 0;
+[; ;hs16p2811.h: 648: volatile bit FC1OUT @ ((unsigned) & CMCON0 * 8) + 6;
+[; ;hs16p2811.h: 650: volatile bit FC1INV @ ((unsigned) & CMCON0 * 8) + 4;
+[; ;hs16p2811.h: 651: volatile bit FCIS @ ((unsigned) & CMCON0 * 8) + 3;
+[; ;hs16p2811.h: 652: volatile bit FCMCH2 @ ((unsigned) & CMCON0 * 8) + 2;
+[; ;hs16p2811.h: 653: volatile bit FCMCH1 @ ((unsigned) & CMCON0 * 8) + 1;
+[; ;hs16p2811.h: 654: volatile bit FCMCH0 @ ((unsigned) & CMCON0 * 8) + 0;
+[; ;hs16p2811.h: 657: volatile unsigned char VRCON @ 0x19F;
+[; ;hs16p2811.h: 658: volatile bit VREN @ ((unsigned) & VRCON * 8) + 7;
+[; ;hs16p2811.h: 659: volatile bit VRR1 @ ((unsigned) & VRCON * 8) + 6;
+[; ;hs16p2811.h: 660: volatile bit VRR0 @ ((unsigned) & VRCON * 8) + 5;
+[; ;hs16p2811.h: 661: volatile bit VRS @ ((unsigned) & VRCON * 8) + 4;
+[; ;hs16p2811.h: 662: volatile bit VR3 @ ((unsigned) & VRCON * 8) + 3;
+[; ;hs16p2811.h: 663: volatile bit VR2 @ ((unsigned) & VRCON * 8) + 2;
+[; ;hs16p2811.h: 664: volatile bit VR1 @ ((unsigned) & VRCON * 8) + 1;
+[; ;hs16p2811.h: 665: volatile bit VR0 @ ((unsigned) & VRCON * 8) + 0;
+[; ;hs16p2811.h: 667: volatile bit FVREN @ ((unsigned) & VRCON * 8) + 7;
+[; ;hs16p2811.h: 668: volatile bit FVRR1 @ ((unsigned) & VRCON * 8) + 6;
+[; ;hs16p2811.h: 669: volatile bit FVRR0 @ ((unsigned) & VRCON * 8) + 5;
+[; ;hs16p2811.h: 670: volatile bit FVRS @ ((unsigned) & VRCON * 8) + 4;
+[; ;hs16p2811.h: 671: volatile bit FVR3 @ ((unsigned) & VRCON * 8) + 3;
+[; ;hs16p2811.h: 672: volatile bit FVR2 @ ((unsigned) & VRCON * 8) + 2;
+[; ;hs16p2811.h: 673: volatile bit FVR1 @ ((unsigned) & VRCON * 8) + 1;
+[; ;hs16p2811.h: 674: volatile bit FVR0 @ ((unsigned) & VRCON * 8) + 0;
+[; ;user_include.h: 19: void GPIO_Init(void);
+[; ;user_include.h: 21: void System_Init(void);
+[; ;user_include.h: 23: void CLR_RAM_EveryBank(void);
+[; ;user_include.h: 31: extern volatile bit flag_is_in_charging;
+[; ;user_include.h: 32: extern volatile bit flag_is_dev_working;
+"5 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c
+[v _pen_pwr_on `(v  1 ef ]
+{
+[; ;pen_pwr_ctl.c: 4: void pen_pwr_on(void)
+[; ;pen_pwr_ctl.c: 5: {
+[e :U _pen_pwr_on ]
+[f ]
+[; ;pen_pwr_ctl.c: 6: TRISA &= ~(0x01 << 6);
+"6
+[e =& _TRISA -> ~ << -> 1 `i -> 6 `i `uc ]
+[; ;pen_pwr_ctl.c: 7: PA6 = 0;
+"7
+[e = _PA6 -> -> 0 `i `b ]
+[; ;pen_pwr_ctl.c: 8: }
+"8
+[e :UE 1 ]
+}
+"11
+[v _pen_pwr_off `(v  1 ef ]
+{
+[; ;pen_pwr_ctl.c: 10: void pen_pwr_off(void)
+[; ;pen_pwr_ctl.c: 11: {
+[e :U _pen_pwr_off ]
+[f ]
+[; ;pen_pwr_ctl.c: 12: PAHCON &= ~(0x01 << 6);
+"12
+[e =& _PAHCON -> ~ << -> 1 `i -> 6 `i `uc ]
+[; ;pen_pwr_ctl.c: 13: PADCON &= ~(0x01 << 6);
+"13
+[e =& _PADCON -> ~ << -> 1 `i -> 6 `i `uc ]
+[; ;pen_pwr_ctl.c: 14: TRISA |= (0x01 << 6);
+"14
+[e =| _TRISA -> << -> 1 `i -> 6 `i `uc ]
+[; ;pen_pwr_ctl.c: 15: }
+"15
+[e :UE 2 ]
+}

@@ -1,0 +1,1399 @@
+
+
+HI-TECH Software PIC PRO Macro Assembler V9.83 build 10920 
+                                                                                               Fri Sep 04 17:54:18 2026
+
+HI-TECH Software Omniscient Code Generator (PRO mode) build 10920
+     1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (PRO mode) build 10920"
+     2                           
+     3                           opt pagewidth 120
+     4                           
+     5                           	opt pm
+     6                           
+     7                           	processor	16F685
+     8                           clrc	macro
+     9                           	bcf	3,0
+    10  0000                     	endm
+    11                           clrz	macro
+    12                           	bcf	3,2
+    13  0000                     	endm
+    14                           setc	macro
+    15                           	bsf	3,0
+    16  0000                     	endm
+    17                           setz	macro
+    18                           	bsf	3,2
+    19  0000                     	endm
+    20                           skipc	macro
+    21                           	btfss	3,0
+    22  0000                     	endm
+    23                           skipz	macro
+    24                           	btfss	3,2
+    25  0000                     	endm
+    26                           skipnc	macro
+    27                           	btfsc	3,0
+    28  0000                     	endm
+    29                           skipnz	macro
+    30                           	btfsc	3,2
+    31  0000                     	endm
+    32  0000                     indf	equ	0
+    33  0000                     indf0	equ	0
+    34  0002                     pc	equ	2
+    35  0002                     pcl	equ	2
+    36  0003                     status	equ	3
+    37  0004                     fsr	equ	4
+    38  0004                     fsr0	equ	4
+    39  0001                     c	equ	1
+    40  0000                     z	equ	0
+    41  000A                     pclath	equ	10
+    42                           	FNCALL	_main,_System_Init
+    43                           	FNCALL	_main,_GPIO_Init
+    44                           	FNCALL	_main,_CLR_RAM_EveryBank
+    45                           	FNCALL	_main,_timer1_init
+    46                           	FNCALL	_main,_timer3_init
+    47                           	FNCALL	_main,_delay_ms
+    48                           	FNROOT	_main
+    49                           	FNCALL	intlevel1,_myIsr
+    50                           	global	intlevel1
+    51                           	FNROOT	intlevel1
+    52                           	global	led_refresh@sta
+    53                           	global	_flag_is_led_show_enable
+    54                           	global	_flag_led_1_on
+    55                           	global	_flag_led_2_on
+    56                           	global	_flag_led_3_on
+    57                           	global	_flag_led_4_on
+    58                           	global	_FSR
+    59                           psect	text100,local,class=CODE,delta=2
+    60                           global __ptext100
+    61  0000                     __ptext100:
+    62  0004                     _FSR	set	4
+    63                           	global	_INDF
+    64  0000                     _INDF	set	0
+    65                           	global	_INTCON
+    66  000B                     _INTCON	set	11
+    67                           	global	_PCDCON
+    68  0013                     _PCDCON	set	19
+    69                           	global	_PCHCON
+    70  0012                     _PCHCON	set	18
+    71                           	global	_PIR1
+    72  000C                     _PIR1	set	12
+    73                           	global	_PIR2
+    74  000D                     _PIR2	set	13
+    75                           	global	_PORTA
+    76  0005                     _PORTA	set	5
+    77                           	global	_PORTC
+    78  0007                     _PORTC	set	7
+    79                           	global	_STATUS
+    80  0003                     _STATUS	set	3
+    81                           	global	_GIE
+    82  005F                     _GIE	set	95
+    83                           	global	_PEIE
+    84  005E                     _PEIE	set	94
+    85                           	global	_T1IF
+    86  0060                     _T1IF	set	96
+    87                           	global	_T3IF
+    88  0069                     _T3IF	set	105
+    89                           	global	_OPTIONR
+    90  0081                     _OPTIONR	set	129
+    91                           	global	_PADCON
+    92  0093                     _PADCON	set	147
+    93                           	global	_PAHCON
+    94  0092                     _PAHCON	set	146
+    95                           	global	_PAODCON
+    96  0095                     _PAODCON	set	149
+    97                           	global	_PIE1
+    98  008C                     _PIE1	set	140
+    99                           	global	_PIE2
+   100  008D                     _PIE2	set	141
+   101                           	global	_T1CON
+   102  009B                     _T1CON	set	155
+   103                           	global	_T1TH
+   104  009C                     _T1TH	set	156
+   105                           	global	_T1TL
+   106  009D                     _T1TL	set	157
+   107                           	global	_TRISA
+   108  0085                     _TRISA	set	133
+   109                           	global	_TRISC
+   110  0087                     _TRISC	set	135
+   111                           	global	_WUACON
+   112  008F                     _WUACON	set	143
+   113                           	global	_T1IE
+   114  0460                     _T1IE	set	1120
+   115                           	global	_T1REN
+   116  04D8                     _T1REN	set	1240
+   117                           	global	_T3IE
+   118  0469                     _T3IE	set	1129
+   119                           	global	_WDTE
+   120  0477                     _WDTE	set	1143
+   121                           	global	_T3C0
+   122  0110                     _T3C0	set	272
+   123                           	global	_T3C1
+   124  0111                     _T3C1	set	273
+   125                           	global	_T3C2
+   126  0119                     _T3C2	set	281
+   127                           	global	_T3TH
+   128  0113                     _T3TH	set	275
+   129                           	global	_T3TL
+   130  0112                     _T3TL	set	274
+   131                           	global	_T3REN
+   132  0887                     _T3REN	set	2183
+   133                           	file	"HS16P2811_PROJECT.as"
+   134                           	line	#
+   135                           psect cinit,class=CODE,delta=2
+   136                           global start_initialization
+   137  00C8                     start_initialization:
+   138                           
+   139                           psect	bitbssCOMMON,class=COMMON,bit,space=1
+   140                           global __pbitbssCOMMON
+   141  03E0                     __pbitbssCOMMON:
+   142  03E0                     _flag_is_led_show_enable:
+   143  03E0                            ds      1
+   144                           
+   145  03E1                     _flag_led_1_on:
+   146  03E1                            ds      1
+   147                           
+   148  03E2                     _flag_led_2_on:
+   149  03E2                            ds      1
+   150                           
+   151  03E3                     _flag_led_3_on:
+   152  03E3                            ds      1
+   153                           
+   154  03E4                     _flag_led_4_on:
+   155  03E4                            ds      1
+   156                           
+   157                           psect	bssCOMMON,class=COMMON,space=1
+   158                           global __pbssCOMMON
+   159  007D                     __pbssCOMMON:
+   160  007D                     led_refresh@sta:
+   161  007D                            ds      1
+   162                           
+   163                           ; Clear objects allocated to BITCOMMON
+   164                           psect cinit,class=CODE,delta=2
+   165  00C8  01FC               	clrf	((__pbitbssCOMMON/8)+0)&07Fh
+   166                           ; Clear objects allocated to COMMON
+   167                           psect cinit,class=CODE,delta=2
+   168  00C9  01FD               	clrf	((__pbssCOMMON)+0)&07Fh
+   169                           psect cinit,class=CODE,delta=2
+   170                           global end_of_initialization
+   171                           
+   172                           ;End of C runtime variable initialization code
+   173                           
+   174  00CA                     end_of_initialization:
+   175  00CA  0183               clrf status
+   176  00CB  2862               ljmp _main	;jump to C main() function
+   177                           psect	cstackCOMMON,class=COMMON,space=1
+   178                           global __pcstackCOMMON
+   179  0070                     __pcstackCOMMON:
+   180                           	global	?_timer1_init
+   181  0070                     ?_timer1_init:	; 0 bytes @ 0x0
+   182                           	global	?_timer3_init
+   183  0070                     ?_timer3_init:	; 0 bytes @ 0x0
+   184                           	global	?_System_Init
+   185  0070                     ?_System_Init:	; 0 bytes @ 0x0
+   186                           	global	?_CLR_RAM_EveryBank
+   187  0070                     ?_CLR_RAM_EveryBank:	; 0 bytes @ 0x0
+   188                           	global	?_GPIO_Init
+   189  0070                     ?_GPIO_Init:	; 0 bytes @ 0x0
+   190                           	global	?_main
+   191  0070                     ?_main:	; 0 bytes @ 0x0
+   192                           	global	?_myIsr
+   193  0070                     ?_myIsr:	; 0 bytes @ 0x0
+   194                           	global	??_myIsr
+   195  0070                     ??_myIsr:	; 0 bytes @ 0x0
+   196  0070                     	ds	2
+   197                           	global	??_timer1_init
+   198  0072                     ??_timer1_init:	; 0 bytes @ 0x2
+   199                           	global	??_timer3_init
+   200  0072                     ??_timer3_init:	; 0 bytes @ 0x2
+   201                           	global	??_System_Init
+   202  0072                     ??_System_Init:	; 0 bytes @ 0x2
+   203                           	global	??_CLR_RAM_EveryBank
+   204  0072                     ??_CLR_RAM_EveryBank:	; 0 bytes @ 0x2
+   205                           	global	??_GPIO_Init
+   206  0072                     ??_GPIO_Init:	; 0 bytes @ 0x2
+   207                           	global	?_delay_ms
+   208  0072                     ?_delay_ms:	; 0 bytes @ 0x2
+   209                           	global	delay_ms@xms
+   210  0072                     delay_ms@xms:	; 4 bytes @ 0x2
+   211  0072                     	ds	4
+   212                           	global	??_delay_ms
+   213  0076                     ??_delay_ms:	; 0 bytes @ 0x6
+   214  0076                     	ds	4
+   215                           	global	delay_ms@i
+   216  007A                     delay_ms@i:	; 2 bytes @ 0xA
+   217  007A                     	ds	2
+   218                           	global	??_main
+   219  007C                     ??_main:	; 0 bytes @ 0xC
+   220 ;;Data sizes: Strings 0, constant 0, data 0, bss 1, persistent 0 stack 0
+   221 ;;Auto spaces:   Size  Autos    Used
+   222 ;; COMMON          14     12      14
+   223 ;; BANK0           80      0       0
+   224 ;; BANK1           32      0       0
+   225                           
+   226 ;;
+   227 ;; Pointer list with targets:
+   228                           
+   229                           
+   230                           
+   231 ;;
+   232 ;; Critical Paths under _main in COMMON
+   233 ;;
+   234 ;;   _main->_delay_ms
+   235 ;;
+   236 ;; Critical Paths under _myIsr in COMMON
+   237 ;;
+   238 ;;   None.
+   239 ;;
+   240 ;; Critical Paths under _main in BANK0
+   241 ;;
+   242 ;;   None.
+   243 ;;
+   244 ;; Critical Paths under _myIsr in BANK0
+   245 ;;
+   246 ;;   None.
+   247 ;;
+   248 ;; Critical Paths under _main in BANK1
+   249 ;;
+   250 ;;   None.
+   251 ;;
+   252 ;; Critical Paths under _myIsr in BANK1
+   253 ;;
+   254 ;;   None.
+   255                           
+   256 ;;
+   257 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   258 ;;
+   259                           
+   260 ;;
+   261 ;;Call Graph Tables:
+   262 ;;
+   263 ;; ---------------------------------------------------------------------------------
+   264 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   265 ;; ---------------------------------------------------------------------------------
+   266 ;; (0) _main                                                 0     0      0      30
+   267 ;;                        _System_Init
+   268 ;;                          _GPIO_Init
+   269 ;;                  _CLR_RAM_EveryBank
+   270 ;;                        _timer1_init
+   271 ;;                        _timer3_init
+   272 ;;                           _delay_ms
+   273 ;; ---------------------------------------------------------------------------------
+   274 ;; (1) _timer3_init                                          0     0      0       0
+   275 ;; ---------------------------------------------------------------------------------
+   276 ;; (1) _timer1_init                                          0     0      0       0
+   277 ;; ---------------------------------------------------------------------------------
+   278 ;; (1) _delay_ms                                            10     6      4      30
+   279 ;;                                              2 COMMON    10     6      4
+   280 ;; ---------------------------------------------------------------------------------
+   281 ;; (1) _GPIO_Init                                            0     0      0       0
+   282 ;; ---------------------------------------------------------------------------------
+   283 ;; (1) _CLR_RAM_EveryBank                                    0     0      0       0
+   284 ;; ---------------------------------------------------------------------------------
+   285 ;; (1) _System_Init                                          0     0      0       0
+   286 ;; ---------------------------------------------------------------------------------
+   287 ;; Estimated maximum stack depth 1
+   288 ;; ---------------------------------------------------------------------------------
+   289 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   290 ;; ---------------------------------------------------------------------------------
+   291 ;; (2) _myIsr                                                2     2      0       0
+   292 ;;                                              0 COMMON     2     2      0
+   293 ;; ---------------------------------------------------------------------------------
+   294 ;; Estimated maximum stack depth 2
+   295 ;; ---------------------------------------------------------------------------------
+   296                           
+   297 ;; Call Graph Graphs:
+   298                           
+   299 ;; _main (ROOT)
+   300 ;;   _System_Init
+   301 ;;   _GPIO_Init
+   302 ;;   _CLR_RAM_EveryBank
+   303 ;;   _timer1_init
+   304 ;;   _timer3_init
+   305 ;;   _delay_ms
+   306 ;;
+   307 ;; _myIsr (ROOT)
+   308 ;;
+   309                           
+   310 ;; Address spaces:
+   311                           
+   312 ;;Name               Size   Autos  Total    Cost      Usage
+   313 ;;BITCOMMON            E      0       1       0        7.1%
+   314 ;;NULL                 0      0       0       0        0.0%
+   315 ;;CODE                 0      0       0       0        0.0%
+   316 ;;COMMON               E      C       E       1      100.0%
+   317 ;;BITSFR0              0      0       0       1        0.0%
+   318 ;;SFR0                 0      0       0       1        0.0%
+   319 ;;BITSFR1              0      0       0       2        0.0%
+   320 ;;SFR1                 0      0       0       2        0.0%
+   321 ;;STACK                0      0       1       2        0.0%
+   322 ;;ABS                  0      0       E       3        0.0%
+   323 ;;BITBANK0            50      0       0       4        0.0%
+   324 ;;BITSFR3              0      0       0       4        0.0%
+   325 ;;SFR3                 0      0       0       4        0.0%
+   326 ;;BANK0               50      0       0       5        0.0%
+   327 ;;BITSFR2              0      0       0       5        0.0%
+   328 ;;SFR2                 0      0       0       5        0.0%
+   329 ;;BITBANK1            20      0       0       6        0.0%
+   330 ;;BANK1               20      0       0       7        0.0%
+   331 ;;DATA                 0      0       F       8        0.0%
+   332                           
+   333                           	global	_main
+   334                           psect	maintext,global,class=CODE,delta=2
+   335                           global __pmaintext
+   336  0062                     __pmaintext:
+   337                           
+   338 ;; *************** function _main *****************
+   339 ;; Defined at:
+   340 ;;		line 192 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+   341 ;; Parameters:    Size  Location     Type
+   342 ;;		None
+   343 ;; Auto vars:     Size  Location     Type
+   344 ;;		None
+   345 ;; Return value:  Size  Location     Type
+   346 ;;		None               void
+   347 ;; Registers used:
+   348 ;;		wreg, status,2, status,0, pclath, cstack
+   349 ;; Tracked objects:
+   350 ;;		On entry : 17F/0
+   351 ;;		On exit  : 0/0
+   352 ;;		Unchanged: FFE00/0
+   353 ;; Data sizes:     COMMON   BANK0   BANK1
+   354 ;;      Params:         0       0       0
+   355 ;;      Locals:         0       0       0
+   356 ;;      Temps:          0       0       0
+   357 ;;      Totals:         0       0       0
+   358 ;;Total ram usage:        0 bytes
+   359 ;; Hardware stack levels required when called:    2
+   360 ;; This function calls:
+   361 ;;		_System_Init
+   362 ;;		_GPIO_Init
+   363 ;;		_CLR_RAM_EveryBank
+   364 ;;		_timer1_init
+   365 ;;		_timer3_init
+   366 ;;		_delay_ms
+   367 ;; This function is called by:
+   368 ;;		Startup code after reset
+   369 ;; This function uses a non-reentrant model
+   370 ;;
+   371                           psect	maintext
+   372                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   373                           	line	192
+   374                           	global	__size_of_main
+   375  0015                     	__size_of_main	equ	__end_of_main-_main
+   376                           	
+   377  0062                     _main:	
+   378                           	opt	stack 6
+   379                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
+   380                           	line	193
+   381                           	
+   382  0062                     l5639:	
+   383                           ;main.c: 193: System_Init();
+   384  0062  20BC               	fcall	_System_Init
+   385                           	line	194
+   386                           	
+   387  0063                     l5641:	
+   388                           ;main.c: 194: GPIO_Init();
+   389  0063  2077               	fcall	_GPIO_Init
+   390                           	line	195
+   391                           	
+   392  0064                     l5643:	
+   393                           ;main.c: 195: CLR_RAM_EveryBank();
+   394  0064  209C               	fcall	_CLR_RAM_EveryBank
+   395                           	line	198
+   396                           	
+   397  0065                     l5645:	
+   398                           ;main.c: 198: PAHCON &= ~(0x01 << 0);
+   399  0065  1683               	bsf	status, 5	;RP0=1, select bank1
+   400  0066  1303               	bcf	status, 6	;RP1=0, select bank1
+   401  0067  1012               	bcf	(146)^080h+(0/8),(0)&7	;volatile
+   402                           	line	199
+   403                           	
+   404  0068                     l5647:	
+   405                           ;main.c: 199: TRISA |= (0x01 << 0);
+   406  0068  1405               	bsf	(133)^080h+(0/8),(0)&7	;volatile
+   407                           	line	201
+   408                           	
+   409  0069                     l5649:	
+   410                           ;main.c: 201: TRISA |= (0x01 << 6);
+   411  0069  1705               	bsf	(133)^080h+(6/8),(6)&7	;volatile
+   412                           	line	203
+   413                           	
+   414  006A                     l5651:	
+   415                           ;main.c: 203: TRISA |= (0x01 << 7);
+   416  006A  1785               	bsf	(133)^080h+(7/8),(7)&7	;volatile
+   417                           	line	205
+   418                           	
+   419  006B                     l5653:	
+   420                           ;main.c: 205: TRISA |= (0x01 << 5);
+   421  006B  1685               	bsf	(133)^080h+(5/8),(5)&7	;volatile
+   422                           	line	207
+   423                           	
+   424  006C                     l5655:	
+   425                           ;main.c: 207: timer1_init();
+   426  006C  20AE               	fcall	_timer1_init
+   427                           	line	208
+   428                           	
+   429  006D                     l5657:	
+   430                           ;main.c: 208: timer3_init();
+   431  006D  208A               	fcall	_timer3_init
+   432                           	line	209
+   433                           	
+   434  006E                     l5659:	
+   435                           ;main.c: 209: delay_ms(10);
+   436  006E  300A               	movlw	0Ah
+   437  006F  00F2               	movwf	(?_delay_ms)
+   438  0070  01F3               	clrf	(?_delay_ms+1)
+   439  0071  01F4               	clrf	(?_delay_ms+2)
+   440  0072  01F5               	clrf	(?_delay_ms+3)
+   441                           
+   442  0073  200B               	fcall	_delay_ms
+   443                           	line	212
+   444                           	
+   445  0074                     l5661:	
+   446                           # 212 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   447  0074  0064               clrwdt ;#
+   448                           psect	maintext
+   449  0075  2874               	goto	l5661
+   450                           	global	start
+   451  0076  280A               	ljmp	start
+   452                           	opt stack 0
+   453                           psect	maintext
+   454                           	line	214
+   455                           GLOBAL	__end_of_main
+   456  0077                     	__end_of_main:
+   457 ;; =============== function _main ends ============
+   458                           
+   459                           	signat	_main,88
+   460                           	global	_timer3_init
+   461                           psect	text101,local,class=CODE,delta=2
+   462                           global __ptext101
+   463  008A                     __ptext101:
+   464                           
+   465 ;; *************** function _timer3_init *****************
+   466 ;; Defined at:
+   467 ;;		line 4 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\t
+       imer3.c"
+   468 ;; Parameters:    Size  Location     Type
+   469 ;;		None
+   470 ;; Auto vars:     Size  Location     Type
+   471 ;;		None
+   472 ;; Return value:  Size  Location     Type
+   473 ;;		None               void
+   474 ;; Registers used:
+   475 ;;		wreg, status,2
+   476 ;; Tracked objects:
+   477 ;;		On entry : 60/20
+   478 ;;		On exit  : 60/20
+   479 ;;		Unchanged: FFF9F/0
+   480 ;; Data sizes:     COMMON   BANK0   BANK1
+   481 ;;      Params:         0       0       0
+   482 ;;      Locals:         0       0       0
+   483 ;;      Temps:          0       0       0
+   484 ;;      Totals:         0       0       0
+   485 ;;Total ram usage:        0 bytes
+   486 ;; Hardware stack levels used:    1
+   487 ;; Hardware stack levels required when called:    1
+   488 ;; This function calls:
+   489 ;;		Nothing
+   490 ;; This function is called by:
+   491 ;;		_main
+   492 ;; This function uses a non-reentrant model
+   493 ;;
+   494                           psect	text101
+   495                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\user_code\timer3.c"
+   496                           	line	4
+   497                           	global	__size_of_timer3_init
+   498  0012                     	__size_of_timer3_init	equ	__end_of_timer3_init-_timer3_init
+   499                           	
+   500  008A                     _timer3_init:	
+   501                           	opt	stack 6
+   502                           ; Regs used in _timer3_init: [wreg+status,2]
+   503                           	line	5
+   504                           	
+   505  008A                     l5609:	
+   506                           ;timer3.c: 5: T3C0 = 0;
+   507  008A  1283               	bcf	status, 5	;RP0=0, select bank2
+   508  008B  1703               	bsf	status, 6	;RP1=1, select bank2
+   509  008C  0190               	clrf	(272)^0100h	;volatile
+   510                           	line	6
+   511                           ;timer3.c: 6: T3C2 = 0;
+   512  008D  0199               	clrf	(281)^0100h	;volatile
+   513                           	line	7
+   514                           	
+   515  008E                     l5611:	
+   516                           ;timer3.c: 7: T3TL = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) % 25
+                                 6;
+   517  008E  3017               	movlw	(017h)
+   518  008F  0092               	movwf	(274)^0100h	;volatile
+   519                           	line	8
+   520                           	
+   521  0090                     l5613:	
+   522                           ;timer3.c: 8: T3TH = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) / 25
+                                 6;
+   523  0090  30FC               	movlw	(0FCh)
+   524  0091  0093               	movwf	(275)^0100h	;volatile
+   525                           	line	9
+   526                           	
+   527  0092                     l5615:	
+   528                           ;timer3.c: 9: T3C1 = TIMER3_DIV_4_REG_VAL;
+   529  0092  3005               	movlw	(05h)
+   530  0093  0091               	movwf	(273)^0100h	;volatile
+   531                           	line	11
+   532                           	
+   533  0094                     l5617:	
+   534                           ;timer3.c: 11: T3REN = 1;
+   535  0094  1790               	bsf	(2183/8)^0100h,(2183)&7
+   536                           	line	12
+   537                           	
+   538  0095                     l5619:	
+   539                           ;timer3.c: 12: T3IF = 0;
+   540  0095  1303               	bcf	status, 6	;RP1=0, select bank0
+   541  0096  108D               	bcf	(105/8),(105)&7
+   542                           	line	13
+   543                           	
+   544  0097                     l5621:	
+   545                           ;timer3.c: 13: T3IE = 1;
+   546  0097  1683               	bsf	status, 5	;RP0=1, select bank1
+   547  0098  148D               	bsf	(1129/8)^080h,(1129)&7
+   548                           	line	14
+   549                           	
+   550  0099                     l5623:	
+   551                           ;timer3.c: 14: PEIE = 1;
+   552  0099  170B               	bsf	(94/8),(94)&7
+   553                           	line	15
+   554                           	
+   555  009A                     l5625:	
+   556                           ;timer3.c: 15: GIE = 1;
+   557  009A  178B               	bsf	(95/8),(95)&7
+   558                           	line	16
+   559                           	
+   560  009B                     l3469:	
+   561  009B  0008               	return
+   562                           	opt stack 0
+   563                           GLOBAL	__end_of_timer3_init
+   564  009C                     	__end_of_timer3_init:
+   565 ;; =============== function _timer3_init ends ============
+   566                           
+   567                           	signat	_timer3_init,88
+   568                           	global	_timer1_init
+   569                           psect	text102,local,class=CODE,delta=2
+   570                           global __ptext102
+   571  00AE                     __ptext102:
+   572                           
+   573 ;; *************** function _timer1_init *****************
+   574 ;; Defined at:
+   575 ;;		line 4 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\t
+       imer1.c"
+   576 ;; Parameters:    Size  Location     Type
+   577 ;;		None
+   578 ;; Auto vars:     Size  Location     Type
+   579 ;;		None
+   580 ;; Return value:  Size  Location     Type
+   581 ;;		None               void
+   582 ;; Registers used:
+   583 ;;		wreg
+   584 ;; Tracked objects:
+   585 ;;		On entry : 60/20
+   586 ;;		On exit  : 60/20
+   587 ;;		Unchanged: FFF9F/0
+   588 ;; Data sizes:     COMMON   BANK0   BANK1
+   589 ;;      Params:         0       0       0
+   590 ;;      Locals:         0       0       0
+   591 ;;      Temps:          0       0       0
+   592 ;;      Totals:         0       0       0
+   593 ;;Total ram usage:        0 bytes
+   594 ;; Hardware stack levels used:    1
+   595 ;; Hardware stack levels required when called:    1
+   596 ;; This function calls:
+   597 ;;		Nothing
+   598 ;; This function is called by:
+   599 ;;		_main
+   600 ;; This function uses a non-reentrant model
+   601 ;;
+   602                           psect	text102
+   603                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\user_code\timer1.c"
+   604                           	line	4
+   605                           	global	__size_of_timer1_init
+   606  000E                     	__size_of_timer1_init	equ	__end_of_timer1_init-_timer1_init
+   607                           	
+   608  00AE                     _timer1_init:	
+   609                           	opt	stack 6
+   610                           ; Regs used in _timer1_init: [wreg]
+   611                           	line	6
+   612                           	
+   613  00AE                     l5597:	
+   614                           ;timer1.c: 6: T1TL = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) % 256;
+   615  00AE  3037               	movlw	(037h)
+   616  00AF  009D               	movwf	(157)^080h	;volatile
+   617                           	line	7
+   618                           ;timer1.c: 7: T1TH = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) / 256;
+   619  00B0  30FF               	movlw	(0FFh)
+   620  00B1  009C               	movwf	(156)^080h	;volatile
+   621                           	line	9
+   622                           ;timer1.c: 9: T1CON = TIMER1_DIV_4_REG_VAL << 4;
+   623  00B2  3020               	movlw	(020h)
+   624  00B3  009B               	movwf	(155)^080h	;volatile
+   625                           	line	10
+   626                           	
+   627  00B4                     l5599:	
+   628                           ;timer1.c: 10: T1IF = 0;
+   629  00B4  1283               	bcf	status, 5	;RP0=0, select bank0
+   630  00B5  100C               	bcf	(96/8),(96)&7
+   631                           	line	11
+   632                           	
+   633  00B6                     l5601:	
+   634                           ;timer1.c: 11: T1IE = 1;
+   635  00B6  1683               	bsf	status, 5	;RP0=1, select bank1
+   636  00B7  140C               	bsf	(1120/8)^080h,(1120)&7
+   637                           	line	12
+   638                           	
+   639  00B8                     l5603:	
+   640                           ;timer1.c: 12: PEIE = 1;
+   641  00B8  170B               	bsf	(94/8),(94)&7
+   642                           	line	13
+   643                           	
+   644  00B9                     l5605:	
+   645                           ;timer1.c: 13: T1REN = 1;
+   646  00B9  141B               	bsf	(1240/8)^080h,(1240)&7
+   647                           	line	14
+   648                           	
+   649  00BA                     l5607:	
+   650                           ;timer1.c: 14: GIE = 1;
+   651  00BA  178B               	bsf	(95/8),(95)&7
+   652                           	line	15
+   653                           	
+   654  00BB                     l2620:	
+   655  00BB  0008               	return
+   656                           	opt stack 0
+   657                           GLOBAL	__end_of_timer1_init
+   658  00BC                     	__end_of_timer1_init:
+   659 ;; =============== function _timer1_init ends ============
+   660                           
+   661                           	signat	_timer1_init,88
+   662                           	global	_delay_ms
+   663                           psect	text103,local,class=CODE,delta=2
+   664                           global __ptext103
+   665  000B                     __ptext103:
+   666                           
+   667 ;; *************** function _delay_ms *****************
+   668 ;; Defined at:
+   669 ;;		line 176 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+   670 ;; Parameters:    Size  Location     Type
+   671 ;;  xms             4    2[COMMON] unsigned long 
+   672 ;; Auto vars:     Size  Location     Type
+   673 ;;  i               2   10[COMMON] unsigned int 
+   674 ;; Return value:  Size  Location     Type
+   675 ;;		None               void
+   676 ;; Registers used:
+   677 ;;		wreg
+   678 ;; Tracked objects:
+   679 ;;		On entry : 60/20
+   680 ;;		On exit  : 0/0
+   681 ;;		Unchanged: FFE00/0
+   682 ;; Data sizes:     COMMON   BANK0   BANK1
+   683 ;;      Params:         4       0       0
+   684 ;;      Locals:         2       0       0
+   685 ;;      Temps:          4       0       0
+   686 ;;      Totals:        10       0       0
+   687 ;;Total ram usage:       10 bytes
+   688 ;; Hardware stack levels used:    1
+   689 ;; Hardware stack levels required when called:    1
+   690 ;; This function calls:
+   691 ;;		Nothing
+   692 ;; This function is called by:
+   693 ;;		_main
+   694 ;; This function uses a non-reentrant model
+   695 ;;
+   696                           psect	text103
+   697                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   698                           	line	176
+   699                           	global	__size_of_delay_ms
+   700  0039                     	__size_of_delay_ms	equ	__end_of_delay_ms-_delay_ms
+   701                           	
+   702  000B                     _delay_ms:	
+   703                           	opt	stack 6
+   704                           ; Regs used in _delay_ms: [wreg]
+   705                           	line	177
+   706                           	
+   707  000B                     l5589:	
+   708                           ;main.c: 177: while (xms) {
+   709  000B  283B               	goto	l862
+   710                           	line	181
+   711                           	
+   712  000C                     l5591:	
+   713                           ;main.c: 181: u16 i = 510;
+   714  000C  30FE               	movlw	low(01FEh)
+   715  000D  00FA               	movwf	(delay_ms@i)
+   716  000E  3001               	movlw	high(01FEh)
+   717  000F  00FB               	movwf	((delay_ms@i))+1
+   718                           	line	182
+   719                           ;main.c: 182: while (i--) {
+   720  0010  2812               	goto	l5593
+   721                           	
+   722  0011                     l865:	
+   723                           	line	183
+   724                           # 183 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   725  0011  0000               NOP ;#
+   726                           psect	text103
+   727                           	line	182
+   728                           	
+   729  0012                     l5593:	
+   730  0012  3001               	movlw	low(01h)
+   731  0013  02FA               	subwf	(delay_ms@i),f
+   732  0014  3000               	movlw	high(01h)
+   733  0015  1C03               	skipc
+   734  0016  03FB               	decf	(delay_ms@i+1),f
+   735  0017  02FB               	subwf	(delay_ms@i+1),f
+   736  0018  0A7A               	incf	((delay_ms@i)),w
+   737  0019  1903               	skipnz
+   738  001A  0A7B               	incf	((delay_ms@i+1)),w
+   739                           
+   740  001B  1D03               	skipz
+   741  001C  281E               	goto	u11
+   742  001D  281F               	goto	u10
+   743  001E                     u11:
+   744  001E  2811               	goto	l865
+   745  001F                     u10:
+   746                           	line	185
+   747                           	
+   748  001F                     l5595:	
+   749                           ;main.c: 184: }
+   750                           ;main.c: 185: xms--;
+   751  001F  3001               	movlw	01h
+   752  0020  00F6               	movwf	((??_delay_ms+0)+0)
+   753  0021  3000               	movlw	0
+   754  0022  00F7               	movwf	((??_delay_ms+0)+0+1)
+   755  0023  3000               	movlw	0
+   756  0024  00F8               	movwf	((??_delay_ms+0)+0+2)
+   757  0025  3000               	movlw	0
+   758  0026  00F9               	movwf	((??_delay_ms+0)+0+3)
+   759  0027  0876               	movf	0+(??_delay_ms+0)+0,w
+   760  0028  02F2               	subwf	(delay_ms@xms),f
+   761  0029  0877               	movf	1+(??_delay_ms+0)+0,w
+   762  002A  1C03               	skipc
+   763  002B  0F77               	incfsz	1+(??_delay_ms+0)+0,w
+   764  002C  282E               	goto	u25
+   765  002D  282F               	goto	u26
+   766  002E                     u25:
+   767  002E  02F3               	subwf	(delay_ms@xms+1),f
+   768  002F                     u26:
+   769  002F  0878               	movf	2+(??_delay_ms+0)+0,w
+   770  0030  1C03               	skipc
+   771  0031  0F78               	incfsz	2+(??_delay_ms+0)+0,w
+   772  0032  2834               	goto	u27
+   773  0033  2835               	goto	u28
+   774  0034                     u27:
+   775  0034  02F4               	subwf	(delay_ms@xms+2),f
+   776  0035                     u28:
+   777  0035  0879               	movf	3+(??_delay_ms+0)+0,w
+   778  0036  1C03               	skipc
+   779  0037  0F79               	incfsz	3+(??_delay_ms+0)+0,w
+   780  0038  283A               	goto	u29
+   781  0039  283B               	goto	u20
+   782  003A                     u29:
+   783  003A  02F5               	subwf	(delay_ms@xms+3),f
+   784  003B                     u20:
+   785                           
+   786                           	line	186
+   787                           	
+   788  003B                     l862:	
+   789                           	line	177
+   790  003B  0875               	movf	(delay_ms@xms+3),w
+   791  003C  0474               	iorwf	(delay_ms@xms+2),w
+   792  003D  0473               	iorwf	(delay_ms@xms+1),w
+   793  003E  0472               	iorwf	(delay_ms@xms),w
+   794  003F  1D03               	skipz
+   795  0040  2842               	goto	u31
+   796  0041  2843               	goto	u30
+   797  0042                     u31:
+   798  0042  280C               	goto	l5591
+   799  0043                     u30:
+   800                           	line	187
+   801                           	
+   802  0043                     l868:	
+   803  0043  0008               	return
+   804                           	opt stack 0
+   805                           GLOBAL	__end_of_delay_ms
+   806  0044                     	__end_of_delay_ms:
+   807 ;; =============== function _delay_ms ends ============
+   808                           
+   809                           	signat	_delay_ms,4216
+   810                           	global	_GPIO_Init
+   811                           psect	text104,local,class=CODE,delta=2
+   812                           global __ptext104
+   813  0077                     __ptext104:
+   814                           
+   815 ;; *************** function _GPIO_Init *****************
+   816 ;; Defined at:
+   817 ;;		line 111 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+   818 ;; Parameters:    Size  Location     Type
+   819 ;;		None
+   820 ;; Auto vars:     Size  Location     Type
+   821 ;;		None
+   822 ;; Return value:  Size  Location     Type
+   823 ;;		None               void
+   824 ;; Registers used:
+   825 ;;		wreg, status,2
+   826 ;; Tracked objects:
+   827 ;;		On entry : 17F/0
+   828 ;;		On exit  : 17F/0
+   829 ;;		Unchanged: FFE80/0
+   830 ;; Data sizes:     COMMON   BANK0   BANK1
+   831 ;;      Params:         0       0       0
+   832 ;;      Locals:         0       0       0
+   833 ;;      Temps:          0       0       0
+   834 ;;      Totals:         0       0       0
+   835 ;;Total ram usage:        0 bytes
+   836 ;; Hardware stack levels used:    1
+   837 ;; Hardware stack levels required when called:    1
+   838 ;; This function calls:
+   839 ;;		Nothing
+   840 ;; This function is called by:
+   841 ;;		_main
+   842 ;; This function uses a non-reentrant model
+   843 ;;
+   844                           psect	text104
+   845                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   846                           	line	111
+   847                           	global	__size_of_GPIO_Init
+   848  0013                     	__size_of_GPIO_Init	equ	__end_of_GPIO_Init-_GPIO_Init
+   849                           	
+   850  0077                     _GPIO_Init:	
+   851                           	opt	stack 6
+   852                           ; Regs used in _GPIO_Init: [wreg+status,2]
+   853                           	line	113
+   854                           	
+   855  0077                     l5579:	
+   856                           ;main.c: 113: PORTA = 0b00000000;
+   857  0077  0185               	clrf	(5)	;volatile
+   858                           	line	114
+   859                           ;main.c: 114: TRISA = 0b00000000;
+   860  0078  1683               	bsf	status, 5	;RP0=1, select bank1
+   861  0079  0185               	clrf	(133)^080h	;volatile
+   862                           	line	115
+   863                           ;main.c: 115: PAODCON = 0b00000000;
+   864  007A  0195               	clrf	(149)^080h	;volatile
+   865                           	line	116
+   866                           	
+   867  007B                     l5581:	
+   868                           ;main.c: 116: PAHCON = 0b11111111;
+   869  007B  30FF               	movlw	(0FFh)
+   870  007C  0092               	movwf	(146)^080h	;volatile
+   871                           	line	117
+   872                           	
+   873  007D                     l5583:	
+   874                           ;main.c: 117: PADCON = 0b11111111;
+   875  007D  30FF               	movlw	(0FFh)
+   876  007E  0093               	movwf	(147)^080h	;volatile
+   877                           	line	118
+   878                           ;main.c: 118: WUACON = 0b00000000;
+   879  007F  018F               	clrf	(143)^080h	;volatile
+   880                           	line	121
+   881                           ;main.c: 121: PORTC = 0b00000000;
+   882  0080  1283               	bcf	status, 5	;RP0=0, select bank0
+   883  0081  0187               	clrf	(7)	;volatile
+   884                           	line	122
+   885                           ;main.c: 122: TRISC = 0b00000000;
+   886  0082  1683               	bsf	status, 5	;RP0=1, select bank1
+   887  0083  0187               	clrf	(135)^080h	;volatile
+   888                           	line	123
+   889                           	
+   890  0084                     l5585:	
+   891                           ;main.c: 123: PCDCON = 0b11111111;
+   892  0084  30FF               	movlw	(0FFh)
+   893  0085  1283               	bcf	status, 5	;RP0=0, select bank0
+   894  0086  0093               	movwf	(19)	;volatile
+   895                           	line	124
+   896                           	
+   897  0087                     l5587:	
+   898                           ;main.c: 124: PCHCON = 0b11111111;
+   899  0087  30FF               	movlw	(0FFh)
+   900  0088  0092               	movwf	(18)	;volatile
+   901                           	line	125
+   902                           	
+   903  0089                     l859:	
+   904  0089  0008               	return
+   905                           	opt stack 0
+   906                           GLOBAL	__end_of_GPIO_Init
+   907  008A                     	__end_of_GPIO_Init:
+   908 ;; =============== function _GPIO_Init ends ============
+   909                           
+   910                           	signat	_GPIO_Init,88
+   911                           	global	_CLR_RAM_EveryBank
+   912                           psect	text105,local,class=CODE,delta=2
+   913                           global __ptext105
+   914  009C                     __ptext105:
+   915                           
+   916 ;; *************** function _CLR_RAM_EveryBank *****************
+   917 ;; Defined at:
+   918 ;;		line 73 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+   919 ;; Parameters:    Size  Location     Type
+   920 ;;		None
+   921 ;; Auto vars:     Size  Location     Type
+   922 ;;		None
+   923 ;; Return value:  Size  Location     Type
+   924 ;;		None               void
+   925 ;; Registers used:
+   926 ;;		wreg, status,2, status,0
+   927 ;; Tracked objects:
+   928 ;;		On entry : 17F/0
+   929 ;;		On exit  : 0/0
+   930 ;;		Unchanged: FFE00/0
+   931 ;; Data sizes:     COMMON   BANK0   BANK1
+   932 ;;      Params:         0       0       0
+   933 ;;      Locals:         0       0       0
+   934 ;;      Temps:          0       0       0
+   935 ;;      Totals:         0       0       0
+   936 ;;Total ram usage:        0 bytes
+   937 ;; Hardware stack levels used:    1
+   938 ;; Hardware stack levels required when called:    1
+   939 ;; This function calls:
+   940 ;;		Nothing
+   941 ;; This function is called by:
+   942 ;;		_main
+   943 ;; This function uses a non-reentrant model
+   944 ;;
+   945                           psect	text105
+   946                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+   947                           	line	73
+   948                           	global	__size_of_CLR_RAM_EveryBank
+   949  0012                     	__size_of_CLR_RAM_EveryBank	equ	__end_of_CLR_RAM_EveryBank-_CLR_RAM_EveryBank
+   950                           	
+   951  009C                     _CLR_RAM_EveryBank:	
+   952                           	opt	stack 6
+   953                           ; Regs used in _CLR_RAM_EveryBank: [wreg+status,2+status,0]
+   954                           	line	74
+   955                           	
+   956  009C                     l5543:	
+   957                           ;main.c: 74: STATUS &= 0x1F;
+   958  009C  301F               	movlw	(01Fh)
+   959  009D  0583               	andwf	(3),f	;volatile
+   960                           	line	76
+   961                           	
+   962  009E                     l5545:	
+   963                           # 76 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   964  009E  305F                   MOVLW 0x5F; ;#
+   965                           psect	text105
+   966                           	line	77
+   967                           	
+   968  009F                     l5547:	
+   969                           # 77 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   970  009F  00A0                   MOVWF 0x20; ;#
+   971                           psect	text105
+   972                           	line	78
+   973                           	
+   974  00A0                     l5549:	
+   975                           # 78 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   976  00A0  307F                   MOVLW 0x7F; ;#
+   977                           psect	text105
+   978                           	line	79
+   979                           	
+   980  00A1                     l5551:	
+   981                           # 79 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   982  00A1  0084                   MOVWF _FSR, F; ;#
+   983                           psect	text105
+   984                           	line	80
+   985                           	
+   986  00A2                     l5553:	
+   987                           # 80 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   988  00A2                     CLR_RAM_LOOP: ;#
+   989                           psect	text105
+   990                           	line	81
+   991                           	
+   992  00A2                     l5555:	
+   993                           # 81 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+   994  00A2  20A8                   CALL CLR_RAM_Demo; ;#
+   995                           psect	text105
+   996                           	line	83
+   997                           	
+   998  00A3                     l5557:	
+   999                           # 83 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1000  00A3  0384                   DECF _FSR, F; ;#
+  1001                           psect	text105
+  1002                           	line	84
+  1003                           	
+  1004  00A4                     l5559:	
+  1005                           # 84 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1006  00A4  0BA0                   DECFSZ 0X20, F; ;#
+  1007                           psect	text105
+  1008                           	line	85
+  1009                           	
+  1010  00A5                     l5561:	
+  1011                           # 85 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1012  00A5  28A2                   GOTO CLR_RAM_LOOP; ;#
+  1013                           psect	text105
+  1014                           	line	87
+  1015                           	
+  1016  00A6                     l5563:	
+  1017                           # 87 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1018  00A6  20A8                   CALL CLR_RAM_Demo; ;#
+  1019                           psect	text105
+  1020                           	line	88
+  1021                           	
+  1022  00A7                     l5565:	
+  1023                           # 88 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1024  00A7  0008                   RETURN; ;#
+  1025                           psect	text105
+  1026                           	line	90
+  1027                           	
+  1028  00A8                     l5567:	
+  1029                           # 90 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1030  00A8                     CLR_RAM_Demo: ;#
+  1031                           psect	text105
+  1032                           	line	93
+  1033                           	
+  1034  00A8                     l5569:	
+  1035                           # 93 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1036  00A8  1784                           BSF _FSR, 7; ;#
+  1037                           psect	text105
+  1038                           	line	94
+  1039                           	
+  1040  00A9                     l5571:	
+  1041                           # 94 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1042  00A9  0180                   CLRF _INDF; ;#
+  1043                           psect	text105
+  1044                           	line	98
+  1045                           	
+  1046  00AA                     l5573:	
+  1047                           # 98 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1048  00AA  1384                           BCF _FSR, 7; ;#
+  1049                           psect	text105
+  1050                           	line	99
+  1051                           	
+  1052  00AB                     l5575:	
+  1053                           # 99 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P281
+                                 1-SOP8\main.c"
+  1054  00AB  0180                   CLRF _INDF; ;#
+  1055                           psect	text105
+  1056                           	line	101
+  1057                           	
+  1058  00AC                     l5577:	
+  1059                           # 101 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+  1060  00AC  0008                   RETURN; ;#
+  1061                           psect	text105
+  1062                           	line	103
+  1063                           	
+  1064  00AD                     l856:	
+  1065  00AD  0008               	return
+  1066                           	opt stack 0
+  1067                           GLOBAL	__end_of_CLR_RAM_EveryBank
+  1068  00AE                     	__end_of_CLR_RAM_EveryBank:
+  1069 ;; =============== function _CLR_RAM_EveryBank ends ============
+  1070                           
+  1071                           	signat	_CLR_RAM_EveryBank,88
+  1072                           	global	_System_Init
+  1073                           psect	text106,local,class=CODE,delta=2
+  1074                           global __ptext106
+  1075  00BC                     __ptext106:
+  1076                           
+  1077 ;; *************** function _System_Init *****************
+  1078 ;; Defined at:
+  1079 ;;		line 25 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+  1080 ;; Parameters:    Size  Location     Type
+  1081 ;;		None
+  1082 ;; Auto vars:     Size  Location     Type
+  1083 ;;		None
+  1084 ;; Return value:  Size  Location     Type
+  1085 ;;		None               void
+  1086 ;; Registers used:
+  1087 ;;		status,2
+  1088 ;; Tracked objects:
+  1089 ;;		On entry : 17F/0
+  1090 ;;		On exit  : 17F/0
+  1091 ;;		Unchanged: FFE80/0
+  1092 ;; Data sizes:     COMMON   BANK0   BANK1
+  1093 ;;      Params:         0       0       0
+  1094 ;;      Locals:         0       0       0
+  1095 ;;      Temps:          0       0       0
+  1096 ;;      Totals:         0       0       0
+  1097 ;;Total ram usage:        0 bytes
+  1098 ;; Hardware stack levels used:    1
+  1099 ;; Hardware stack levels required when called:    1
+  1100 ;; This function calls:
+  1101 ;;		Nothing
+  1102 ;; This function is called by:
+  1103 ;;		_main
+  1104 ;; This function uses a non-reentrant model
+  1105 ;;
+  1106                           psect	text106
+  1107                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+  1108                           	line	25
+  1109                           	global	__size_of_System_Init
+  1110  000C                     	__size_of_System_Init	equ	__end_of_System_Init-_System_Init
+  1111                           	
+  1112  00BC                     _System_Init:	
+  1113                           	opt	stack 6
+  1114                           ; Regs used in _System_Init: [status,2]
+  1115                           	line	26
+  1116                           	
+  1117  00BC                     l5539:	
+  1118                           ;main.c: 26: OPTIONR = 0b000000000;
+  1119  00BC  1683               	bsf	status, 5	;RP0=1, select bank1
+  1120  00BD  0181               	clrf	(129)^080h	;volatile
+  1121                           	line	29
+  1122                           ;main.c: 29: INTCON = 0b00000000;
+  1123  00BE  018B               	clrf	(11)	;volatile
+  1124                           	line	37
+  1125                           	
+  1126  00BF                     l5541:	
+  1127                           ;main.c: 37: WDTE = 1;
+  1128  00BF  178E               	bsf	(1143/8)^080h,(1143)&7
+  1129                           	line	39
+  1130                           ;main.c: 39: PIE1 = 0B00000000;
+  1131  00C0  018C               	clrf	(140)^080h	;volatile
+  1132                           	line	43
+  1133                           ;main.c: 43: PIR1 = 0B00000000;
+  1134  00C1  1283               	bcf	status, 5	;RP0=0, select bank0
+  1135  00C2  018C               	clrf	(12)	;volatile
+  1136                           	line	47
+  1137                           ;main.c: 47: PIE2 = 0B00000000;
+  1138  00C3  1683               	bsf	status, 5	;RP0=1, select bank1
+  1139  00C4  018D               	clrf	(141)^080h	;volatile
+  1140                           	line	52
+  1141                           ;main.c: 52: PIR2 = 0B00000000;
+  1142  00C5  1283               	bcf	status, 5	;RP0=0, select bank0
+  1143  00C6  018D               	clrf	(13)	;volatile
+  1144                           	line	56
+  1145                           	
+  1146  00C7                     l853:	
+  1147  00C7  0008               	return
+  1148                           	opt stack 0
+  1149                           GLOBAL	__end_of_System_Init
+  1150  00C8                     	__end_of_System_Init:
+  1151 ;; =============== function _System_Init ends ============
+  1152                           
+  1153                           	signat	_System_Init,88
+  1154                           	global	_myIsr
+  1155                           psect	text107,local,class=CODE,delta=2
+  1156                           global __ptext107
+  1157  0044                     __ptext107:
+  1158                           
+  1159 ;; *************** function _myIsr *****************
+  1160 ;; Defined at:
+  1161 ;;		line 221 in file "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c"
+  1162 ;; Parameters:    Size  Location     Type
+  1163 ;;		None
+  1164 ;; Auto vars:     Size  Location     Type
+  1165 ;;		None
+  1166 ;; Return value:  Size  Location     Type
+  1167 ;;		None               void
+  1168 ;; Registers used:
+  1169 ;;		wreg
+  1170 ;; Tracked objects:
+  1171 ;;		On entry : 0/0
+  1172 ;;		On exit  : 20/0
+  1173 ;;		Unchanged: FFF9F/0
+  1174 ;; Data sizes:     COMMON   BANK0   BANK1
+  1175 ;;      Params:         0       0       0
+  1176 ;;      Locals:         0       0       0
+  1177 ;;      Temps:          2       0       0
+  1178 ;;      Totals:         2       0       0
+  1179 ;;Total ram usage:        2 bytes
+  1180 ;; Hardware stack levels used:    1
+  1181 ;; This function calls:
+  1182 ;;		Nothing
+  1183 ;; This function is called by:
+  1184 ;;		Interrupt level 1
+  1185 ;; This function uses a non-reentrant model
+  1186 ;;
+  1187                           psect	text107
+  1188                           	file	"D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P28
+                                 11-SOP8\main.c"
+  1189                           	line	221
+  1190                           	global	__size_of_myIsr
+  1191  001E                     	__size_of_myIsr	equ	__end_of_myIsr-_myIsr
+  1192                           	
+  1193  0044                     _myIsr:	
+  1194                           	opt	stack 6
+  1195                           ; Regs used in _myIsr: [wreg]
+  1196                           psect	intentry,class=CODE,delta=2
+  1197                           global __pintentry
+  1198  0004                     __pintentry:
+  1199                           global interrupt_function
+  1200  0004                     interrupt_function:
+  1201                           	global saved_w
+  1202  007E                     	saved_w	set	btemp+0
+  1203  0004  00FE               	movwf	saved_w
+  1204  0005  0E03               	swapf	status,w
+  1205  0006  00F0               	movwf	(??_myIsr+0)
+  1206  0007  080A               	movf	pclath,w
+  1207  0008  00F1               	movwf	(??_myIsr+1)
+  1208  0009  2844               	ljmp	_myIsr
+  1209                           psect	text107
+  1210                           	line	223
+  1211                           	
+  1212  0044                     i1l5627:	
+  1213                           ;main.c: 223: if (T1IF) {
+  1214  0044  1283               	bcf	status, 5	;RP0=0, select bank0
+  1215  0045  1303               	bcf	status, 6	;RP1=0, select bank0
+  1216  0046  1C0C               	btfss	(96/8),(96)&7
+  1217  0047  2849               	goto	u4_21
+  1218  0048  284A               	goto	u4_20
+  1219  0049                     u4_21:
+  1220  0049  2850               	goto	i1l5633
+  1221  004A                     u4_20:
+  1222                           	line	225
+  1223                           	
+  1224  004A                     i1l5629:	
+  1225                           ;main.c: 225: T1IF = 0;
+  1226  004A  100C               	bcf	(96/8),(96)&7
+  1227                           	line	226
+  1228                           	
+  1229  004B                     i1l5631:	
+  1230                           ;main.c: 226: T1TL = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) % 256;
+  1231  004B  3037               	movlw	(037h)
+  1232  004C  1683               	bsf	status, 5	;RP0=1, select bank1
+  1233  004D  009D               	movwf	(157)^080h	;volatile
+  1234                           	line	227
+  1235                           ;main.c: 227: T1TH = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) / 256;
+  1236  004E  30FF               	movlw	(0FFh)
+  1237  004F  009C               	movwf	(156)^080h	;volatile
+  1238                           	line	230
+  1239                           	
+  1240  0050                     i1l5633:	
+  1241                           ;main.c: 228: }
+  1242                           ;main.c: 230: if (T3IF) {
+  1243  0050  1283               	bcf	status, 5	;RP0=0, select bank0
+  1244  0051  1C8D               	btfss	(105/8),(105)&7
+  1245  0052  2854               	goto	u5_21
+  1246  0053  2855               	goto	u5_20
+  1247  0054                     u5_21:
+  1248  0054  285B               	goto	i1l879
+  1249  0055                     u5_20:
+  1250                           	line	232
+  1251                           	
+  1252  0055                     i1l5635:	
+  1253                           ;main.c: 232: T3IF = 0;
+  1254  0055  108D               	bcf	(105/8),(105)&7
+  1255                           	line	233
+  1256                           	
+  1257  0056                     i1l5637:	
+  1258                           ;main.c: 233: T3TL = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) % 25
+                                 6;
+  1259  0056  3017               	movlw	(017h)
+  1260  0057  1703               	bsf	status, 6	;RP1=1, select bank2
+  1261  0058  0092               	movwf	(274)^0100h	;volatile
+  1262                           	line	234
+  1263                           ;main.c: 234: T3TH = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) / 25
+                                 6;
+  1264  0059  30FC               	movlw	(0FCh)
+  1265  005A  0093               	movwf	(275)^0100h	;volatile
+  1266                           	line	236
+  1267                           	
+  1268  005B                     i1l879:	
+  1269  005B  0871               	movf	(??_myIsr+1),w
+  1270  005C  008A               	movwf	pclath
+  1271  005D  0E70               	swapf	(??_myIsr+0)^0FFFFFF80h,w
+  1272  005E  0083               	movwf	status
+  1273  005F  0EFE               	swapf	saved_w,f
+  1274  0060  0E7E               	swapf	saved_w,w
+  1275  0061  0009               	retfie
+  1276                           	opt stack 0
+  1277                           GLOBAL	__end_of_myIsr
+  1278  0062                     	__end_of_myIsr:
+  1279 ;; =============== function _myIsr ends ============
+  1280                           
+  1281                           	signat	_myIsr,88
+  1282                           psect	text108,local,class=CODE,delta=2
+  1283                           global __ptext108
+  1284  0000                     __ptext108:
+  1285                           	global	btemp
+  1286  007E                     	btemp set 07Eh
+  1287                           
+  1288                           	DABS	1,126,2	;btemp
+  1289                           	global	wtemp0
+  1290  007E                     	wtemp0 set btemp
+
+
+HI-TECH Software PICC Macro Assembler V9.83 build 10920 
+Symbol Table                                                                                   Fri Sep 04 17:54:18 2026
+
+                        u10 001F                          u11 001E                          u20 003B  
+                        u30 0043                          u31 0042                          u25 002E  
+                        u26 002F                          u27 0034                          u28 0035  
+                        u29 003A     _flag_is_led_show_enable 03E0                         l853 00C7  
+                       l862 003B                         l856 00AD                         l865 0011  
+                       l859 0089                         l868 0043                         _GIE 005F  
+                       _FSR 0004                        l2620 00BB                        l3469 009B  
+                      l5601 00B6                        l5603 00B8                        l5611 008E  
+                      l5541 00BF                        l5605 00B9                        l5621 0097  
+                      l5613 0090                        l5551 00A1                        l5543 009C  
+                      l5607 00BA                        l5623 0099                        l5615 0092  
+                      l5561 00A5                        l5553 00A2                        l5545 009E  
+                      l5625 009A                        l5617 0094                        l5609 008A  
+                      l5641 0063                        l5539 00BC                        l5571 00A9  
+                      l5563 00A6                        l5555 00A2                        l5547 009F  
+                      l5619 0095                        l5651 006A                        l5643 0064  
+                      l5573 00AA                        l5565 00A7                        l5557 00A3  
+                      l5549 00A0                        l5581 007B                        l5661 0074  
+                      l5653 006B                        l5645 0065                        l5575 00AB  
+                      l5567 00A8                        l5559 00A4                        l5583 007D  
+                      l5591 000C                        l5655 006C                        l5647 0068  
+                      l5639 0062                        l5577 00AC                        l5569 00A8  
+                      l5585 0084                        l5593 0012                        l5657 006D  
+                      l5649 0069                        l5587 0087                        l5579 0077  
+                      l5595 001F                        l5659 006E                        l5589 000B  
+                      l5597 00AE                        l5599 00B4                        _T3C0 0110  
+                      _T3C1 0111                        _T3C2 0119                        _T1IE 0460  
+                      _T1IF 0060                        _T3IE 0469                        _T3IF 0069  
+                      _INDF 0000                        _T1TH 009C                        _T1TL 009D  
+                      _T3TH 0113                        _PIE1 008C                        _T3TL 0112  
+                      _PIE2 008D                        _PEIE 005E                        _PIR1 000C  
+                      _PIR2 000D                        _WDTE 0477                        u4_20 004A  
+                      u4_21 0049                        u5_20 0055                        u5_21 0054  
+                      _main 0062                        btemp 007E                        start 000A  
+        __size_of_GPIO_Init 0013        __size_of_System_Init 000C                       ?_main 0070  
+                     _T1CON 009B                       _T1REN 04D8                       _T3REN 0887  
+                     i1l879 005B                       _PORTA 0005                       _PORTC 0007  
+                     _TRISA 0085                       _TRISC 0087                       _myIsr 0044  
+            __pbitbssCOMMON 03E0                       pclath 000A                       status 0003  
+                     wtemp0 007E                __end_of_main 0077                      ??_main 007C  
+         __end_of_GPIO_Init 008A                      ?_myIsr 0070                      _PADCON 0093  
+                    _PAHCON 0092                      _PCDCON 0013                      _PCHCON 0012  
+                    i1l5631 004B                      i1l5633 0050                      i1l5635 0055  
+                    i1l5627 0044                      i1l5637 0056                      i1l5629 004A  
+                    _INTCON 000B                      _STATUS 0003                      _WUACON 008F  
+          __end_of_delay_ms 0044                ?_timer1_init 0070                ?_timer3_init 0070  
+                    saved_w 007E              __pcstackCOMMON 0070               __end_of_myIsr 0062  
+         _CLR_RAM_EveryBank 009C          ?_CLR_RAM_EveryBank 0070                     ??_myIsr 0070  
+       ??_CLR_RAM_EveryBank 0072                  __pmaintext 0062                  __pintentry 0004  
+ __end_of_CLR_RAM_EveryBank 00AE                     _PAODCON 0095                   ?_delay_ms 0072  
+                   _OPTIONR 0081               ??_System_Init 0072        __size_of_timer1_init 000E  
+      __size_of_timer3_init 0012                  ??_delay_ms 0076                   _GPIO_Init 0077  
+      end_of_initialization 00CA         __end_of_System_Init 00C8  __size_of_CLR_RAM_EveryBank 0012  
+                ?_GPIO_Init 0070         start_initialization 00C8                 _System_Init 00BC  
+            led_refresh@sta 007D                 __pbssCOMMON 007D                 ??_GPIO_Init 0072  
+         __size_of_delay_ms 0039                   __ptext100 0000                   __ptext101 008A  
+                 __ptext102 00AE                   __ptext103 000B                   __ptext104 0077  
+                 __ptext105 009C                   __ptext106 00BC                   __ptext107 0044  
+                 __ptext108 0000              __size_of_myIsr 001E           interrupt_function 0004  
+                 delay_ms@i 007A               ??_timer1_init 0072               ??_timer3_init 0072  
+             _flag_led_1_on 03E1               _flag_led_2_on 03E2               _flag_led_3_on 03E3  
+             _flag_led_4_on 03E4         __end_of_timer1_init 00BC         __end_of_timer3_init 009C  
+                  _delay_ms 000B               __size_of_main 0015                ?_System_Init 0070  
+               delay_ms@xms 0072                    intlevel1 0000                 _timer1_init 00AE  
+               _timer3_init 008A                 CLR_RAM_LOOP 00A2                 CLR_RAM_Demo 00A8  

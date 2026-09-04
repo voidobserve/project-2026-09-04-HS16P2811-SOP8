@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <chip>HS16P2811</chip>
+  <ver>1.1</ver>
+  <ide-ver>2.1.16</ide-ver>
+  <config-values count="20">0d20 0006 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 </config-values>
+  <type>ccs</type>
+  <clean-ram>false</clean-ram>
+  <OPT>space</OPT>
+  <output-dir>
+  </output-dir>
+  <folder>
+    <file>\main.c</file>
+    <file>\user_include.h</file>
+    <file>\user_config.h</file>
+    <folder name="user_code">
+      <file>\led.c</file>
+      <file>\timer1.c</file>
+      <file>\timer3.c</file>
+      <file>\key.c</file>
+      <file>\pen_pwr_ctl.c</file>
+    </folder>
+  </folder>
+  <properies />
+  <record />
+  <compile-config>Debug</compile-config>
+  <stack>8</stack>
+  <limit_value>0</limit_value>
+  <limit_value_enable>false</limit_value_enable>
+  <vendor_enable>false</vendor_enable>
+</project>

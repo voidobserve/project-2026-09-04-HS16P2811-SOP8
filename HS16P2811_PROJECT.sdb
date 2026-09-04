@@ -1,0 +1,1031 @@
+[p PRO_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F685 ]
+"221 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v F854 `(v  1 t 0 ]
+"674 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[e E799 . `uc
+TIMER1_DIV_1_REG_VAL 0
+TIMER1_DIV_2_REG_VAL 1
+TIMER1_DIV_4_REG_VAL 2
+TIMER1_DIV_8_REG_VAL 3
+]
+[e E799 . `uc
+TIMER3_DIV_128_REG_VAL 0
+TIMER3_DIV_64_REG_VAL 1
+TIMER3_DIV_32_REG_VAL 2
+TIMER3_DIV_16_REG_VAL 3
+TIMER3_DIV_8_REG_VAL 4
+TIMER3_DIV_4_REG_VAL 5
+TIMER3_DIV_2_REG_VAL 6
+TIMER3_DIV_1_REG_VAL 7
+]
+"3 bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"34 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"43 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"33 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"63 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"87 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"36 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"25 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _System_Init `(v  1 e 0 0 ]
+"73
+[v _CLR_RAM_EveryBank `(v  1 e 0 0 ]
+"111
+[v _GPIO_Init `(v  1 e 0 0 ]
+"176
+[v _delay_ms `(v  1 e 0 0 ]
+"192
+[v _main `(v  1 e 0 0 ]
+"221
+[v _myIsr `I(v  1 e 0 0 ]
+"6 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _key_scan `(v  1 e 0 0 ]
+"13 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c
+[v _led_all_off `(v  1 e 0 0 ]
+"30
+[v _led1_on `(v  1 e 0 0 ]
+"42
+[v _led2_on `(v  1 e 0 0 ]
+"52
+[v _led3_on `(v  1 e 0 0 ]
+"62
+[v _led4_on `(v  1 e 0 0 ]
+"79
+[v _led_refresh `(v  1 e 0 0 ]
+"169
+[v _led_status_handle `(v  1 e 0 0 ]
+"5 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c
+[v _pen_pwr_on `(v  1 e 0 0 ]
+"11
+[v _pen_pwr_off `(v  1 e 0 0 ]
+"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c
+[v _timer1_init `(v  1 e 0 0 ]
+"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c
+[v _timer3_init `(v  1 e 0 0 ]
+"68 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
+[v _INDF `VEuc  1 e 1 @0 ]
+"71
+[v _PCL `VEuc  1 e 1 @2 ]
+"74
+[v _STATUS `VEuc  1 e 1 @3 ]
+"75
+[v _IRP `VEb  1 e 0 @31 ]
+"76
+[v _RP1 `VEb  1 e 0 @30 ]
+"77
+[v _RP0 `VEb  1 e 0 @29 ]
+"78
+[v _TO `VEb  1 e 0 @28 ]
+"79
+[v _PD `VEb  1 e 0 @27 ]
+"80
+[v _Z `VEb  1 e 0 @26 ]
+"81
+[v _DC `VEb  1 e 0 @25 ]
+"82
+[v _C `VEb  1 e 0 @24 ]
+"84
+[v _FIRP `VEb  1 e 0 @31 ]
+"85
+[v _FRP1 `VEb  1 e 0 @30 ]
+"86
+[v _FRP0 `VEb  1 e 0 @29 ]
+"87
+[v _FTO `VEb  1 e 0 @28 ]
+"88
+[v _FPD `VEb  1 e 0 @27 ]
+"89
+[v _FZ `VEb  1 e 0 @26 ]
+"90
+[v _FDC `VEb  1 e 0 @25 ]
+"91
+[v _FC `VEb  1 e 0 @24 ]
+"94
+[v _FSR `VEuc  1 e 1 @4 ]
+"95
+[v _FSR7 `VEb  1 e 0 @39 ]
+"97
+[v _FFSR7 `VEb  1 e 0 @39 ]
+"100
+[v _PCLATH `VEuc  1 e 1 @10 ]
+"101
+[v _PCH2 `VEb  1 e 0 @82 ]
+"102
+[v _PCH1 `VEb  1 e 0 @81 ]
+"103
+[v _PCH0 `VEb  1 e 0 @80 ]
+"105
+[v _FPCH2 `VEb  1 e 0 @82 ]
+"106
+[v _FPCH1 `VEb  1 e 0 @81 ]
+"107
+[v _FPCH0 `VEb  1 e 0 @80 ]
+"110
+[v _INTCON `VEuc  1 e 1 @11 ]
+"111
+[v _GIE `VEb  1 e 0 @95 ]
+"112
+[v _PEIE `VEb  1 e 0 @94 ]
+"113
+[v _INTIE `VEb  1 e 0 @92 ]
+"114
+[v _PAIE `VEb  1 e 0 @91 ]
+"115
+[v _INTIF `VEb  1 e 0 @89 ]
+"116
+[v _PAIF `VEb  1 e 0 @88 ]
+"118
+[v _FGIE `VEb  1 e 0 @95 ]
+"119
+[v _FPEIE `VEb  1 e 0 @94 ]
+"120
+[v _FINTIE `VEb  1 e 0 @92 ]
+"121
+[v _FPAIE `VEb  1 e 0 @91 ]
+"122
+[v _FINTIF `VEb  1 e 0 @89 ]
+"123
+[v _FPAIF `VEb  1 e 0 @88 ]
+"131
+[v _PORTA `VEuc  1 e 1 @5 ]
+"132
+[v _PA7 `VEb  1 e 0 @47 ]
+"133
+[v _PA6 `VEb  1 e 0 @46 ]
+"134
+[v _PA5 `VEb  1 e 0 @45 ]
+"135
+[v _PA4 `VEb  1 e 0 @44 ]
+"136
+[v _PA3 `VEb  1 e 0 @43 ]
+"137
+[v _PA2 `VEb  1 e 0 @42 ]
+"138
+[v _PA1 `VEb  1 e 0 @41 ]
+"139
+[v _PA0 `VEb  1 e 0 @40 ]
+"141
+[v _FPA7 `VEb  1 e 0 @47 ]
+"142
+[v _FPA6 `VEb  1 e 0 @46 ]
+"143
+[v _FPA5 `VEb  1 e 0 @45 ]
+"144
+[v _FPA4 `VEb  1 e 0 @44 ]
+"145
+[v _FPA3 `VEb  1 e 0 @43 ]
+"146
+[v _FPA2 `VEb  1 e 0 @42 ]
+"147
+[v _FPA1 `VEb  1 e 0 @41 ]
+"148
+[v _FPA0 `VEb  1 e 0 @40 ]
+"151
+[v _PORTC `VEuc  1 e 1 @7 ]
+"152
+[v _PC5 `VEb  1 e 0 @61 ]
+"153
+[v _PC4 `VEb  1 e 0 @60 ]
+"154
+[v _PC3 `VEb  1 e 0 @59 ]
+"155
+[v _PC2 `VEb  1 e 0 @58 ]
+"156
+[v _PC1 `VEb  1 e 0 @57 ]
+"157
+[v _PC0 `VEb  1 e 0 @56 ]
+"159
+[v _FPC5 `VEb  1 e 0 @61 ]
+"160
+[v _FPC4 `VEb  1 e 0 @60 ]
+"161
+[v _FPC3 `VEb  1 e 0 @59 ]
+"162
+[v _FPC2 `VEb  1 e 0 @58 ]
+"163
+[v _FPC1 `VEb  1 e 0 @57 ]
+"164
+[v _FPC0 `VEb  1 e 0 @56 ]
+"167
+[v _PIR1 `VEuc  1 e 1 @12 ]
+"168
+[v _ADCIF `VEb  1 e 0 @102 ]
+"169
+[v _T1IF `VEb  1 e 0 @96 ]
+"171
+[v _FADCIF `VEb  1 e 0 @102 ]
+"172
+[v _FT1IF `VEb  1 e 0 @96 ]
+"175
+[v _PIR2 `VEuc  1 e 1 @13 ]
+"176
+[v _C1IF `VEb  1 e 0 @109 ]
+"177
+[v _T4IF `VEb  1 e 0 @106 ]
+"178
+[v _T3IF `VEb  1 e 0 @105 ]
+"180
+[v _FC1IF `VEb  1 e 0 @109 ]
+"181
+[v _FT4IF `VEb  1 e 0 @106 ]
+"182
+[v _FT3IF `VEb  1 e 0 @105 ]
+"185
+[v _PCHCON `VEuc  1 e 1 @18 ]
+"186
+[v _PHC5 `VEb  1 e 0 @149 ]
+"187
+[v _PHC4 `VEb  1 e 0 @148 ]
+"188
+[v _PHC3 `VEb  1 e 0 @147 ]
+"189
+[v _PHC2 `VEb  1 e 0 @146 ]
+"190
+[v _PHC1 `VEb  1 e 0 @145 ]
+"191
+[v _PHC0 `VEb  1 e 0 @144 ]
+"193
+[v _FPHC5 `VEb  1 e 0 @149 ]
+"194
+[v _FPHC4 `VEb  1 e 0 @148 ]
+"195
+[v _FPHC3 `VEb  1 e 0 @147 ]
+"196
+[v _FPHC2 `VEb  1 e 0 @146 ]
+"197
+[v _FPHC1 `VEb  1 e 0 @145 ]
+"198
+[v _FPHC0 `VEb  1 e 0 @144 ]
+"202
+[v _PCDCON `VEuc  1 e 1 @19 ]
+"203
+[v _PDC5 `VEb  1 e 0 @157 ]
+"204
+[v _PDC4 `VEb  1 e 0 @156 ]
+"205
+[v _PDC3 `VEb  1 e 0 @155 ]
+"206
+[v _PDC2 `VEb  1 e 0 @154 ]
+"207
+[v _PDC1 `VEb  1 e 0 @153 ]
+"208
+[v _PDC0 `VEb  1 e 0 @152 ]
+"210
+[v _FPDC5 `VEb  1 e 0 @157 ]
+"211
+[v _FPDC4 `VEb  1 e 0 @156 ]
+"212
+[v _FPDC3 `VEb  1 e 0 @155 ]
+"213
+[v _FPDC2 `VEb  1 e 0 @154 ]
+"214
+[v _FPDC1 `VEb  1 e 0 @153 ]
+"215
+[v _FPDC0 `VEb  1 e 0 @152 ]
+"218
+[v _ADBBUF `VEuc  1 e 1 @22 ]
+"221
+[v _ADPCON1 `VEuc  1 e 1 @25 ]
+"224
+[v _ADPCON `VEuc  1 e 1 @26 ]
+"227
+[v _ADM `VEuc  1 e 1 @27 ]
+"228
+[v _ADENB `VEb  1 e 0 @223 ]
+"229
+[v _ADS `VEb  1 e 0 @222 ]
+"230
+[v _EOC `VEb  1 e 0 @221 ]
+"231
+[v _GCHS `VEb  1 e 0 @220 ]
+"232
+[v _CHS3 `VEb  1 e 0 @219 ]
+"233
+[v _CHS2 `VEb  1 e 0 @218 ]
+"234
+[v _CHS1 `VEb  1 e 0 @217 ]
+"235
+[v _CHS0 `VEb  1 e 0 @216 ]
+"237
+[v _FADENB `VEb  1 e 0 @223 ]
+"238
+[v _FADS `VEb  1 e 0 @222 ]
+"239
+[v _FEOC `VEb  1 e 0 @221 ]
+"240
+[v _FGCHS `VEb  1 e 0 @220 ]
+"241
+[v _FCHS3 `VEb  1 e 0 @219 ]
+"242
+[v _FCHS2 `VEb  1 e 0 @218 ]
+"243
+[v _FCHS1 `VEb  1 e 0 @217 ]
+"244
+[v _FCHS0 `VEb  1 e 0 @216 ]
+"247
+[v _ADB `VEuc  1 e 1 @28 ]
+"250
+[v _ADR `VEuc  1 e 1 @29 ]
+"251
+[v _ADCKS1 `VEb  1 e 0 @238 ]
+"252
+[v _ADCKS0 `VEb  1 e 0 @236 ]
+"254
+[v _FADCKS1 `VEb  1 e 0 @238 ]
+"255
+[v _FADCKS0 `VEb  1 e 0 @236 ]
+"258
+[v _ADT `VEuc  1 e 1 @30 ]
+"261
+[v _VREFH `VEuc  1 e 1 @31 ]
+"263
+[v _EVHENB `VEb  1 e 0 @255 ]
+"264
+[v _VHS1 `VEb  1 e 0 @249 ]
+"265
+[v _VHS0 `VEb  1 e 0 @248 ]
+"267
+[v _FEVHENB `VEb  1 e 0 @255 ]
+"268
+[v _FVHS1 `VEb  1 e 0 @249 ]
+"269
+[v _FVHS0 `VEb  1 e 0 @248 ]
+"277
+[v _OPTIONR `VEuc  1 e 1 @129 ]
+"280
+[v _INTEDGE `VEb  1 e 0 @1038 ]
+"282
+[v _FINTEDGE `VEb  1 e 0 @1038 ]
+"285
+[v _TRISA `VEuc  1 e 1 @133 ]
+"286
+[v _TRISA7 `VEb  1 e 0 @1071 ]
+"287
+[v _TRISA6 `VEb  1 e 0 @1070 ]
+"288
+[v _TRISA5 `VEb  1 e 0 @1069 ]
+"289
+[v _TRISA4 `VEb  1 e 0 @1068 ]
+"290
+[v _TRISA3 `VEb  1 e 0 @1067 ]
+"291
+[v _TRISA2 `VEb  1 e 0 @1066 ]
+"292
+[v _TRISA1 `VEb  1 e 0 @1065 ]
+"293
+[v _TRISA0 `VEb  1 e 0 @1064 ]
+"295
+[v _FTRISA7 `VEb  1 e 0 @1071 ]
+"296
+[v _FTRISA6 `VEb  1 e 0 @1070 ]
+"297
+[v _FTRISA5 `VEb  1 e 0 @1069 ]
+"298
+[v _FTRISA4 `VEb  1 e 0 @1068 ]
+"299
+[v _FTRISA3 `VEb  1 e 0 @1067 ]
+"300
+[v _FTRISA2 `VEb  1 e 0 @1066 ]
+"301
+[v _FTRISA1 `VEb  1 e 0 @1065 ]
+"302
+[v _FTRISA0 `VEb  1 e 0 @1064 ]
+"305
+[v _TRISC `VEuc  1 e 1 @135 ]
+"306
+[v _TRISC5 `VEb  1 e 0 @1085 ]
+"307
+[v _TRISC4 `VEb  1 e 0 @1084 ]
+"308
+[v _TRISC3 `VEb  1 e 0 @1083 ]
+"309
+[v _TRISC2 `VEb  1 e 0 @1082 ]
+"310
+[v _TRISC1 `VEb  1 e 0 @1081 ]
+"311
+[v _TRISC0 `VEb  1 e 0 @1080 ]
+"313
+[v _FTRISC5 `VEb  1 e 0 @1085 ]
+"314
+[v _FTRISC4 `VEb  1 e 0 @1084 ]
+"315
+[v _FTRISC3 `VEb  1 e 0 @1083 ]
+"316
+[v _FTRISC2 `VEb  1 e 0 @1082 ]
+"317
+[v _FTRISC1 `VEb  1 e 0 @1081 ]
+"318
+[v _FTRISC0 `VEb  1 e 0 @1080 ]
+"321
+[v _PIE1 `VEuc  1 e 1 @140 ]
+"322
+[v _ADCIE `VEb  1 e 0 @1126 ]
+"323
+[v _T1IE `VEb  1 e 0 @1120 ]
+"325
+[v _FADCIE `VEb  1 e 0 @1126 ]
+"326
+[v _FT1IE `VEb  1 e 0 @1120 ]
+"329
+[v _PIE2 `VEuc  1 e 1 @141 ]
+"330
+[v _C1IE `VEb  1 e 0 @1133 ]
+"331
+[v _T4IE `VEb  1 e 0 @1130 ]
+"332
+[v _T3IE `VEb  1 e 0 @1129 ]
+"334
+[v _FC1IE `VEb  1 e 0 @1133 ]
+"335
+[v _FT4IE `VEb  1 e 0 @1130 ]
+"336
+[v _FT3IE `VEb  1 e 0 @1129 ]
+"339
+[v _PCON `VEuc  1 e 1 @142 ]
+"340
+[v _WDTE `VEb  1 e 0 @1143 ]
+"341
+[v _LVDTE `VEb  1 e 0 @1141 ]
+"343
+[v _FWDTE `VEb  1 e 0 @1143 ]
+"344
+[v _FLVDTE `VEb  1 e 0 @1141 ]
+"347
+[v _WUACON `VEuc  1 e 1 @143 ]
+"348
+[v _WUA7 `VEb  1 e 0 @1151 ]
+"349
+[v _WUA6 `VEb  1 e 0 @1150 ]
+"350
+[v _WUA5 `VEb  1 e 0 @1149 ]
+"351
+[v _WUA4 `VEb  1 e 0 @1148 ]
+"352
+[v _WUA3 `VEb  1 e 0 @1147 ]
+"353
+[v _WUA2 `VEb  1 e 0 @1146 ]
+"354
+[v _WUA1 `VEb  1 e 0 @1145 ]
+"355
+[v _WUA0 `VEb  1 e 0 @1144 ]
+"357
+[v _FWUA7 `VEb  1 e 0 @1151 ]
+"358
+[v _FWUA6 `VEb  1 e 0 @1150 ]
+"359
+[v _FWUA5 `VEb  1 e 0 @1149 ]
+"360
+[v _FWUA4 `VEb  1 e 0 @1148 ]
+"361
+[v _FWUA3 `VEb  1 e 0 @1147 ]
+"362
+[v _FWUA2 `VEb  1 e 0 @1146 ]
+"363
+[v _FWUA1 `VEb  1 e 0 @1145 ]
+"364
+[v _FWUA0 `VEb  1 e 0 @1144 ]
+"367
+[v _PAHCON `VEuc  1 e 1 @146 ]
+"368
+[v _PHA7 `VEb  1 e 0 @1175 ]
+"369
+[v _PHA6 `VEb  1 e 0 @1174 ]
+"370
+[v _PHA5 `VEb  1 e 0 @1173 ]
+"371
+[v _PHA4 `VEb  1 e 0 @1172 ]
+"372
+[v _PHA3 `VEb  1 e 0 @1171 ]
+"373
+[v _PHA2 `VEb  1 e 0 @1170 ]
+"374
+[v _PHA1 `VEb  1 e 0 @1169 ]
+"375
+[v _PHA0 `VEb  1 e 0 @1168 ]
+"377
+[v _FPHA7 `VEb  1 e 0 @1175 ]
+"378
+[v _FPHA6 `VEb  1 e 0 @1174 ]
+"379
+[v _FPHA5 `VEb  1 e 0 @1173 ]
+"380
+[v _FPHA4 `VEb  1 e 0 @1172 ]
+"381
+[v _FPHA3 `VEb  1 e 0 @1171 ]
+"382
+[v _FPHA2 `VEb  1 e 0 @1170 ]
+"383
+[v _FPHA1 `VEb  1 e 0 @1169 ]
+"384
+[v _FPHA0 `VEb  1 e 0 @1168 ]
+"387
+[v _PADCON `VEuc  1 e 1 @147 ]
+"388
+[v _PDA7 `VEb  1 e 0 @1183 ]
+"389
+[v _PDA6 `VEb  1 e 0 @1182 ]
+"390
+[v _PDA5 `VEb  1 e 0 @1181 ]
+"391
+[v _PDA4 `VEb  1 e 0 @1180 ]
+"392
+[v _PDA3 `VEb  1 e 0 @1179 ]
+"393
+[v _PDA2 `VEb  1 e 0 @1178 ]
+"394
+[v _PDA1 `VEb  1 e 0 @1177 ]
+"395
+[v _PDA0 `VEb  1 e 0 @1176 ]
+"397
+[v _FPDA7 `VEb  1 e 0 @1183 ]
+"398
+[v _FPDA6 `VEb  1 e 0 @1182 ]
+"399
+[v _FPDA5 `VEb  1 e 0 @1181 ]
+"400
+[v _FPDA4 `VEb  1 e 0 @1180 ]
+"401
+[v _FPDA3 `VEb  1 e 0 @1179 ]
+"402
+[v _FPDA2 `VEb  1 e 0 @1178 ]
+"403
+[v _FPDA1 `VEb  1 e 0 @1177 ]
+"404
+[v _FPDA0 `VEb  1 e 0 @1176 ]
+"407
+[v _OSCM `VEuc  1 e 1 @148 ]
+"408
+[v _WAKEMODE `VEb  1 e 0 @1190 ]
+"409
+[v _GREENEN `VEb  1 e 0 @1189 ]
+"410
+[v _SLCON `VEb  1 e 0 @1187 ]
+"411
+[v _STPHX `VEb  1 e 0 @1185 ]
+"412
+[v _CLKMD `VEb  1 e 0 @1184 ]
+"414
+[v _FWAKEMODE `VEb  1 e 0 @1190 ]
+"415
+[v _FGREENEN `VEb  1 e 0 @1189 ]
+"416
+[v _FSLCON `VEb  1 e 0 @1187 ]
+"417
+[v _FSTPHX `VEb  1 e 0 @1185 ]
+"418
+[v _FCLKMD `VEb  1 e 0 @1184 ]
+"421
+[v _PAODCON `VEuc  1 e 1 @149 ]
+"422
+[v _ODA7 `VEb  1 e 0 @1199 ]
+"423
+[v _ODA6 `VEb  1 e 0 @1198 ]
+"424
+[v _ODA5 `VEb  1 e 0 @1197 ]
+"425
+[v _ODA4 `VEb  1 e 0 @1196 ]
+"426
+[v _ODA3 `VEb  1 e 0 @1195 ]
+"427
+[v _ODA2 `VEb  1 e 0 @1194 ]
+"428
+[v _ODA1 `VEb  1 e 0 @1193 ]
+"429
+[v _ODA0 `VEb  1 e 0 @1192 ]
+"431
+[v _FODA7 `VEb  1 e 0 @1199 ]
+"432
+[v _FODA6 `VEb  1 e 0 @1198 ]
+"433
+[v _FODA5 `VEb  1 e 0 @1197 ]
+"434
+[v _FODA4 `VEb  1 e 0 @1196 ]
+"435
+[v _FODA3 `VEb  1 e 0 @1195 ]
+"436
+[v _FODA2 `VEb  1 e 0 @1194 ]
+"437
+[v _FODA1 `VEb  1 e 0 @1193 ]
+"438
+[v _FODA0 `VEb  1 e 0 @1192 ]
+"441
+[v _T1CON `VEuc  1 e 1 @155 ]
+"442
+[v _T1CK1 `VEb  1 e 0 @1245 ]
+"443
+[v _T1CK0 `VEb  1 e 0 @1244 ]
+"444
+[v _T1CKS1 `VEb  1 e 0 @1243 ]
+"445
+[v _T1SYNC `VEb  1 e 0 @1242 ]
+"446
+[v _T1CKS0 `VEb  1 e 0 @1241 ]
+"447
+[v _T1REN `VEb  1 e 0 @1240 ]
+"449
+[v _FT1CK1 `VEb  1 e 0 @1245 ]
+"450
+[v _FT1CK0 `VEb  1 e 0 @1244 ]
+"451
+[v _FT1CKS1 `VEb  1 e 0 @1243 ]
+"452
+[v _FT1SYNC `VEb  1 e 0 @1242 ]
+"453
+[v _FT1CKS0 `VEb  1 e 0 @1241 ]
+"454
+[v _FT1REN `VEb  1 e 0 @1240 ]
+"457
+[v _T1TH `VEuc  1 e 1 @156 ]
+"460
+[v _T1TL `VEuc  1 e 1 @157 ]
+"463
+[v _T3D4L `VEuc  1 e 1 @158 ]
+"466
+[v _T3D4H `VEuc  1 e 1 @159 ]
+"473
+[v _T3C0 `VEuc  1 e 1 @272 ]
+"474
+[v _T3REN `VEb  1 e 0 @2183 ]
+"475
+[v _T3PWM1INV `VEb  1 e 0 @2181 ]
+"476
+[v _T3PWM0INV `VEb  1 e 0 @2180 ]
+"477
+[v _T3PWM1EN `VEb  1 e 0 @2178 ]
+"478
+[v _T3PWM0EN `VEb  1 e 0 @2177 ]
+"480
+[v _FT3REN `VEb  1 e 0 @2183 ]
+"481
+[v _FT3PWM1INV `VEb  1 e 0 @2181 ]
+"482
+[v _FT3PWM0INV `VEb  1 e 0 @2180 ]
+"483
+[v _FT3PWM1EN `VEb  1 e 0 @2178 ]
+"484
+[v _FT3PWM0EN `VEb  1 e 0 @2177 ]
+"487
+[v _T3C1 `VEuc  1 e 1 @273 ]
+"488
+[v _T3OUT0 `VEb  1 e 0 @2190 ]
+"489
+[v _T3CKS0 `VEb  1 e 0 @2188 ]
+"490
+[v _T3CK2 `VEb  1 e 0 @2186 ]
+"491
+[v _T3CK1 `VEb  1 e 0 @2185 ]
+"492
+[v _T3CK0 `VEb  1 e 0 @2184 ]
+"494
+[v _FT3OUT0 `VEb  1 e 0 @2190 ]
+"495
+[v _FT3CKS0 `VEb  1 e 0 @2188 ]
+"496
+[v _FT3CK2 `VEb  1 e 0 @2186 ]
+"497
+[v _FT3CK1 `VEb  1 e 0 @2185 ]
+"498
+[v _FT3CK0 `VEb  1 e 0 @2184 ]
+"501
+[v _T3TL `VEuc  1 e 1 @274 ]
+"504
+[v _T3TH `VEuc  1 e 1 @275 ]
+"507
+[v _T3PL `VEuc  1 e 1 @276 ]
+"510
+[v _T3PH `VEuc  1 e 1 @277 ]
+"513
+[v _T3D0L `VEuc  1 e 1 @278 ]
+"516
+[v _T3D0H `VEuc  1 e 1 @279 ]
+"519
+[v _T3C2 `VEuc  1 e 1 @281 ]
+"520
+[v _PDTM2 `VEb  1 e 0 @2255 ]
+"521
+[v _PDTM0 `VEb  1 e 0 @2254 ]
+"522
+[v _T3PWM4INV `VEb  1 e 0 @2253 ]
+"523
+[v _T3PWM3INV `VEb  1 e 0 @2252 ]
+"524
+[v _T3PWM2INV `VEb  1 e 0 @2251 ]
+"525
+[v _T3PWM4EN `VEb  1 e 0 @2250 ]
+"526
+[v _T3PWM3EN `VEb  1 e 0 @2249 ]
+"527
+[v _T3PWM2EN `VEb  1 e 0 @2248 ]
+"529
+[v _FPDTM2 `VEb  1 e 0 @2255 ]
+"530
+[v _FPDTM0 `VEb  1 e 0 @2254 ]
+"531
+[v _FT3PWM4INV `VEb  1 e 0 @2253 ]
+"532
+[v _FT3PWM3INV `VEb  1 e 0 @2252 ]
+"533
+[v _FT3PWM2INV `VEb  1 e 0 @2251 ]
+"534
+[v _FT3PWM4EN `VEb  1 e 0 @2250 ]
+"535
+[v _FT3PWM3EN `VEb  1 e 0 @2249 ]
+"536
+[v _FT3PWM2EN `VEb  1 e 0 @2248 ]
+"539
+[v _T3D1L `VEuc  1 e 1 @282 ]
+"542
+[v _T3D1H `VEuc  1 e 1 @283 ]
+"545
+[v _T3D2L `VEuc  1 e 1 @284 ]
+"548
+[v _T3D2H `VEuc  1 e 1 @285 ]
+"551
+[v _T3D3L `VEuc  1 e 1 @286 ]
+"554
+[v _T3D3H `VEuc  1 e 1 @287 ]
+"561
+[v _PWMSEL1 `VEuc  1 e 1 @393 ]
+"562
+[v _T4PWMS1 `VEb  1 e 0 @3147 ]
+"563
+[v _T4PWMS0 `VEb  1 e 0 @3146 ]
+"564
+[v _T3PWM4S1 `VEb  1 e 0 @3145 ]
+"565
+[v _T3PWM4S0 `VEb  1 e 0 @3144 ]
+"567
+[v _FT4PWMS1 `VEb  1 e 0 @3147 ]
+"568
+[v _FT4PWMS0 `VEb  1 e 0 @3146 ]
+"569
+[v _FT3PWM4S1 `VEb  1 e 0 @3145 ]
+"570
+[v _FT3PWM4S0 `VEb  1 e 0 @3144 ]
+"573
+[v _PWMSEL `VEuc  1 e 1 @396 ]
+"574
+[v _T3PWM3S1 `VEb  1 e 0 @3175 ]
+"575
+[v _T3PWM3S0 `VEb  1 e 0 @3174 ]
+"576
+[v _T3PWM2S1 `VEb  1 e 0 @3173 ]
+"577
+[v _T3PWM2S0 `VEb  1 e 0 @3172 ]
+"578
+[v _T3PWM1S1 `VEb  1 e 0 @3171 ]
+"579
+[v _T3PWM1S0 `VEb  1 e 0 @3170 ]
+"580
+[v _T3PWM0S1 `VEb  1 e 0 @3169 ]
+"581
+[v _T3PWM0S0 `VEb  1 e 0 @3168 ]
+"583
+[v _FT3PWM3S1 `VEb  1 e 0 @3175 ]
+"584
+[v _FT3PWM3S0 `VEb  1 e 0 @3174 ]
+"585
+[v _FT3PWM2S1 `VEb  1 e 0 @3173 ]
+"586
+[v _FT3PWM2S0 `VEb  1 e 0 @3172 ]
+"587
+[v _FT3PWM1S1 `VEb  1 e 0 @3171 ]
+"588
+[v _FT3PWM1S0 `VEb  1 e 0 @3170 ]
+"589
+[v _FT3PWM0S1 `VEb  1 e 0 @3169 ]
+"590
+[v _FT3PWM0S0 `VEb  1 e 0 @3168 ]
+"593
+[v _T4C0 `VEuc  1 e 1 @397 ]
+"594
+[v _T4REN `VEb  1 e 0 @3183 ]
+"595
+[v _T4PWMINV `VEb  1 e 0 @3180 ]
+"596
+[v _T4BUZEN `VEb  1 e 0 @3179 ]
+"597
+[v _T4PWMEN `VEb  1 e 0 @3177 ]
+"599
+[v _FT4REN `VEb  1 e 0 @3183 ]
+"600
+[v _FT4PWMINV `VEb  1 e 0 @3180 ]
+"601
+[v _FT4BUZEN `VEb  1 e 0 @3179 ]
+"602
+[v _FT4PWMEN `VEb  1 e 0 @3177 ]
+"605
+[v _T4C1 `VEuc  1 e 1 @398 ]
+"606
+[v _T4OUT0 `VEb  1 e 0 @3190 ]
+"607
+[v _T4CKS0 `VEb  1 e 0 @3188 ]
+"608
+[v _T4CK2 `VEb  1 e 0 @3186 ]
+"609
+[v _T4CK1 `VEb  1 e 0 @3185 ]
+"610
+[v _T4CK0 `VEb  1 e 0 @3184 ]
+"612
+[v _FT4OUT0 `VEb  1 e 0 @3190 ]
+"613
+[v _FT4CKS0 `VEb  1 e 0 @3188 ]
+"614
+[v _FT4CK2 `VEb  1 e 0 @3186 ]
+"615
+[v _FT4CK1 `VEb  1 e 0 @3185 ]
+"616
+[v _FT4CK0 `VEb  1 e 0 @3184 ]
+"619
+[v _T4TL `VEuc  1 e 1 @399 ]
+"622
+[v _T4TH `VEuc  1 e 1 @400 ]
+"625
+[v _T4PL `VEuc  1 e 1 @401 ]
+"628
+[v _T4PH `VEuc  1 e 1 @402 ]
+"631
+[v _T4DL `VEuc  1 e 1 @403 ]
+"634
+[v _T4DH `VEuc  1 e 1 @404 ]
+"637
+[v _CMCON0 `VEuc  1 e 1 @413 ]
+"639
+[v _C1OUT `VEb  1 e 0 @3310 ]
+"641
+[v _C1INV `VEb  1 e 0 @3308 ]
+"642
+[v _CIS `VEb  1 e 0 @3307 ]
+"643
+[v _CMCH2 `VEb  1 e 0 @3306 ]
+"644
+[v _CMCH1 `VEb  1 e 0 @3305 ]
+"645
+[v _CMCH0 `VEb  1 e 0 @3304 ]
+"648
+[v _FC1OUT `VEb  1 e 0 @3310 ]
+"650
+[v _FC1INV `VEb  1 e 0 @3308 ]
+"651
+[v _FCIS `VEb  1 e 0 @3307 ]
+"652
+[v _FCMCH2 `VEb  1 e 0 @3306 ]
+"653
+[v _FCMCH1 `VEb  1 e 0 @3305 ]
+"654
+[v _FCMCH0 `VEb  1 e 0 @3304 ]
+"657
+[v _VRCON `VEuc  1 e 1 @415 ]
+"658
+[v _VREN `VEb  1 e 0 @3327 ]
+"659
+[v _VRR1 `VEb  1 e 0 @3326 ]
+"660
+[v _VRR0 `VEb  1 e 0 @3325 ]
+"661
+[v _VRS `VEb  1 e 0 @3324 ]
+"662
+[v _VR3 `VEb  1 e 0 @3323 ]
+"663
+[v _VR2 `VEb  1 e 0 @3322 ]
+"664
+[v _VR1 `VEb  1 e 0 @3321 ]
+"665
+[v _VR0 `VEb  1 e 0 @3320 ]
+"667
+[v _FVREN `VEb  1 e 0 @3327 ]
+"668
+[v _FVRR1 `VEb  1 e 0 @3326 ]
+"669
+[v _FVRR0 `VEb  1 e 0 @3325 ]
+"670
+[v _FVRS `VEb  1 e 0 @3324 ]
+"671
+[v _FVR3 `VEb  1 e 0 @3323 ]
+"672
+[v _FVR2 `VEb  1 e 0 @3322 ]
+"673
+[v _FVR1 `VEb  1 e 0 @3321 ]
+"674
+[v _FVR0 `VEb  1 e 0 @3320 ]
+"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c
+[v _flag_led_1_on `VEb  1 e 0 0 ]
+"5
+[v _flag_led_2_on `VEb  1 e 0 0 ]
+"6
+[v _flag_led_3_on `VEb  1 e 0 0 ]
+"7
+[v _flag_led_4_on `VEb  1 e 0 0 ]
+"10
+[v _flag_is_led_show_enable `VEb  1 e 0 0 ]
+"192 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _main `(v  1 e 0 0 ]
+{
+"214
+} 0
+"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c
+[v _timer3_init `(v  1 e 0 0 ]
+{
+"16
+} 0
+"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c
+[v _timer1_init `(v  1 e 0 0 ]
+{
+"15
+} 0
+"176 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _delay_ms `(v  1 e 0 0 ]
+{
+"181
+[v delay_ms@i `ui  1 a 2 10 ]
+"176
+[v delay_ms@xms `ul  1 p 4 2 ]
+"187
+} 0
+"111
+[v _GPIO_Init `(v  1 e 0 0 ]
+{
+"125
+} 0
+"73
+[v _CLR_RAM_EveryBank `(v  1 e 0 0 ]
+{
+"103
+} 0
+"25
+[v _System_Init `(v  1 e 0 0 ]
+{
+"56
+} 0
+"221
+[v _myIsr `I(v  1 e 0 0 ]
+{
+"236
+} 0

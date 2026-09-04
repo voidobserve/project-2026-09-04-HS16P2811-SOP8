@@ -1,0 +1,103 @@
+
+
+HI-TECH Software PIC Macro Assembler V9.83 build 10920 
+                                                                                                           Fri Sep 04 17:54:18 2026
+
+
+     1                           
+     2                           	; HI-TECH C Compiler for PIC10/12/16 MCUs V9.83
+     3                           	; Copyright (C) 1984-2011 HI-TECH Software
+     4                           	;Serial no. HCPICP-123456
+     5                           
+     6                           	; Auto-generated runtime startup code for final link stage.
+     7                           
+     8                           	;
+     9                           	; Compiler options:
+    10                           	;
+    11                           	; --chip=16F685 -D__16F685_H --ERRFORMAT=error:%f(%l):(%n) %s \
+    12                           	; --WARNFORMAT=warnning:%f(%l):(%n) %s \
+    13                           	; --MSGFORMAT=message:%f(%l):(%n) %s --ASMLIST \
+    14                           	; -L-preset_vec=00h,intentry=04h,init,end_init \
+    15                           	; -MD:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2
+                                 811_PROJECT.map \
+    16                           	; -OD:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2
+                                 811_PROJECT \
+    17                           	; -ID:\project\≤ŒøºŒƒµµ∫Õ◊ ¡œ\À’÷›ª™–æŒ¢µÁ◊”\HSIDE_v2.1.16_2026.07.07\include \
+    18                           	; -ID:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8 \
+    19                           	; -ID:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_c
+                                 ode \
+    20                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c \
+    21                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_cod
+                                 e\led.c \
+    22                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_cod
+                                 e\timer1.c \
+    23                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_cod
+                                 e\timer3.c \
+    24                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_cod
+                                 e\key.c \
+    25                           	; D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_cod
+                                 e\pen_pwr_ctl.c \
+    26                           	; --OPT=debug
+    27                           	;
+    28                           
+    29                           
+    30                           	processor	16F685
+    31                           
+    32                           	global	_main,start,_exit,reset_vec
+    33                           	fnroot	_main
+    34                           	psect	config,class=CONFIG,delta=2
+    35                           	psect	idloc,class=IDLOC,delta=2
+    36                           	psect	code,class=CODE,delta=2
+    37                           	psect	powerup,class=CODE,delta=2
+    38                           	psect	reset_vec,class=CODE,delta=2
+    39                           	psect	maintext,class=CODE,delta=2
+    40  0000                     	C	set	0
+    41  0002                     	Z	set	2
+    42  0002                     	PCL	set	2
+    43  0000                     	INDF	set	0
+    44                           
+    45  0003                     	STATUS	equ	3
+    46  000A                     	PCLATH	equ	0Ah
+    47                           
+    48                           	psect	eeprom_data,class=EEDATA,delta=2,space=2
+    49                           	psect	intentry,class=CODE,delta=2
+    50                           	psect	functab,class=CODE,delta=2
+    51                           	global	intlevel0,intlevel1,intlevel2, intlevel3, intlevel4, intlevel5
+    52  0000                     intlevel0:
+    53  0000                     intlevel1:
+    54  0000                     intlevel2:
+    55  0000                     intlevel3:
+    56  0000                     intlevel4:
+    57  0000                     intlevel5:
+    58                           	psect	init,class=CODE,delta=2
+    59                           	psect	cinit,class=CODE,delta=2
+    60                           	psect	text,class=CODE,delta=2
+    61                           	psect	end_init,class=CODE,delta=2
+    62                           	psect	clrtext,class=CODE,delta=2
+    63  0004                     	FSR	set	4
+    64                           	psect	strings,class=CODE,delta=2,reloc=256
+    65                           
+    66                           	psect	reset_vec
+    67  0000                     reset_vec:
+    68                           	; No powerup routine
+    69                           	global start
+    70                           
+    71                           ; jump to start
+    72  0000  280A               	goto	start & 0x7FF | (reset_vec & not 0x7FF)
+    73                           
+    74                           
+    75                           
+    76                           	psect	init
+    77  000A                     start
+    78  000A                     _exit
+    79                           	psect	end_init
+    80                           	global start_initialization
+    81  000A  28C8               	ljmp start_initialization	;jump to C runtime clear & initialization
+
+
+HI-TECH Software PICC Macro Assembler V9.83 build 10920 
+Symbol Table                                                                                               Fri Sep 04 17:54:18 2026
+
+               _main 0062                 _exit 000A                 start 000A  start_initialization 00C8  
+           intlevel0 0000             intlevel1 0000             intlevel2 0000             intlevel3 0000  
+           intlevel4 0000             intlevel5 0000             reset_vec 0000  
