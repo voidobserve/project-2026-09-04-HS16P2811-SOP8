@@ -1,7 +1,7 @@
 
-# 1 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c"
+# 1 "D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c"
 
-# 5 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h"
+# 5 "D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h"
 void pen_pwr_on(void);
 void pen_pwr_off(void);
 
@@ -609,7 +609,7 @@ volatile bit FVR2 @ ((unsigned) & VRCON * 8) + 2;
 volatile bit FVR1 @ ((unsigned) & VRCON * 8) + 1;
 volatile bit FVR0 @ ((unsigned) & VRCON * 8) + 0;
 
-# 19 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h"
+# 19 "D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h"
 void GPIO_Init(void);
 
 void System_Init(void);
@@ -617,10 +617,28 @@ void System_Init(void);
 void CLR_RAM_EveryBank(void);
 
 # 31
+extern volatile bit flag_is_charge_begin;
+
 extern volatile bit flag_is_in_charging;
 extern volatile bit flag_is_dev_working;
 
-# 4 "D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c"
+extern volatile u16 pwr_off_cnt;
+
+# 41
+extern volatile u8 into_low_power_cnt;
+
+
+extern volatile u8 charge_anim_phase;
+
+
+extern volatile u16 charge_fully_cnt;
+
+extern volatile u8 led_sta_refresh_cnt;
+
+extern volatile u16 adc_val ;
+extern volatile u16 bat_vol;
+
+# 4 "D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c"
 void pen_pwr_on(void)
 {
 TRISA &= ~(0x01 << 6);

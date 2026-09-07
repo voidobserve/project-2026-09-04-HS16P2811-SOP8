@@ -845,15 +845,69 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FVR1 `Vb  1 e@3321 ]
 "674 D:\project\²Î¿¼ÎÄµµºÍ×ÊÁÏ\ËÕÖÝ»ªÐ¾Î¢µç×Ó\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
 [v _FVR0 `Vb  1 e@3320 ]
-"19 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+"22 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _flag_is_charge_begin `Vb  1 e ]
+"24 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
 [v _flag_is_in_charging `Vb  1 e ]
-"20 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+"25 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
 [v _flag_is_dev_working `Vb  1 e ]
-[p mainexit ]
-"32 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.h
+"27 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _pwr_off_cnt `Vui  1 e ]
+"32 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _into_low_power_cnt `Vuc  1 e ]
+"35 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _charge_anim_phase `Vuc  1 e ]
+"38 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _charge_fully_cnt `Vui  1 e ]
+"40 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _led_sta_refresh_cnt `Vuc  1 e ]
+"42 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _adc_val `Vui  1 e ]
+"43 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _bat_vol `Vui  1 e ]
+"44 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _bat_vol_tmp `Vui  1 e ]
+"47 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _adc_enable `Vb  1 e ]
+"48 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _adc_sta `Vb  1 e ]
+"49 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _adc_val_sum `Vul  1 e ]
+"50 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _adc_val_cnt `Vuc  1 e ]
+"53 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[v _last_vibration_sensor_lev `Vb  1 e ]
+"19 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+[v _GPIO_Init `(v  0 ef ]
+"23 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+[v _CLR_RAM_EveryBank `(v  0 ef ]
+"16 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\adc.h
+[v _adc_init `(v  0 ef ]
+"32 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.h
 [v _timer1_init `(v  0 ef ]
-"33 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.h
+"33 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.h
 [v _timer3_init `(v  0 ef ]
+[p mainexit ]
+"15 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _flag_is_led_show_enable `Vb  0 e ]
+"23 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _led_refresh `(v  0 ef ]
+"6 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h
+[v _pen_pwr_off `(v  0 ef ]
+"10 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _flag_led_1_on `Vb  0 e ]
+"11 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _flag_led_2_on `Vb  0 e ]
+"12 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _flag_led_3_on `Vb  0 e ]
+"13 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _flag_led_4_on `Vb  0 e ]
+"17 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.h
+[v _key_scan `(v  0 ef ]
+"17 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _led_all_off `(v  0 ef ]
+"22 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+[v _led_status_handle `(v  0 ef ]
 [; ;hs16p2811.h: 39: typedef signed char s8;
 [; ;hs16p2811.h: 40: typedef signed int s16;
 [; ;hs16p2811.h: 41: typedef signed long s32;
@@ -1289,8 +1343,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user_include.h: 19: void GPIO_Init(void);
 [; ;user_include.h: 21: void System_Init(void);
 [; ;user_include.h: 23: void CLR_RAM_EveryBank(void);
-[; ;user_include.h: 31: extern volatile bit flag_is_in_charging;
-[; ;user_include.h: 32: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 31: extern volatile bit flag_is_charge_begin;
+[; ;user_include.h: 33: extern volatile bit flag_is_in_charging;
+[; ;user_include.h: 34: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 36: extern volatile u16 pwr_off_cnt;
+[; ;user_include.h: 41: extern volatile u8 into_low_power_cnt;
+[; ;user_include.h: 44: extern volatile u8 charge_anim_phase;
+[; ;user_include.h: 47: extern volatile u16 charge_fully_cnt;
+[; ;user_include.h: 49: extern volatile u8 led_sta_refresh_cnt;
+[; ;user_include.h: 51: extern volatile u16 adc_val ;
+[; ;user_include.h: 52: extern volatile u16 bat_vol;
 [; ;led.h: 10: extern volatile bit flag_led_1_on;
 [; ;led.h: 11: extern volatile bit flag_led_2_on;
 [; ;led.h: 12: extern volatile bit flag_led_3_on;
@@ -1303,6 +1365,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;led.h: 21: void led4_on(void);
 [; ;led.h: 22: void led_status_handle(void);
 [; ;led.h: 23: void led_refresh(void);
+[; ;key.h: 4: enum
+[; ;key.h: 5: {
+[; ;key.h: 6: KEY_ID_NONE = 0x00,
+[; ;key.h: 7: KEY_ID_VALID,
+[; ;key.h: 8: };
+[; ;key.h: 17: void key_scan(void);
+[; ;adc.h: 16: void adc_init(void);
 [; ;timer1.h: 6: enum
 [; ;timer1.h: 7: {
 [; ;timer1.h: 8: TIMER1_DIV_1_REG_VAL = 0x00,
@@ -1331,285 +1400,805 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer3.h: 30: TIMER3_CNT_TEST_VAL = ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000))),
 [; ;timer3.h: 31: };
 [; ;timer3.h: 33: void timer3_init(void);
-[; ;main.c: 19: volatile bit flag_is_in_charging;
-[; ;main.c: 20: volatile bit flag_is_dev_working;
-"28 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[; ;pen_pwr_ctl.h: 5: void pen_pwr_on(void);
+[; ;pen_pwr_ctl.h: 6: void pen_pwr_off(void);
+[; ;main.c: 22: volatile bit flag_is_charge_begin;
+[; ;main.c: 24: volatile bit flag_is_in_charging;
+[; ;main.c: 25: volatile bit flag_is_dev_working;
+"27 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+[i _pwr_off_cnt
+-> -> 0 `i `ui
+]
+[; ;main.c: 27: volatile u16 pwr_off_cnt = 0;
+"32
+[i _into_low_power_cnt
+-> -> 0 `i `uc
+]
+[; ;main.c: 32: volatile u8 into_low_power_cnt = 0;
+"35
+[i _charge_anim_phase
+-> -> 0 `i `uc
+]
+[; ;main.c: 35: volatile u8 charge_anim_phase = 0;
+"38
+[i _charge_fully_cnt
+-> -> 0 `i `ui
+]
+[; ;main.c: 38: volatile u16 charge_fully_cnt = 0;
+"40
+[i _led_sta_refresh_cnt
+-> -> 0 `i `uc
+]
+[; ;main.c: 40: volatile u8 led_sta_refresh_cnt = 0;
+"42
+[i _adc_val
+-> -> 0 `i `ui
+]
+[; ;main.c: 42: volatile u16 adc_val = 0;
+"43
+[i _bat_vol
+-> -> 0 `i `ui
+]
+[; ;main.c: 43: volatile u16 bat_vol = 0;
+[; ;main.c: 44: volatile u16 bat_vol_tmp;
+"47
+[i _adc_enable
+-> 0 `i
+]
+[; ;main.c: 47: volatile bit adc_enable = 0;
+"48
+[i _adc_sta
+-> 0 `i
+]
+[; ;main.c: 48: volatile bit adc_sta = 0;
+"49
+[i _adc_val_sum
+-> -> -> 0 `i `l `ul
+]
+[; ;main.c: 49: volatile u32 adc_val_sum = 0;
+"50
+[i _adc_val_cnt
+-> -> 0 `i `uc
+]
+[; ;main.c: 50: volatile u8 adc_val_cnt = 0;
+"53
+[i _last_vibration_sensor_lev
+-> 0 `i
+]
+[; ;main.c: 53: volatile bit last_vibration_sensor_lev = 0;
+"61
 [v _System_Init `(v  1 ef ]
 {
-[; ;main.c: 27: void System_Init(void)
-[; ;main.c: 28: {
+[; ;main.c: 60: void System_Init(void)
+[; ;main.c: 61: {
 [e :U _System_Init ]
 [f ]
-[; ;main.c: 29: OPTIONR = 0b000000000;
-"29
+[; ;main.c: 62: OPTIONR = 0b000000000;
+"62
 [e = _OPTIONR -> -> 0 `i `uc ]
-[; ;main.c: 32: INTCON = 0b00000000;
-"32
+[; ;main.c: 65: INTCON = 0b00000000;
+"65
 [e = _INTCON -> -> 0 `i `uc ]
-[; ;main.c: 40: WDTE = 1;
-"40
-[e = _WDTE -> -> 1 `i `b ]
-[; ;main.c: 42: PIE1 = 0B00000000;
-"42
+[; ;main.c: 73: WDTE = 0;
+"73
+[e = _WDTE -> -> 0 `i `b ]
+[; ;main.c: 75: PIE1 = 0B00000000;
+"75
 [e = _PIE1 -> -> 0 `i `uc ]
-[; ;main.c: 46: PIR1 = 0B00000000;
-"46
+[; ;main.c: 79: PIR1 = 0B00000000;
+"79
 [e = _PIR1 -> -> 0 `i `uc ]
-[; ;main.c: 50: PIE2 = 0B00000000;
-"50
+[; ;main.c: 83: PIE2 = 0B00000000;
+"83
 [e = _PIE2 -> -> 0 `i `uc ]
-[; ;main.c: 55: PIR2 = 0B00000000;
-"55
+[; ;main.c: 88: PIR2 = 0B00000000;
+"88
 [e = _PIR2 -> -> 0 `i `uc ]
-[; ;main.c: 59: }
-"59
+[; ;main.c: 93: GPIO_Init();
+"93
+[e ( _GPIO_Init ..  ]
+[; ;main.c: 94: CLR_RAM_EveryBank();
+"94
+[e ( _CLR_RAM_EveryBank ..  ]
+[; ;main.c: 95: }
+"95
 [e :UE 1 ]
 }
-"76
+"112
 [v _CLR_RAM_EveryBank `(v  1 ef ]
 {
-[; ;main.c: 75: void CLR_RAM_EveryBank(void)
-[; ;main.c: 76: {
+[; ;main.c: 111: void CLR_RAM_EveryBank(void)
+[; ;main.c: 112: {
 [e :U _CLR_RAM_EveryBank ]
 [f ]
-[; ;main.c: 77: STATUS &= 0x1F;
-"77
+[; ;main.c: 113: STATUS &= 0x1F;
+"113
 [e =& _STATUS -> -> 31 `i `uc ]
-"79
+"115
 [;     MOVLW 0x5F; ;#
-"80
+"116
 [;     MOVWF 0x20; ;#
-"81
+"117
 [;     MOVLW 0x7F; ;#
-"82
+"118
 [;     MOVWF _FSR, F; ;#
-"83
+"119
 [; CLR_RAM_LOOP: ;#
-"84
+"120
 [;     CALL CLR_RAM_Demo; ;#
-"85
-"86
+"121
+"122
 [;     DECF _FSR, F; ;#
-"87
+"123
 [;     DECFSZ 0X20, F; ;#
-"88
+"124
 [;     GOTO CLR_RAM_LOOP; ;#
-"89
-"90
+"125
+"126
 [;     CALL CLR_RAM_Demo; ;#
-"91
+"127
 [;     RETURN; ;#
-"92
-"93
+"128
+"129
 [; CLR_RAM_Demo: ;#
-"94
-"95
-"96
+"130
+"131
+"132
 [;             BSF _FSR, 7; ;#
-"97
+"133
 [;     CLRF _INDF; ;#
-"98
-"99
-"100
-"101
+"134
+"135
+"136
+"137
 [;             BCF _FSR, 7; ;#
-"102
+"138
 [;     CLRF _INDF; ;#
-"103
-"104
+"139
+"140
 [;     RETURN; ;#
-[; ;main.c: 106: }
-"106
+[; ;main.c: 142: }
+"142
 [e :UE 2 ]
 }
-"114
+"150
 [v _GPIO_Init `(v  1 ef ]
 {
-[; ;main.c: 113: void GPIO_Init(void)
-[; ;main.c: 114: {
+[; ;main.c: 149: void GPIO_Init(void)
+[; ;main.c: 150: {
 [e :U _GPIO_Init ]
 [f ]
-[; ;main.c: 116: PORTA = 0b00000000;
-"116
+[; ;main.c: 152: PORTA = 0b00000000;
+"152
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;main.c: 117: TRISA = 0b00000000;
-"117
+[; ;main.c: 153: TRISA = 0b00000000;
+"153
 [e = _TRISA -> -> 0 `i `uc ]
-[; ;main.c: 118: PAODCON = 0b00000000;
-"118
+[; ;main.c: 154: PAODCON = 0b00000000;
+"154
 [e = _PAODCON -> -> 0 `i `uc ]
-[; ;main.c: 119: PAHCON = 0b11111111;
-"119
+[; ;main.c: 155: PAHCON = 0b11111111;
+"155
 [e = _PAHCON -> -> 255 `i `uc ]
-[; ;main.c: 120: PADCON = 0b11111111;
-"120
+[; ;main.c: 156: PADCON = 0b11111111;
+"156
 [e = _PADCON -> -> 255 `i `uc ]
-[; ;main.c: 121: WUACON = 0b00000000;
-"121
+[; ;main.c: 157: WUACON = 0b00000000;
+"157
 [e = _WUACON -> -> 0 `i `uc ]
-[; ;main.c: 124: PORTC = 0b00000000;
-"124
+[; ;main.c: 160: PORTC = 0b00000000;
+"160
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;main.c: 125: TRISC = 0b00000000;
-"125
+[; ;main.c: 161: TRISC = 0b00000000;
+"161
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 126: PCDCON = 0b11111111;
-"126
+[; ;main.c: 162: PCDCON = 0b11111111;
+"162
 [e = _PCDCON -> -> 255 `i `uc ]
-[; ;main.c: 127: PCHCON = 0b11111111;
-"127
+[; ;main.c: 163: PCHCON = 0b11111111;
+"163
 [e = _PCHCON -> -> 255 `i `uc ]
-[; ;main.c: 128: }
-"128
+[; ;main.c: 164: }
+"164
 [e :UE 3 ]
 }
-"179
+"215
 [v _delay_ms `(v  1 ef1`ul ]
 {
-[; ;main.c: 178: void delay_ms(u32 xms)
-[; ;main.c: 179: {
+[; ;main.c: 214: void delay_ms(u32 xms)
+[; ;main.c: 215: {
 [e :U _delay_ms ]
 [v _xms `ul  1 r1 ]
 [f ]
-[; ;main.c: 180: while (xms) {
-"180
+[; ;main.c: 216: while (xms) {
+"216
 [e $U 5  ]
 [e :U 6 ]
 {
-"184
+"220
 [v _i `ui  1 a ]
-[; ;main.c: 184: u16 i = 510;
+[; ;main.c: 220: u16 i = 510;
 [e = _i -> -> 510 `i `ui ]
-[; ;main.c: 185: while (i--) {
-"185
+[; ;main.c: 221: while (i--) {
+"221
 [e $U 8  ]
 [e :U 9 ]
 {
-[; ;main.c: 186: asm("NOP");
-"186
+[; ;main.c: 222: asm("NOP");
+"222
 [; NOP ;#
-"187
+"223
 }
 [e :U 8 ]
-"185
+"221
 [e $ != -- _i -> -> 1 `i `ui -> -> 0 `i `ui 9  ]
 [e :U 10 ]
-[; ;main.c: 187: }
-[; ;main.c: 188: xms--;
-"188
+[; ;main.c: 223: }
+[; ;main.c: 224: xms--;
+"224
 [e -- _xms -> -> -> 1 `i `l `ul ]
-"189
+"225
 }
 [e :U 5 ]
-"180
+"216
 [e $ != _xms -> -> 0 `i `ul 6  ]
 [e :U 7 ]
-[; ;main.c: 189: }
-[; ;main.c: 190: }
-"190
+[; ;main.c: 225: }
+[; ;main.c: 226: }
+"226
 [e :UE 4 ]
 }
-"195
-[v _main `(v  1 ef ]
+"229
+[v _user_init `(v  1 ef ]
 {
-[; ;main.c: 194: void main(void)
-[; ;main.c: 195: {
-[e :U _main ]
+[; ;main.c: 228: void user_init(void)
+[; ;main.c: 229: {
+[e :U _user_init ]
 [f ]
-[; ;main.c: 196: System_Init();
-"196
-[e ( _System_Init ..  ]
-[; ;main.c: 197: GPIO_Init();
-"197
-[e ( _GPIO_Init ..  ]
-[; ;main.c: 198: CLR_RAM_EveryBank();
-"198
-[e ( _CLR_RAM_EveryBank ..  ]
-[; ;main.c: 201: PAHCON &= ~(0x01 << 0);
-"201
+[; ;main.c: 231: PAHCON &= ~(0x01 << 0);
+"231
 [e =& _PAHCON -> ~ << -> 1 `i -> 0 `i `uc ]
-[; ;main.c: 202: TRISA |= (0x01 << 0);
-"202
+[; ;main.c: 232: TRISA |= (0x01 << 0);
+"232
 [e =| _TRISA -> << -> 1 `i -> 0 `i `uc ]
-[; ;main.c: 204: TRISA |= (0x01 << 6);
-"204
+[; ;main.c: 234: TRISA |= (0x01 << 6);
+"234
 [e =| _TRISA -> << -> 1 `i -> 6 `i `uc ]
-[; ;main.c: 206: TRISA |= (0x01 << 7);
-"206
+[; ;main.c: 236: TRISA |= (0x01 << 7);
+"236
 [e =| _TRISA -> << -> 1 `i -> 7 `i `uc ]
-[; ;main.c: 208: TRISA |= (0x01 << 5);
-"208
+[; ;main.c: 238: TRISA |= (0x01 << 5);
+"238
 [e =| _TRISA -> << -> 1 `i -> 5 `i `uc ]
-[; ;main.c: 210: timer1_init();
-"210
+[; ;main.c: 240: adc_init();
+"240
+[e ( _adc_init ..  ]
+[; ;main.c: 241: timer1_init();
+"241
 [e ( _timer1_init ..  ]
-[; ;main.c: 211: timer3_init();
-"211
+[; ;main.c: 242: timer3_init();
+"242
 [e ( _timer3_init ..  ]
-[; ;main.c: 212: delay_ms(10);
-"212
+[; ;main.c: 243: GIE = 1;
+"243
+[e = _GIE -> -> 1 `i `b ]
+[; ;main.c: 244: delay_ms(10);
+"244
 [e ( _delay_ms (1 -> -> -> 10 `i `l `ul ]
-[; ;main.c: 214: while (1) {
-"214
-[e :U 13 ]
-{
-[; ;main.c: 215: asm("clrwdt");
-"215
-[; clrwdt ;#
-"216
-}
-[e :U 12 ]
-"214
-[e $U 13  ]
-[e :U 14 ]
-[; ;main.c: 216: }
-[; ;main.c: 217: }
-"217
+[; ;main.c: 248: adc_enable = 1;
+"248
+[e = _adc_enable -> -> 1 `i `b ]
+[; ;main.c: 249: }
+"249
 [e :UE 11 ]
 }
-"224
-[v F856 `(v  1 tf ]
-[v _myIsr `IF856  1 e ]
+"252
+[v _main `(v  1 ef ]
 {
-[; ;main.c: 223: void interrupt myIsr(void)
-[; ;main.c: 224: {
-[e :U _myIsr ]
+[; ;main.c: 251: void main(void)
+[; ;main.c: 252: {
+[e :U _main ]
 [f ]
-[; ;main.c: 226: if (T1IF) {
-"226
-[e $ ! _T1IF 16  ]
+[; ;main.c: 253: System_Init();
+"253
+[e ( _System_Init ..  ]
+[; ;main.c: 254: user_init();
+"254
+[e ( _user_init ..  ]
+[; ;main.c: 256: into_low_power_cnt = (u8)((u16)2000 / 10);
+"256
+[e = _into_low_power_cnt -> / -> -> 2000 `i `ui -> -> 10 `i `ui `uc ]
+[; ;main.c: 257: while (1) {
+"257
+[e :U 14 ]
 {
-[; ;main.c: 228: T1IF = 0;
-"228
-[e = _T1IF -> -> 0 `i `b ]
-[; ;main.c: 229: T1TL = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) % 256;
-"229
-[e = _T1TL -> % - -> 65535 `ui -> / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 10000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
-[; ;main.c: 230: T1TH = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) / 256;
-"230
-[e = _T1TH -> / - -> 65535 `ui -> / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 10000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
-"231
+[; ;main.c: 265: if ((flag_is_dev_working && pwr_off_cnt >= (((u16)((u32)50 * 60 * 1000 / 100)))) ||
+[; ;main.c: 266: into_low_power_cnt >= (u8)((u16)2000 / 10)) {
+"266
+[e $ ! || && _flag_is_dev_working >= _pwr_off_cnt -> / * * -> -> 50 `i `ul -> -> -> 60 `i `l `ul -> -> -> 1000 `i `l `ul -> -> -> 100 `i `l `ul `ui >= -> _into_low_power_cnt `i -> -> / -> -> 2000 `i `ui -> -> 10 `i `ui `uc `i 16  ]
+{
+[; ;main.c: 267: label_low_power_in:
+"267
+[e :U 17 ]
+[; ;main.c: 269: GIE = 0;
+"269
+[e = _GIE -> -> 0 `i `b ]
+[; ;main.c: 272: T1IE = 0;
+"272
+[e = _T1IE -> -> 0 `i `b ]
+[; ;main.c: 273: T3IE = 0;
+"273
+[e = _T3IE -> -> 0 `i `b ]
+[; ;main.c: 274: T1REN = 0;
+"274
+[e = _T1REN -> -> 0 `i `b ]
+[; ;main.c: 275: T3REN = 0;
+"275
+[e = _T3REN -> -> 0 `i `b ]
+[; ;main.c: 277: ADCIE = 0;
+"277
+[e = _ADCIE -> -> 0 `i `b ]
+[; ;main.c: 278: ADM &= ~(0x0F << 0);
+"278
+[e =& _ADM -> ~ << -> 15 `i -> 0 `i `uc ]
+[; ;main.c: 279: GCHS = 0;
+"279
+[e = _GCHS -> -> 0 `i `b ]
+[; ;main.c: 280: ADENB = 0;
+"280
+[e = _ADENB -> -> 0 `i `b ]
+[; ;main.c: 283: TRISA = 0xFF;
+"283
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;main.c: 284: PAHCON = 0xFF;
+"284
+[e = _PAHCON -> -> 255 `i `uc ]
+[; ;main.c: 285: PADCON = 0xFF;
+"285
+[e = _PADCON -> -> 255 `i `uc ]
+[; ;main.c: 289: PAHCON &= ~(0x01 << 0 | 0x01 << 1 | 0x01 << 2);
+"289
+[e =& _PAHCON -> ~ | | << -> 1 `i -> 0 `i << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc ]
+[; ;main.c: 290: PAIF = 0;
+"290
+[e = _PAIF -> -> 0 `i `b ]
+[; ;main.c: 291: PAIE = 1;
+"291
+[e = _PAIE -> -> 1 `i `b ]
+[; ;main.c: 293: WUACON |= (0x01 << 0 |
+[; ;main.c: 294: 0x01 << 5);
+"294
+[e =| _WUACON -> | << -> 1 `i -> 0 `i << -> 1 `i -> 5 `i `uc ]
+[; ;main.c: 295: PEIE = 1;
+"295
+[e = _PEIE -> -> 1 `i `b ]
+[; ;main.c: 297: CLKMD = 1;
+"297
+[e = _CLKMD -> -> 1 `i `b ]
+[; ;main.c: 298: STPHX = 1;
+"298
+[e = _STPHX -> -> 1 `i `b ]
+[; ;main.c: 299: SLCON = 1;
+"299
+[e = _SLCON -> -> 1 `i `b ]
+[; ;main.c: 301: asm("NOP");
+"301
+[; NOP ;#
+[; ;main.c: 302: asm("NOP");
+"302
+[; NOP ;#
+[; ;main.c: 303: asm("sleep");
+"303
+[; sleep ;#
+[; ;main.c: 304: asm("NOP");
+"304
+[; NOP ;#
+[; ;main.c: 305: asm("NOP");
+"305
+[; NOP ;#
+[; ;main.c: 307: PAIF = 0;
+"307
+[e = _PAIF -> -> 0 `i `b ]
+[; ;main.c: 308: PAIE = 0;
+"308
+[e = _PAIE -> -> 0 `i `b ]
+[; ;main.c: 309: WUACON = 0x00;
+"309
+[e = _WUACON -> -> 0 `i `uc ]
+[; ;main.c: 317: OSCM = 0x01 << 6;
+"317
+[e = _OSCM -> << -> 1 `i -> 6 `i `uc ]
+[; ;main.c: 319: System_Init();
+"319
+[e ( _System_Init ..  ]
+[; ;main.c: 320: user_init();
+"320
+[e ( _user_init ..  ]
+[; ;main.c: 322: delay_ms(10);
+"322
+[e ( _delay_ms (1 -> -> -> 10 `i `l `ul ]
+[; ;main.c: 323: flag_is_led_show_enable = 1;
+"323
+[e = _flag_is_led_show_enable -> -> 1 `i `b ]
+[; ;main.c: 325: if (PA5 == 0 && bat_vol <= (2900)) {
+"325
+[e $ ! && == -> _PA5 `i -> 0 `i <= _bat_vol -> -> 2900 `i `ui 18  ]
+{
+[; ;main.c: 327: goto label_low_power_in;
+"327
+[e $U 17  ]
+"328
+}
+[e :U 18 ]
+"329
 }
 [e :U 16 ]
-[; ;main.c: 231: }
-[; ;main.c: 233: if (T3IF) {
-"233
-[e $ ! _T3IF 17  ]
-{
-[; ;main.c: 235: T3IF = 0;
-"235
-[e = _T3IF -> -> 0 `i `b ]
-[; ;main.c: 236: T3TL = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) % 256;
-"236
-[e = _T3TL -> % - -> 65535 `ui -> / / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
-[; ;main.c: 237: T3TH = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) / 256;
-"237
-[e = _T3TH -> / - -> 65535 `ui -> / / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
-"238
+"330
 }
-[e :U 17 ]
-[; ;main.c: 238: }
-[; ;main.c: 239: }
-"239
-[e :UE 15 ]
+[e :U 13 ]
+"257
+[e $U 14  ]
+[e :U 15 ]
+[; ;main.c: 328: }
+[; ;main.c: 329: }
+[; ;main.c: 330: }
+[; ;main.c: 331: }
+"331
+[e :UE 12 ]
+}
+"339
+[v F891 `(v  1 tf ]
+[v _myIsr `IF891  1 e ]
+{
+[; ;main.c: 338: void interrupt myIsr(void)
+[; ;main.c: 339: {
+[e :U _myIsr ]
+[f ]
+[; ;main.c: 340: if (T1IF) {
+"340
+[e $ ! _T1IF 20  ]
+{
+[; ;main.c: 342: T1IF = 0;
+"342
+[e = _T1IF -> -> 0 `i `b ]
+[; ;main.c: 343: T1TL = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) % 256;
+"343
+[e = _T1TL -> % - -> 65535 `ui -> / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 10000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
+[; ;main.c: 344: T1TH = (0xFFFF - ((u16)(((16000000UL) / 2) / (4) / ((u16)10000)))) / 256;
+"344
+[e = _T1TH -> / - -> 65535 `ui -> / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 10000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
+[; ;main.c: 345: led_refresh();
+"345
+[e ( _led_refresh ..  ]
+[; ;main.c: 347: if (adc_enable) {
+"347
+[e $ ! _adc_enable 21  ]
+{
+[; ;main.c: 348: if (0 == adc_sta) {
+"348
+[e $ ! == -> 0 `i -> _adc_sta `i 22  ]
+{
+[; ;main.c: 349: adc_sta = 1;
+"349
+[e = _adc_sta -> -> 1 `i `b ]
+[; ;main.c: 350: EOC = 0;
+"350
+[e = _EOC -> -> 0 `i `b ]
+[; ;main.c: 351: ADS = 1;
+"351
+[e = _ADS -> -> 1 `i `b ]
+"352
+}
+[e :U 22 ]
+"353
+}
+[e :U 21 ]
+"369
+}
+[e :U 20 ]
+[; ;main.c: 352: }
+[; ;main.c: 353: }
+[; ;main.c: 369: }
+[; ;main.c: 371: if (T3IF) {
+"371
+[e $ ! _T3IF 23  ]
+{
+"373
+[v F896 `Vuc  1 s cnt_dest_10ms ]
+[i F896
+-> -> 0 `i `uc
+]
+"374
+[v F897 `Vuc  1 s cnt_dest_100ms ]
+[i F897
+-> -> 0 `i `uc
+]
+[; ;main.c: 373: static volatile u8 cnt_dest_10ms = 0;
+[; ;main.c: 374: static volatile u8 cnt_dest_100ms = 0;
+[; ;main.c: 376: T3IF = 0;
+"376
+[e = _T3IF -> -> 0 `i `b ]
+[; ;main.c: 377: T3TL = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) % 256;
+"377
+[e = _T3TL -> % - -> 65535 `ui -> / / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
+[; ;main.c: 378: T3TH = (0xFFFF - ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000)))) / 256;
+"378
+[e = _T3TH -> / - -> 65535 `ui -> / / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 1000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
+[; ;main.c: 380: cnt_dest_10ms++;
+"380
+[e ++ F896 -> -> 1 `i `uc ]
+[; ;main.c: 381: if (cnt_dest_10ms >= 10) {
+"381
+[e $ ! >= -> F896 `i -> 10 `i 24  ]
+{
+"383
+[v F902 `Vuc  1 s is_not_charge_cnt ]
+[i F902
+-> -> 0 `i `uc
+]
+[; ;main.c: 383: static volatile u8 is_not_charge_cnt = 0;
+[; ;main.c: 385: cnt_dest_10ms = 0;
+"385
+[e = F896 -> -> 0 `i `uc ]
+[; ;main.c: 398: if (PA5) {
+"398
+[e $ ! _PA5 25  ]
+{
+[; ;main.c: 399: is_not_charge_cnt = 0;
+"399
+[e = F902 -> -> 0 `i `uc ]
+[; ;main.c: 400: if (0 == flag_is_in_charging) {
+"400
+[e $ ! == -> 0 `i -> _flag_is_in_charging `i 26  ]
+{
+[; ;main.c: 401: pen_pwr_off();
+"401
+[e ( _pen_pwr_off ..  ]
+[; ;main.c: 407: flag_led_1_on = 0;
+"407
+[e = _flag_led_1_on -> -> 0 `i `b ]
+[; ;main.c: 408: flag_led_2_on = 0;
+"408
+[e = _flag_led_2_on -> -> 0 `i `b ]
+[; ;main.c: 409: flag_led_3_on = 0;
+"409
+[e = _flag_led_3_on -> -> 0 `i `b ]
+[; ;main.c: 410: flag_led_4_on = 0;
+"410
+[e = _flag_led_4_on -> -> 0 `i `b ]
+[; ;main.c: 416: flag_is_dev_working = 0;
+"416
+[e = _flag_is_dev_working -> -> 0 `i `b ]
+[; ;main.c: 418: flag_is_charge_begin = 1;
+"418
+[e = _flag_is_charge_begin -> -> 1 `i `b ]
+[; ;main.c: 419: charge_anim_phase = 0;
+"419
+[e = _charge_anim_phase -> -> 0 `i `uc ]
+[; ;main.c: 421: charge_fully_cnt = 0;
+"421
+[e = _charge_fully_cnt -> -> 0 `i `ui ]
+[; ;main.c: 422: flag_is_in_charging = 1;
+"422
+[e = _flag_is_in_charging -> -> 1 `i `b ]
+"423
+}
+[e :U 26 ]
+"424
+}
+[; ;main.c: 423: }
+[; ;main.c: 424: } else {
+[e $U 27  ]
+[e :U 25 ]
+{
+[; ;main.c: 425: is_not_charge_cnt++;
+"425
+[e ++ F902 -> -> 1 `i `uc ]
+[; ;main.c: 426: if (is_not_charge_cnt >= (200 / 10)) {
+"426
+[e $ ! >= -> F902 `i / -> 200 `i -> 10 `i 28  ]
+{
+[; ;main.c: 427: is_not_charge_cnt = 0;
+"427
+[e = F902 -> -> 0 `i `uc ]
+[; ;main.c: 428: flag_is_in_charging = 0;
+"428
+[e = _flag_is_in_charging -> -> 0 `i `b ]
+"429
+}
+[e :U 28 ]
+"430
+}
+[e :U 27 ]
+[; ;main.c: 429: }
+[; ;main.c: 430: }
+[; ;main.c: 432: key_scan();
+"432
+[e ( _key_scan ..  ]
+[; ;main.c: 435: if (flag_is_dev_working && bat_vol < (2900)) {
+"435
+[e $ ! && _flag_is_dev_working < _bat_vol -> -> 2900 `i `ui 29  ]
+{
+[; ;main.c: 436: pen_pwr_off();
+"436
+[e ( _pen_pwr_off ..  ]
+[; ;main.c: 437: led_all_off();
+"437
+[e ( _led_all_off ..  ]
+[; ;main.c: 438: flag_is_dev_working = 0;
+"438
+[e = _flag_is_dev_working -> -> 0 `i `b ]
+"439
+}
+[e :U 29 ]
+[; ;main.c: 439: }
+[; ;main.c: 442: if ((PA5 == 0) && (flag_is_dev_working == 0)) {
+"442
+[e $ ! && == -> _PA5 `i -> 0 `i == -> _flag_is_dev_working `i -> 0 `i 30  ]
+{
+[; ;main.c: 444: into_low_power_cnt++;
+"444
+[e ++ _into_low_power_cnt -> -> 1 `i `uc ]
+"446
+}
+[; ;main.c: 446: } else {
+[e $U 31  ]
+[e :U 30 ]
+{
+[; ;main.c: 447: into_low_power_cnt = 0;
+"447
+[e = _into_low_power_cnt -> -> 0 `i `uc ]
+"448
+}
+[e :U 31 ]
+"449
+}
+[e :U 24 ]
+[; ;main.c: 448: }
+[; ;main.c: 449: }
+[; ;main.c: 451: cnt_dest_100ms++;
+"451
+[e ++ F897 -> -> 1 `i `uc ]
+[; ;main.c: 452: if (cnt_dest_100ms >= 100) {
+"452
+[e $ ! >= -> F897 `i -> 100 `i 32  ]
+{
+[; ;main.c: 453: cnt_dest_100ms = 0;
+"453
+[e = F897 -> -> 0 `i `uc ]
+[; ;main.c: 456: led_status_handle();
+"456
+[e ( _led_status_handle ..  ]
+[; ;main.c: 458: if (flag_is_dev_working) {
+"458
+[e $ ! _flag_is_dev_working 33  ]
+{
+[; ;main.c: 466: pwr_off_cnt++;
+"466
+[e ++ _pwr_off_cnt -> -> 1 `i `ui ]
+"468
+}
+[; ;main.c: 468: } else {
+[e $U 34  ]
+[e :U 33 ]
+{
+[; ;main.c: 470: pwr_off_cnt = 0;
+"470
+[e = _pwr_off_cnt -> -> 0 `i `ui ]
+"471
+}
+[e :U 34 ]
+"472
+}
+[e :U 32 ]
+"473
+}
+[e :U 23 ]
+[; ;main.c: 471: }
+[; ;main.c: 472: }
+[; ;main.c: 473: }
+[; ;main.c: 475: if (ADCIF) {
+"475
+[e $ ! _ADCIF 35  ]
+{
+[; ;main.c: 476: ADCIF = 0;
+"476
+[e = _ADCIF -> -> 0 `i `b ]
+[; ;main.c: 477: adc_sta = 0;
+"477
+[e = _adc_sta -> -> 0 `i `b ]
+[; ;main.c: 479: adc_val = ADB;
+"479
+[e = _adc_val -> _ADB `ui ]
+[; ;main.c: 480: adc_val <<= 4;
+"480
+[e =<< _adc_val -> 4 `i ]
+[; ;main.c: 481: adc_val += (ADR & 0x0f);
+"481
+[e =+ _adc_val -> & -> _ADR `i -> 15 `i `ui ]
+[; ;main.c: 483: if (0 == adc_val_cnt) {
+"483
+[e $ ! == -> 0 `i -> _adc_val_cnt `i 36  ]
+{
+[; ;main.c: 484: adc_val_sum = 0;
+"484
+[e = _adc_val_sum -> -> -> 0 `i `l `ul ]
+"485
+}
+[e :U 36 ]
+[; ;main.c: 485: }
+[; ;main.c: 487: adc_val_sum += adc_val;
+"487
+[e =+ _adc_val_sum -> _adc_val `ul ]
+[; ;main.c: 488: adc_val_cnt++;
+"488
+[e ++ _adc_val_cnt -> -> 1 `i `uc ]
+[; ;main.c: 489: if (adc_val_cnt >= (32)) {
+"489
+[e $ ! >= -> _adc_val_cnt `i -> 32 `i 37  ]
+{
+[; ;main.c: 490: bat_vol_tmp = ((u16)((u32)(adc_val_sum / (32)) * (2000) * (4) / 4096));
+"490
+[e = _bat_vol_tmp -> / * * / _adc_val_sum -> -> -> 32 `i `l `ul -> -> -> 2000 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 4096 `i `l `ul `ui ]
+[; ;main.c: 491: adc_val_cnt = 0;
+"491
+[e = _adc_val_cnt -> -> 0 `i `uc ]
+[; ;main.c: 493: if (0 == bat_vol) {
+"493
+[e $ ! == -> -> 0 `i `ui _bat_vol 38  ]
+{
+[; ;main.c: 495: bat_vol = bat_vol_tmp;
+"495
+[e = _bat_vol _bat_vol_tmp ]
+"496
+}
+[e :U 38 ]
+[; ;main.c: 496: }
+[; ;main.c: 498: if (flag_is_dev_working) {
+"498
+[e $ ! _flag_is_dev_working 39  ]
+{
+[; ;main.c: 500: if (bat_vol_tmp < bat_vol) {
+"500
+[e $ ! < _bat_vol_tmp _bat_vol 40  ]
+{
+[; ;main.c: 501: bat_vol = bat_vol_tmp;
+"501
+[e = _bat_vol _bat_vol_tmp ]
+"502
+}
+[e :U 40 ]
+"503
+}
+[; ;main.c: 502: }
+[; ;main.c: 503: } else {
+[e $U 41  ]
+[e :U 39 ]
+{
+[; ;main.c: 505: if (bat_vol_tmp > bat_vol) {
+"505
+[e $ ! > _bat_vol_tmp _bat_vol 42  ]
+{
+[; ;main.c: 506: bat_vol = bat_vol_tmp;
+"506
+[e = _bat_vol _bat_vol_tmp ]
+"507
+}
+[e :U 42 ]
+"508
+}
+[e :U 41 ]
+"509
+}
+[e :U 37 ]
+"510
+}
+[e :U 35 ]
+[; ;main.c: 507: }
+[; ;main.c: 508: }
+[; ;main.c: 509: }
+[; ;main.c: 510: }
+[; ;main.c: 515: }
+"515
+[e :UE 19 ]
 }

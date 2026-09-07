@@ -12,5 +12,5 @@ void timer3_init(void)
     T3IF = 0;
     T3IE = 1;
     PEIE = 1;
-    GIE = 1;
+    // GIE = 1;
 }

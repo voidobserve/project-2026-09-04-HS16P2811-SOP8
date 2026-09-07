@@ -1282,9 +1282,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user_include.h: 19: void GPIO_Init(void);
 [; ;user_include.h: 21: void System_Init(void);
 [; ;user_include.h: 23: void CLR_RAM_EveryBank(void);
-[; ;user_include.h: 31: extern volatile bit flag_is_in_charging;
-[; ;user_include.h: 32: extern volatile bit flag_is_dev_working;
-"5 D:\project\∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c
+[; ;user_include.h: 31: extern volatile bit flag_is_charge_begin;
+[; ;user_include.h: 33: extern volatile bit flag_is_in_charging;
+[; ;user_include.h: 34: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 36: extern volatile u16 pwr_off_cnt;
+[; ;user_include.h: 41: extern volatile u8 into_low_power_cnt;
+[; ;user_include.h: 44: extern volatile u8 charge_anim_phase;
+[; ;user_include.h: 47: extern volatile u16 charge_fully_cnt;
+[; ;user_include.h: 49: extern volatile u8 led_sta_refresh_cnt;
+[; ;user_include.h: 51: extern volatile u16 adc_val ;
+[; ;user_include.h: 52: extern volatile u16 bat_vol;
+"5 D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c
 [v _pen_pwr_on `(v  1 ef ]
 {
 [; ;pen_pwr_ctl.c: 4: void pen_pwr_on(void)

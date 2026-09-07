@@ -11,6 +11,6 @@ void timer1_init(void)
     T1IE = 1;                          // timer1 中断使能位
     PEIE = 1;                          // 外设 中断总使能
     T1REN = 1;                         // timer1 启动位
-    GIE = 1;                           // 总中断
+    // GIE = 1;                           // 总中断
 }
 

@@ -845,8 +845,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FVR1 `Vb  1 e@3321 ]
 "674 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
 [v _FVR0 `Vb  1 e@3320 ]
-[c E801 0 1 2 3 .. ]
-[n E801 . TIMER1_DIV_1_REG_VAL TIMER1_DIV_2_REG_VAL TIMER1_DIV_4_REG_VAL TIMER1_DIV_8_REG_VAL  ]
+[c E809 0 1 2 3 .. ]
+[n E809 . TIMER1_DIV_1_REG_VAL TIMER1_DIV_2_REG_VAL TIMER1_DIV_4_REG_VAL TIMER1_DIV_8_REG_VAL  ]
 [; ;hs16p2811.h: 39: typedef signed char s8;
 [; ;hs16p2811.h: 40: typedef signed int s16;
 [; ;hs16p2811.h: 41: typedef signed long s32;
@@ -1282,8 +1282,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user_include.h: 19: void GPIO_Init(void);
 [; ;user_include.h: 21: void System_Init(void);
 [; ;user_include.h: 23: void CLR_RAM_EveryBank(void);
-[; ;user_include.h: 31: extern volatile bit flag_is_in_charging;
-[; ;user_include.h: 32: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 31: extern volatile bit flag_is_charge_begin;
+[; ;user_include.h: 33: extern volatile bit flag_is_in_charging;
+[; ;user_include.h: 34: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 36: extern volatile u16 pwr_off_cnt;
+[; ;user_include.h: 41: extern volatile u8 into_low_power_cnt;
+[; ;user_include.h: 44: extern volatile u8 charge_anim_phase;
+[; ;user_include.h: 47: extern volatile u16 charge_fully_cnt;
+[; ;user_include.h: 49: extern volatile u8 led_sta_refresh_cnt;
+[; ;user_include.h: 51: extern volatile u16 adc_val ;
+[; ;user_include.h: 52: extern volatile u16 bat_vol;
 [; ;timer1.h: 6: enum
 [; ;timer1.h: 7: {
 [; ;timer1.h: 8: TIMER1_DIV_1_REG_VAL = 0x00,
@@ -1296,7 +1304,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer1.h: 28: TIMER1_CNT_TEST_VAL = ((u16)(((16000000UL) / 2) / (4) / ((u16)10000))),
 [; ;timer1.h: 29: };
 [; ;timer1.h: 32: void timer1_init(void);
-"4 D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c
+"4 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c
 [v _timer1_init `(v  1 ef ]
 {
 [; ;timer1.c: 3: void timer1_init(void)
@@ -1311,7 +1319,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e = _T1TH -> / - -> 65535 `ui -> / / / -> 16000000 `ul -> -> -> 2 `i `l `ul -> -> -> 4 `i `l `ul -> -> -> 10000 `i `ui `ul `ui -> -> 256 `i `ui `uc ]
 [; ;timer1.c: 9: T1CON = TIMER1_DIV_4_REG_VAL << 4;
 "9
-[e = _T1CON -> << -> . `E801 2 `i -> 4 `i `uc ]
+[e = _T1CON -> << -> . `E809 2 `i -> 4 `i `uc ]
 [; ;timer1.c: 10: T1IF = 0;
 "10
 [e = _T1IF -> -> 0 `i `b ]
@@ -1324,9 +1332,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;timer1.c: 13: T1REN = 1;
 "13
 [e = _T1REN -> -> 1 `i `b ]
-[; ;timer1.c: 14: GIE = 1;
-"14
-[e = _GIE -> -> 1 `i `b ]
 [; ;timer1.c: 15: }
 "15
 [e :UE 1 ]

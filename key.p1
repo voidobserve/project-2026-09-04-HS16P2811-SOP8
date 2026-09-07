@@ -845,32 +845,52 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FVR1 `Vb  1 e@3321 ]
 "674 D:\project\²Î¿¼ÎÄµµºÍ×ÊÁÏ\ËÕÖÝ»ªÐ¾Î¢µç×Ó\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
 [v _FVR0 `Vb  1 e@3320 ]
+"6 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _last_key_id `Vuc  1 s ]
 [c E1 0 1 .. ]
 [n E1 . KEY_ID_NONE KEY_ID_VALID  ]
-"31 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+"7 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _press_cnt `Vuc  1 s ]
+"8 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _filter_cnt `Vuc  1 s ]
+"9 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _filter_key_id `Vuc  1 s ]
+"11 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _click_delay_cnt `Vuc  1 s ]
+"12 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _click_cnt `Vuc  1 s ]
+"13 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[v _cur_key_id `Vuc  1 e ]
+"33 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
 [v _flag_is_in_charging `Vb  0 e ]
-"17 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+"17 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
 [v _led_all_off `(v  0 ef ]
-"32 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+"36 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+[v _pwr_off_cnt `Vui  0 e ]
+"41 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+[v _into_low_power_cnt `Vuc  0 e ]
+"34 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
 [v _flag_is_dev_working `Vb  0 e ]
-"5 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h
+"5 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h
 [v _pen_pwr_on `(v  0 ef ]
-"6 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h
+"49 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
+[v _led_sta_refresh_cnt `Vuc  0 e ]
+"6 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.h
 [v _pen_pwr_off `(v  0 ef ]
-"10 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+"10 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
 [v _flag_led_1_on `Vb  0 e ]
-"11 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+"11 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
 [v _flag_led_2_on `Vb  0 e ]
-"12 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+"12 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
 [v _flag_led_3_on `Vb  0 e ]
-"13 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
+"13 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
 [v _flag_led_4_on `Vb  0 e ]
 [; ;key.h: 4: enum
 [; ;key.h: 5: {
 [; ;key.h: 6: KEY_ID_NONE = 0x00,
 [; ;key.h: 7: KEY_ID_VALID,
 [; ;key.h: 8: };
-[; ;key.h: 12: void key_scan(void);
+[; ;key.h: 17: void key_scan(void);
 [; ;hs16p2811.h: 39: typedef signed char s8;
 [; ;hs16p2811.h: 40: typedef signed int s16;
 [; ;hs16p2811.h: 41: typedef signed long s32;
@@ -1306,8 +1326,16 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;user_include.h: 19: void GPIO_Init(void);
 [; ;user_include.h: 21: void System_Init(void);
 [; ;user_include.h: 23: void CLR_RAM_EveryBank(void);
-[; ;user_include.h: 31: extern volatile bit flag_is_in_charging;
-[; ;user_include.h: 32: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 31: extern volatile bit flag_is_charge_begin;
+[; ;user_include.h: 33: extern volatile bit flag_is_in_charging;
+[; ;user_include.h: 34: extern volatile bit flag_is_dev_working;
+[; ;user_include.h: 36: extern volatile u16 pwr_off_cnt;
+[; ;user_include.h: 41: extern volatile u8 into_low_power_cnt;
+[; ;user_include.h: 44: extern volatile u8 charge_anim_phase;
+[; ;user_include.h: 47: extern volatile u16 charge_fully_cnt;
+[; ;user_include.h: 49: extern volatile u8 led_sta_refresh_cnt;
+[; ;user_include.h: 51: extern volatile u16 adc_val ;
+[; ;user_include.h: 52: extern volatile u16 bat_vol;
 [; ;led.h: 10: extern volatile bit flag_led_1_on;
 [; ;led.h: 11: extern volatile bit flag_led_2_on;
 [; ;led.h: 12: extern volatile bit flag_led_3_on;
@@ -1322,293 +1350,285 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;led.h: 23: void led_refresh(void);
 [; ;pen_pwr_ctl.h: 5: void pen_pwr_on(void);
 [; ;pen_pwr_ctl.h: 6: void pen_pwr_off(void);
-"7 D:\project\ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+"6 D:\project\2026-09-04-ÆÕÁè-µçÈÝ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+[i _last_key_id
+-> . `E1 0 `uc
+]
+[; ;key.c: 6: static volatile u8 last_key_id = KEY_ID_NONE;
+"7
+[i _press_cnt
+-> -> 0 `i `uc
+]
+[; ;key.c: 7: static volatile u8 press_cnt = 0;
+"8
+[i _filter_cnt
+-> -> 0 `i `uc
+]
+[; ;key.c: 8: static volatile u8 filter_cnt = 0;
+"9
+[i _filter_key_id
+-> . `E1 0 `uc
+]
+[; ;key.c: 9: static volatile u8 filter_key_id = KEY_ID_NONE;
+"11
+[i _click_delay_cnt
+-> -> 0 `i `uc
+]
+[; ;key.c: 11: static volatile u8 click_delay_cnt = 0;
+"12
+[i _click_cnt
+-> -> 0 `i `uc
+]
+[; ;key.c: 12: static volatile u8 click_cnt = 0;
+"13
+[i _cur_key_id
+-> . `E1 0 `uc
+]
+[; ;key.c: 13: volatile u8 cur_key_id = KEY_ID_NONE;
+"26
 [v _key_scan `(v  1 ef ]
 {
-[; ;key.c: 6: void key_scan(void)
-[; ;key.c: 7: {
+[; ;key.c: 25: void key_scan(void)
+[; ;key.c: 26: {
 [e :U _key_scan ]
 [f ]
-"8
-[v F830 `Vuc  1 s last_key_id ]
-[i F830
--> . `E1 0 `uc
-]
-"9
-[v F831 `Vuc  1 s press_cnt ]
-[i F831
--> -> 0 `i `uc
-]
-"10
-[v F832 `Vuc  1 s filter_cnt ]
-[i F832
--> -> 0 `i `uc
-]
-"11
-[v F833 `Vuc  1 s filter_key_id ]
-[i F833
--> . `E1 0 `uc
-]
-"13
-[v F834 `Vuc  1 s click_delay_cnt ]
-[i F834
--> -> 0 `i `uc
-]
-"14
-[v F835 `Vuc  1 s click_cnt ]
-[i F835
--> -> 0 `i `uc
-]
-"15
-[v _cur_key_id `Vuc  1 a ]
-[; ;key.c: 8: static volatile u8 last_key_id = KEY_ID_NONE;
-[; ;key.c: 9: static volatile u8 press_cnt = 0;
-[; ;key.c: 10: static volatile u8 filter_cnt = 0;
-[; ;key.c: 11: static volatile u8 filter_key_id = KEY_ID_NONE;
-[; ;key.c: 13: static volatile u8 click_delay_cnt = 0;
-[; ;key.c: 14: static volatile u8 click_cnt = 0;
-[; ;key.c: 15: volatile u8 cur_key_id = KEY_ID_NONE;
-[e = _cur_key_id -> . `E1 0 `uc ]
-[; ;key.c: 17: if (flag_is_in_charging) {
-"17
+[; ;key.c: 27: if (flag_is_in_charging) {
+"27
 [e $ ! _flag_is_in_charging 2  ]
 {
-[; ;key.c: 19: last_key_id = 0;
-"19
-[e = F830 -> -> 0 `i `uc ]
-[; ;key.c: 20: press_cnt = 0;
-"20
-[e = F831 -> -> 0 `i `uc ]
-[; ;key.c: 21: filter_cnt = 0;
-"21
-[e = F832 -> -> 0 `i `uc ]
-[; ;key.c: 22: filter_key_id = 0;
-"22
-[e = F833 -> -> 0 `i `uc ]
-[; ;key.c: 23: click_delay_cnt = 0;
-"23
-[e = F834 -> -> 0 `i `uc ]
-[; ;key.c: 24: click_cnt = 0;
-"24
-[e = F835 -> -> 0 `i `uc ]
-[; ;key.c: 25: cur_key_id = 0;
-"25
+[; ;key.c: 29: last_key_id = 0;
+"29
+[e = _last_key_id -> -> 0 `i `uc ]
+[; ;key.c: 30: press_cnt = 0;
+"30
+[e = _press_cnt -> -> 0 `i `uc ]
+[; ;key.c: 31: filter_cnt = 0;
+"31
+[e = _filter_cnt -> -> 0 `i `uc ]
+[; ;key.c: 32: filter_key_id = 0;
+"32
+[e = _filter_key_id -> -> 0 `i `uc ]
+[; ;key.c: 33: click_delay_cnt = 0;
+"33
+[e = _click_delay_cnt -> -> 0 `i `uc ]
+[; ;key.c: 34: click_cnt = 0;
+"34
+[e = _click_cnt -> -> 0 `i `uc ]
+[; ;key.c: 35: cur_key_id = 0;
+"35
 [e = _cur_key_id -> -> 0 `i `uc ]
-[; ;key.c: 26: return;
-"26
+[; ;key.c: 36: return;
+"36
 [e $UE 1  ]
-"27
+"37
 }
 [e :U 2 ]
-[; ;key.c: 27: }
-[; ;key.c: 29: led_all_off();
-"29
+[; ;key.c: 37: }
+[; ;key.c: 39: led_all_off();
+"39
 [e ( _led_all_off ..  ]
-[; ;key.c: 31: PAHCON &= ~(0x01 << 0);
-"31
+[; ;key.c: 41: PAHCON &= ~(0x01 << 0);
+"41
 [e =& _PAHCON -> ~ << -> 1 `i -> 0 `i `uc ]
-[; ;key.c: 32: TRISA |= (0x01 << 0);
-"32
+[; ;key.c: 42: TRISA |= (0x01 << 0);
+"42
 [e =| _TRISA -> << -> 1 `i -> 0 `i `uc ]
-[; ;key.c: 34: if (1 == PA0) {
-"34
+[; ;key.c: 44: if (1 == PA0) {
+"44
 [e $ ! == -> 1 `i -> _PA0 `i 3  ]
 {
-[; ;key.c: 35: cur_key_id = KEY_ID_NONE;
-"35
+[; ;key.c: 45: cur_key_id = KEY_ID_NONE;
+"45
 [e = _cur_key_id -> . `E1 0 `uc ]
-"36
+"46
 }
-[; ;key.c: 36: } else {
+[; ;key.c: 46: } else {
 [e $U 4  ]
 [e :U 3 ]
 {
-[; ;key.c: 38: cur_key_id = KEY_ID_VALID;
-"38
+[; ;key.c: 48: cur_key_id = KEY_ID_VALID;
+"48
 [e = _cur_key_id -> . `E1 1 `uc ]
-[; ;key.c: 41: pwr_off_cnt = 0;
-[v _pwr_off_cnt `i  1 s ]
-"41
-[e = _pwr_off_cnt -> 0 `i ]
-[; ;key.c: 42: into_low_power_cnt = 0;
-[v _into_low_power_cnt `i  1 s ]
-"42
-[e = _into_low_power_cnt -> 0 `i ]
-"43
+[; ;key.c: 51: pwr_off_cnt = 0;
+"51
+[e = _pwr_off_cnt -> -> 0 `i `ui ]
+[; ;key.c: 52: into_low_power_cnt = 0;
+"52
+[e = _into_low_power_cnt -> -> 0 `i `uc ]
+"53
 }
 [e :U 4 ]
-[; ;key.c: 43: }
-[; ;key.c: 45: if (cur_key_id != filter_key_id) {
-"45
-[e $ ! != -> _cur_key_id `i -> F833 `i 5  ]
+[; ;key.c: 53: }
+[; ;key.c: 55: if (cur_key_id != filter_key_id) {
+"55
+[e $ ! != -> _cur_key_id `i -> _filter_key_id `i 5  ]
 {
-[; ;key.c: 47: filter_cnt = 0;
-"47
-[e = F832 -> -> 0 `i `uc ]
-[; ;key.c: 48: filter_key_id = cur_key_id;
-"48
-[e = F833 _cur_key_id ]
-[; ;key.c: 49: return;
-"49
+[; ;key.c: 57: filter_cnt = 0;
+"57
+[e = _filter_cnt -> -> 0 `i `uc ]
+[; ;key.c: 58: filter_key_id = cur_key_id;
+"58
+[e = _filter_key_id _cur_key_id ]
+[; ;key.c: 59: return;
+"59
 [e $UE 1  ]
-"50
+"60
 }
 [e :U 5 ]
-[; ;key.c: 50: }
-[; ;key.c: 52: if (filter_cnt < KEY_FILTER_TIMES) {
-[v _KEY_FILTER_TIMES `i  1 s ]
-"52
-[e $ ! < -> F832 `i _KEY_FILTER_TIMES 6  ]
+[; ;key.c: 60: }
+[; ;key.c: 62: if (filter_cnt < (3)) {
+"62
+[e $ ! < -> _filter_cnt `i -> 3 `i 6  ]
 {
-[; ;key.c: 55: filter_cnt++;
-"55
-[e ++ F832 -> -> 1 `i `uc ]
-[; ;key.c: 56: return;
-"56
+[; ;key.c: 65: filter_cnt++;
+"65
+[e ++ _filter_cnt -> -> 1 `i `uc ]
+[; ;key.c: 66: return;
+"66
 [e $UE 1  ]
-"57
+"67
 }
 [e :U 6 ]
-[; ;key.c: 57: }
-[; ;key.c: 60: if (last_key_id != cur_key_id) {
-"60
-[e $ ! != -> F830 `i -> _cur_key_id `i 7  ]
+[; ;key.c: 67: }
+[; ;key.c: 70: if (last_key_id != cur_key_id) {
+"70
+[e $ ! != -> _last_key_id `i -> _cur_key_id `i 7  ]
 {
-[; ;key.c: 63: if (cur_key_id == KEY_ID_NONE) {
-"63
+[; ;key.c: 73: if (cur_key_id == KEY_ID_NONE) {
+"73
 [e $ ! == -> _cur_key_id `i -> . `E1 0 `i 8  ]
 {
-[; ;key.c: 65: click_delay_cnt = 0;
-"65
-[e = F834 -> -> 0 `i `uc ]
-"66
+[; ;key.c: 75: click_delay_cnt = 0;
+"75
+[e = _click_delay_cnt -> -> 0 `i `uc ]
+"76
 }
-[; ;key.c: 66: } else
+[; ;key.c: 76: } else
 [e $U 9  ]
 [e :U 8 ]
-[; ;key.c: 68: {
-"68
+[; ;key.c: 78: {
+"78
 {
-[; ;key.c: 69: press_cnt = 0;
-"69
-[e = F831 -> -> 0 `i `uc ]
-[; ;key.c: 70: click_cnt++;
-"70
-[e ++ F835 -> -> 1 `i `uc ]
-"71
+[; ;key.c: 79: press_cnt = 0;
+"79
+[e = _press_cnt -> -> 0 `i `uc ]
+[; ;key.c: 80: click_cnt++;
+"80
+[e ++ _click_cnt -> -> 1 `i `uc ]
+"81
 }
 [e :U 9 ]
-[; ;key.c: 71: }
-[; ;key.c: 73: if (click_cnt == 1) {
-"73
-[e $ ! == -> F835 `i -> 1 `i 10  ]
+[; ;key.c: 81: }
+[; ;key.c: 83: if (click_cnt == 2) {
+"83
+[e $ ! == -> _click_cnt `i -> 2 `i 10  ]
 {
-[; ;key.c: 79: flag_is_dev_working = ~flag_is_dev_working;
-"79
+[; ;key.c: 86: flag_is_dev_working = ~flag_is_dev_working;
+"86
 [e = _flag_is_dev_working ! _flag_is_dev_working ]
-[; ;key.c: 81: if (flag_is_dev_working) {
-"81
+[; ;key.c: 88: if (flag_is_dev_working) {
+"88
 [e $ ! _flag_is_dev_working 11  ]
 {
-[; ;key.c: 82: pen_pwr_on();
-"82
+[; ;key.c: 89: pen_pwr_on();
+"89
 [e ( _pen_pwr_on ..  ]
-[; ;key.c: 84: led_sta_refresh_cnt = ((u8)(500 / 100));
-[v _led_sta_refresh_cnt `i  1 s ]
-"84
-[e = _led_sta_refresh_cnt -> -> / -> 500 `i -> 100 `i `uc `i ]
-"85
+[; ;key.c: 91: led_sta_refresh_cnt = ((u8)(500 / 100));
+"91
+[e = _led_sta_refresh_cnt -> / -> 500 `i -> 100 `i `uc ]
+"92
 }
-[; ;key.c: 85: } else {
+[; ;key.c: 92: } else {
 [e $U 12  ]
 [e :U 11 ]
 {
-[; ;key.c: 87: pen_pwr_off();
-"87
-[e ( _pen_pwr_off ..  ]
-[; ;key.c: 92: flag_led_1_on = 0;
-"92
-[e = _flag_led_1_on -> -> 0 `i `b ]
-[; ;key.c: 93: flag_led_2_on = 0;
-"93
-[e = _flag_led_2_on -> -> 0 `i `b ]
-[; ;key.c: 94: flag_led_3_on = 0;
+[; ;key.c: 94: pen_pwr_off();
 "94
+[e ( _pen_pwr_off ..  ]
+[; ;key.c: 98: flag_led_1_on = 0;
+"98
+[e = _flag_led_1_on -> -> 0 `i `b ]
+[; ;key.c: 99: flag_led_2_on = 0;
+"99
+[e = _flag_led_2_on -> -> 0 `i `b ]
+[; ;key.c: 100: flag_led_3_on = 0;
+"100
 [e = _flag_led_3_on -> -> 0 `i `b ]
-[; ;key.c: 95: flag_led_4_on = 0;
-"95
+[; ;key.c: 101: flag_led_4_on = 0;
+"101
 [e = _flag_led_4_on -> -> 0 `i `b ]
-"106
+"107
 }
 [e :U 12 ]
-[; ;key.c: 106: }
-[; ;key.c: 109: click_cnt = 0;
-"109
-[e = F835 -> -> 0 `i `uc ]
+[; ;key.c: 107: }
+[; ;key.c: 110: click_cnt = 0;
 "110
-}
-[e :U 10 ]
+[e = _click_cnt -> -> 0 `i `uc ]
 "111
 }
-[; ;key.c: 110: }
-[; ;key.c: 111: } else {
+[e :U 10 ]
+"112
+}
+[; ;key.c: 111: }
+[; ;key.c: 112: } else {
 [e $U 13  ]
 [e :U 7 ]
 {
-[; ;key.c: 116: if (cur_key_id == KEY_ID_NONE) {
-"116
+[; ;key.c: 117: if (cur_key_id == KEY_ID_NONE) {
+"117
 [e $ ! == -> _cur_key_id `i -> . `E1 0 `i 14  ]
 {
-[; ;key.c: 117: if (click_cnt > 0) {
-"117
-[e $ ! > -> F835 `i -> 0 `i 15  ]
-{
-[; ;key.c: 118: if (click_delay_cnt >= KEY_CLICK_DELAY_TIME) {
-[v _KEY_CLICK_DELAY_TIME `i  1 s ]
+[; ;key.c: 118: if (click_cnt > 0) {
 "118
-[e $ ! >= -> F834 `i _KEY_CLICK_DELAY_TIME 16  ]
+[e $ ! > -> _click_cnt `i -> 0 `i 15  ]
 {
-[; ;key.c: 120: click_cnt = 0;
-"120
-[e = F835 -> -> 0 `i `uc ]
+[; ;key.c: 119: if (click_delay_cnt >= ((u8)((u16)300 / 10))) {
+"119
+[e $ ! >= -> _click_delay_cnt `i -> -> / -> -> 300 `i `ui -> -> 10 `i `ui `uc `i 16  ]
+{
+[; ;key.c: 121: click_cnt = 0;
 "121
+[e = _click_cnt -> -> 0 `i `uc ]
+"122
 }
-[; ;key.c: 121: } else {
+[; ;key.c: 122: } else {
 [e $U 17  ]
 [e :U 16 ]
 {
-[; ;key.c: 122: if (click_delay_cnt < 255) {
-"122
-[e $ ! < -> F834 `i -> 255 `i 18  ]
+[; ;key.c: 123: if (click_delay_cnt < 255) {
+"123
+[e $ ! < -> _click_delay_cnt `i -> 255 `i 18  ]
 {
-[; ;key.c: 124: click_delay_cnt++;
-"124
-[e ++ F834 -> -> 1 `i `uc ]
+[; ;key.c: 125: click_delay_cnt++;
 "125
-}
-[e :U 18 ]
+[e ++ _click_delay_cnt -> -> 1 `i `uc ]
 "126
 }
-[e :U 17 ]
+[e :U 18 ]
 "127
 }
-[e :U 15 ]
+[e :U 17 ]
 "128
 }
-[; ;key.c: 125: }
+[e :U 15 ]
+"129
+}
 [; ;key.c: 126: }
 [; ;key.c: 127: }
-[; ;key.c: 128: } else {
+[; ;key.c: 128: }
+[; ;key.c: 129: }
 [e $U 19  ]
+"132
 [e :U 14 ]
+[; ;key.c: 132: else {
 {
 [; ;key.c: 134: if (press_cnt < 255) {
 "134
-[e $ ! < -> F831 `i -> 255 `i 20  ]
+[e $ ! < -> _press_cnt `i -> 255 `i 20  ]
 {
 [; ;key.c: 135: press_cnt++;
 "135
-[e ++ F831 -> -> 1 `i `uc ]
+[e ++ _press_cnt -> -> 1 `i `uc ]
 "136
 }
 [e :U 20 ]
@@ -1623,7 +1643,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;key.c: 138: }
 [; ;key.c: 140: last_key_id = cur_key_id;
 "140
-[e = F830 _cur_key_id ]
+[e = _last_key_id _cur_key_id ]
 [; ;key.c: 141: }
 "141
 [e :UE 1 ]

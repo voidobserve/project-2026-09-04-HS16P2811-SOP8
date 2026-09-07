@@ -12,17 +12,18 @@
 	; --WARNFORMAT=warnning:%f(%l):(%n) %s \
 	; --MSGFORMAT=message:%f(%l):(%n) %s --ASMLIST \
 	; -L-preset_vec=00h,intentry=04h,init,end_init \
-	; -MD:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT.map \
-	; -OD:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT \
+	; -MD:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT.map \
+	; -OD:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT \
 	; -ID:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include \
-	; -ID:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8 \
-	; -ID:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c \
-	; D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c \
+	; -ID:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8 \
+	; -ID:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer1.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\pen_pwr_ctl.c \
+	; D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\adc.c \
 	; --OPT=debug
 	;
 

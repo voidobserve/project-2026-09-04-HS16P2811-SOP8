@@ -19,6 +19,7 @@
       <file>\timer3.c</file>
       <file>\key.c</file>
       <file>\pen_pwr_ctl.c</file>
+      <file>\adc.c</file>
     </folder>
   </folder>
   <properies />

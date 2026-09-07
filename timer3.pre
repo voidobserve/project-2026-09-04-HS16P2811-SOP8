@@ -1,5 +1,5 @@
 
-# 1 "D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c"
+# 1 "D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c"
 
 # 39 "D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h"
 typedef signed char s8;
@@ -605,7 +605,7 @@ volatile bit FVR2 @ ((unsigned) & VRCON * 8) + 2;
 volatile bit FVR1 @ ((unsigned) & VRCON * 8) + 1;
 volatile bit FVR0 @ ((unsigned) & VRCON * 8) + 0;
 
-# 19 "D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h"
+# 19 "D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h"
 void GPIO_Init(void);
 
 void System_Init(void);
@@ -613,10 +613,28 @@ void System_Init(void);
 void CLR_RAM_EveryBank(void);
 
 # 31
+extern volatile bit flag_is_charge_begin;
+
 extern volatile bit flag_is_in_charging;
 extern volatile bit flag_is_dev_working;
 
-# 6 "D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.h"
+extern volatile u16 pwr_off_cnt;
+
+# 41
+extern volatile u8 into_low_power_cnt;
+
+
+extern volatile u8 charge_anim_phase;
+
+
+extern volatile u16 charge_fully_cnt;
+
+extern volatile u8 led_sta_refresh_cnt;
+
+extern volatile u16 adc_val ;
+extern volatile u16 bat_vol;
+
+# 6 "D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.h"
 enum
 {
 TIMER3_DIV_128_REG_VAL = 0x00,
@@ -637,7 +655,7 @@ TIMER3_CNT_TEST_VAL = ((u16)(((16000000UL) / 2) / 2 / (4) / ((u16)1000))),
 
 void timer3_init(void);
 
-# 3 "D:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c"
+# 3 "D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\timer3.c"
 void timer3_init(void)
 {
 T3C0 = 0;
@@ -650,5 +668,5 @@ T3REN = 1;
 T3IF = 0;
 T3IE = 1;
 PEIE = 1;
-GIE = 1;
+
 }

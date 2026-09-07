@@ -6,7 +6,7 @@ Linker command line:
   --edf=D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\PICC\dat\en_msgs.txt \
   -cs -h+HS16P2811_PROJECT.sym -z -Q16F685 -ol.obj \
   -preset_vec=00h,intentry=04h,init,end_init \
-  -MD:\project\普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT.map \
+  -MD:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\HS16P2811_PROJECT.map \
   -E1 -ACONST=00h-0FFhx8 -ACODE=00h-07FFh -ASTRCODE=00h-07FFh \
   -AENTRY=00h-0FFhx8 -ASTRING=00h-0FFhx8 -ABANK0=020h-06Fh \
   -ABANK1=0A0h-0BFh -ARAM=020h-06Fh,0A0h-0BFh -AABS1=020h-07Fh,0A0h-0BFh \
@@ -23,39 +23,71 @@ Machine type is 16F685
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-startup.obj     end_init                              A        A        1        8       0
+startup.obj     end_init                              E        E        1        8       0
                 reset_vec                             0        0        1        0       0
 HS16P2811_PROJECT.obj
-                intentry                              4        4        6        8       0
-                text107                              44       44       1E        8       0
-                text106                              BC       BC        C        8       0
-                text105                              9C       9C       12        8       0
-                text104                              77       77       13        8       0
-                text103                               B        B       39        8       0
-                text102                              AE       AE        E        8       0
-                text101                              8A       8A       12        8       0
-                maintext                             62       62       15        8       0
+                intentry                              4        4        A        8       0
+                text689                             475      475        5        8       0
+                text688                             46A      46A        6        8       0
+                text687                             12E      12E      119        8       0
+                text686                             459      459        9        8       0
+                text685                             450      450        9        8       0
+                text684                             447      447        9        8       0
+                text683                             43E      43E        9        8       0
+                text682                             470      470        5        8       0
+                text681                             355      355       3A        8       0
+                swtext1                             47A      47A        4      8F4       0
+                text680                             38F      38F       34        8       0
+                text679                             247      247       77        8       0
+                text678                               F        F      11F        8       0
+                text677                             3D7      3D7       13        8       0
+                text676                             3EA      3EA       12        8       0
+                text675                             31A      31A       3B        8       0
+                text674                             428      428        C        8       0
+                text673                             41B      41B        D        8       0
+                text672                             3FC      3FC       11        8       0
+                text671                             40D      40D        E        8       0
+                text670                             3C3      3C3       14        8       0
+                maintext                            2BE      2BE       5C        8       0
+                cstackBANK0                          3D       3D       11       20       1
                 cstackCOMMON                         70       70        C       70       1
-                bssCOMMON                            7D       7D        1       70       1
-                bitbssCOMMON                        3E0       7C        5       70       1     8
-                cinit                                C8       C8        4        8       0
+                clrtext                             462      462        8        8       0
+                bssBANK0                             20       20       1D       20       1
+                bitbssBANK0                         270       4E        1       20       1     8
+                bitbssCOMMON                        3E0       7C        A       70       1     8
+                cinit                               434      434        A        8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CONST          
+                swtext1                             47A      47A        4         0
 
         CLASS   CODE           
-                end_init                              A        A        1         0
-                intentry                              4        4        6         0
+                end_init                              E        E        1         0
+                intentry                              4        4        A         0
                 reset_vec                             0        0        1         0
-                text107                              44       44       1E         0
-                text106                              BC       BC        C         0
-                text105                              9C       9C       12         0
-                text104                              77       77       13         0
-                text103                               B        B       39         0
-                text102                              AE       AE        E         0
-                text101                              8A       8A       12         0
-                maintext                             62       62       15         0
-                cinit                                C8       C8        4         0
+                text689                             475      475        5         0
+                text688                             46A      46A        6         0
+                text687                             12E      12E      119         0
+                text686                             459      459        9         0
+                text685                             450      450        9         0
+                text684                             447      447        9         0
+                text683                             43E      43E        9         0
+                text682                             470      470        5         0
+                text681                             355      355       3A         0
+                text680                             38F      38F       34         0
+                text679                             247      247       77         0
+                text678                               F        F      11F         0
+                text677                             3D7      3D7       13         0
+                text676                             3EA      3EA       12         0
+                text675                             31A      31A       3B         0
+                text674                             428      428        C         0
+                text673                             41B      41B        D         0
+                text672                             3FC      3FC       11         0
+                text671                             40D      40D        E         0
+                text670                             3C3      3C3       14         0
+                maintext                            2BE      2BE       5C         0
+                clrtext                             462      462        8         0
+                cinit                               434      434        A         0
 
         CLASS   STRCODE        
 
@@ -64,6 +96,9 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   STRING         
 
         CLASS   BANK0          
+                cstackBANK0                          3D       3D       11         1
+                bssBANK0                             20       20       1D         1
+                bitbssBANK0                         270       4E        1         1
 
         CLASS   BANK1          
 
@@ -74,8 +109,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 
         CLASS   COMMON         
                 cstackCOMMON                         70       70        C         1
-                bssCOMMON                            7D       7D        1         1
-                bitbssCOMMON                        3E0       7C        5         1
+                bitbssCOMMON                        3E0       7C        A         1
 
         CLASS   SFR0           
 
@@ -100,61 +134,107 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000001  000001         0       0  CODE        2
-                intentry                       000004  0000C8  0000CC         8       0  CODE        2
+                intentry                       000004  000476  00047A         8       0  CODE        2
+                bssBANK0                       000020  00002F  00004F        20       1  BANK0       1
                 cstackCOMMON                   000070  00000E  00007E        70       1  COMMON      1
+                swtext1                        00047A  000004  00047E       8F4       0  CONST       2
 
 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            020-06F            50           1
+        BANK0            04F-06F            21           1
         BANK1            0A0-0BF            20           1
         CODE             001-003             3           2
-                         0CC-7FF           734
+                         47E-7FF           382
         CONFIG           2007-2007             1           2
         CONST            001-003             3           2
-                         0CC-7FF           100
+                         47E-7FF           100
         ENTRY            001-003             3           2
-                         0CC-7FF           100
+                         47E-7FF           100
         IDLOC            2000-2003             4           2
-        RAM              020-06F            50           1
+        RAM              04F-06F            21           1
                          0A0-0BF            20
         SFR0             000-01F            20           1
         SFR1             080-09F            20           1
         SFR2             100-16F            70           1
         SFR3             180-1EF            70           1
         STRCODE          001-003             3           2
-                         0CC-7FF           734
+                         47E-7FF           382
         STRING           001-003             3           2
-                         0CC-7FF           100
+                         47E-7FF           100
 
                                   Symbol Table
 
-??_CLR_RAM_EveryBank        cstackCOMMON 072
-??_GPIO_Init                cstackCOMMON 072
-??_System_Init              cstackCOMMON 072
-??_delay_ms                 cstackCOMMON 076
-??_main                     cstackCOMMON 07C
-??_myIsr                    cstackCOMMON 070
-??_timer1_init              cstackCOMMON 072
-??_timer3_init              cstackCOMMON 072
+??_CLR_RAM_EveryBank        cstackBANK0  044
+??_GPIO_Init                cstackBANK0  044
+??_System_Init              cstackBANK0  044
+??___lmul                   cstackCOMMON 078
+??_adc_init                 cstackBANK0  044
+??_delay_ms                 cstackBANK0  048
+??_key_scan                 cstackCOMMON 070
+??_led1_on                  cstackCOMMON 070
+??_led2_on                  cstackCOMMON 070
+??_led3_on                  cstackCOMMON 070
+??_led4_on                  cstackCOMMON 070
+??_led_all_off              cstackCOMMON 070
+??_led_refresh              cstackCOMMON 070
+??_led_status_handle        cstackCOMMON 070
+??_main                     cstackBANK0  04E
+??_myIsr                    cstackBANK0  03D
+??_pen_pwr_off              cstackCOMMON 070
+??_pen_pwr_on               cstackCOMMON 070
+??_timer1_init              cstackBANK0  044
+??_timer3_init              cstackBANK0  044
+??_user_init                cstackBANK0  04E
 ?_CLR_RAM_EveryBank         cstackCOMMON 070
 ?_GPIO_Init                 cstackCOMMON 070
 ?_System_Init               cstackCOMMON 070
-?_delay_ms                  cstackCOMMON 072
+?___lmul                    cstackCOMMON 070
+?_adc_init                  cstackCOMMON 070
+?_delay_ms                  cstackBANK0  044
+?_key_scan                  cstackCOMMON 070
+?_led1_on                   cstackCOMMON 070
+?_led2_on                   cstackCOMMON 070
+?_led3_on                   cstackCOMMON 070
+?_led4_on                   cstackCOMMON 070
+?_led_all_off               cstackCOMMON 070
+?_led_refresh               cstackCOMMON 070
+?_led_status_handle         cstackCOMMON 070
 ?_main                      cstackCOMMON 070
 ?_myIsr                     cstackCOMMON 070
+?_pen_pwr_off               cstackCOMMON 070
+?_pen_pwr_on                cstackCOMMON 070
 ?_timer1_init               cstackCOMMON 070
 ?_timer3_init               cstackCOMMON 070
-_CLR_RAM_EveryBank          text105      09C
+?_user_init                 cstackCOMMON 070
+_ADB                        (abs)        01C
+_ADCIE                      (abs)        466
+_ADCIF                      (abs)        066
+_ADENB                      (abs)        0DF
+_ADM                        (abs)        01B
+_ADR                        (abs)        01D
+_ADS                        (abs)        0DE
+_CLKMD                      (abs)        4A0
+_CLR_RAM_EveryBank          text676      3EA
+_EOC                        (abs)        0DD
 _FSR                        (abs)        004
+_GCHS                       (abs)        0DC
 _GIE                        (abs)        05F
-_GPIO_Init                  text104      077
+_GPIO_Init                  text677      3D7
 _INDF                       (abs)        000
 _INTCON                     (abs)        00B
 _OPTIONR                    (abs)        081
+_OSCM                       (abs)        094
+_PA0                        (abs)        028
+_PA1                        (abs)        029
+_PA2                        (abs)        02A
+_PA5                        (abs)        02D
+_PA6                        (abs)        02E
 _PADCON                     (abs)        093
 _PAHCON                     (abs)        092
+_PAIE                       (abs)        05B
+_PAIF                       (abs)        058
 _PAODCON                    (abs)        095
 _PCDCON                     (abs)        013
 _PCHCON                     (abs)        012
@@ -165,8 +245,10 @@ _PIR1                       (abs)        00C
 _PIR2                       (abs)        00D
 _PORTA                      (abs)        005
 _PORTC                      (abs)        007
+_SLCON                      (abs)        4A3
 _STATUS                     (abs)        003
-_System_Init                text106      0BC
+_STPHX                      (abs)        4A1
+_System_Init                text671      40D
 _T1CON                      (abs)        09B
 _T1IE                       (abs)        460
 _T1IF                       (abs)        060
@@ -183,6 +265,7 @@ _T3TH                       (abs)        113
 _T3TL                       (abs)        112
 _TRISA                      (abs)        085
 _TRISC                      (abs)        087
+_VREFH                      (abs)        01F
 _WDTE                       (abs)        477
 _WUACON                     (abs)        08F
 __Habs1                     abs1         000
@@ -190,20 +273,22 @@ __Hbank0                    bank0        000
 __Hbank1                    bank1        000
 __Hbank2                    bank2        000
 __Hbank3                    bank3        000
+__HbitbssBANK0              bitbssBANK0  000
 __HbitbssCOMMON             bitbssCOMMON 000
-__HbssCOMMON                bssCOMMON    000
+__HbssBANK0                 bssBANK0     000
 __Hcinit                    cinit        000
 __Hclrtext                  clrtext      000
 __Hcode                     code         000
 __Hcommon                   common       000
 __Hconfig                   config       000
+__HcstackBANK0              cstackBANK0  000
 __HcstackCOMMON             cstackCOMMON 000
 __Heeprom_data              eeprom_data  000
-__Hend_init                 end_init     00B
+__Hend_init                 end_init     00F
 __Hfunctab                  functab      000
 __Hidloc                    idloc        000
-__Hinit                     init         00A
-__Hintentry                 intentry     00A
+__Hinit                     init         00E
+__Hintentry                 intentry     00E
 __Hmaintext                 maintext     000
 __Hpowerup                  powerup      000
 __Hram                      ram          000
@@ -219,19 +304,21 @@ __Lbank0                    bank0        000
 __Lbank1                    bank1        000
 __Lbank2                    bank2        000
 __Lbank3                    bank3        000
+__LbitbssBANK0              bitbssBANK0  000
 __LbitbssCOMMON             bitbssCOMMON 000
-__LbssCOMMON                bssCOMMON    000
+__LbssBANK0                 bssBANK0     000
 __Lcinit                    cinit        000
 __Lclrtext                  clrtext      000
 __Lcode                     code         000
 __Lcommon                   common       000
 __Lconfig                   config       000
+__LcstackBANK0              cstackBANK0  000
 __LcstackCOMMON             cstackCOMMON 000
 __Leeprom_data              eeprom_data  000
-__Lend_init                 end_init     00A
+__Lend_init                 end_init     00E
 __Lfunctab                  functab      000
 __Lidloc                    idloc        000
-__Linit                     init         00A
+__Linit                     init         00E
 __Lintentry                 intentry     004
 __Lmaintext                 maintext     000
 __Lpowerup                  powerup      000
@@ -243,53 +330,135 @@ __Lsfr2                     sfr2         000
 __Lsfr3                     sfr3         000
 __Lstrings                  strings      000
 __Ltext                     text         000
-__S0                        (abs)        0CC
+__S0                        (abs)        47E
 __S1                        (abs)        07E
-__end_of_CLR_RAM_EveryBank  text105      0AE
-__end_of_GPIO_Init          text104      08A
-__end_of_System_Init        text106      0C8
-__end_of_delay_ms           text103      044
-__end_of_main               maintext     077
-__end_of_myIsr              text107      062
-__end_of_timer1_init        text102      0BC
-__end_of_timer3_init        text101      09C
+___lmul                     text681      355
+___lmul@multiplicand        cstackCOMMON 074
+___lmul@multiplier          cstackCOMMON 070
+___lmul@product             cstackCOMMON 078
+__end_of_CLR_RAM_EveryBank  text676      3FC
+__end_of_GPIO_Init          text677      3EA
+__end_of_System_Init        text671      41B
+__end_of___lmul             text681      38F
+__end_of_adc_init           text674      434
+__end_of_delay_ms           text675      355
+__end_of_key_scan           text679      2BE
+__end_of_led1_on            text686      462
+__end_of_led2_on            text685      459
+__end_of_led3_on            text684      450
+__end_of_led4_on            text683      447
+__end_of_led_all_off        text688      470
+__end_of_led_refresh        text680      3C3
+__end_of_led_status_handle  text687      247
+__end_of_main               maintext     31A
+__end_of_myIsr              text678      12E
+__end_of_pen_pwr_off        text689      47A
+__end_of_pen_pwr_on         text682      475
+__end_of_timer1_init        text673      428
+__end_of_timer3_init        text672      40D
+__end_of_user_init          text670      3D7
+__pbitbssBANK0              bitbssBANK0  270
 __pbitbssCOMMON             bitbssCOMMON 3E0
-__pbssCOMMON                bssCOMMON    07D
+__pbssBANK0                 bssBANK0     020
+__pcstackBANK0              cstackBANK0  03D
 __pcstackCOMMON             cstackCOMMON 070
 __pintentry                 intentry     004
-__pmaintext                 maintext     062
-__ptext100                  text100      000
-__ptext101                  text101      08A
-__ptext102                  text102      0AE
-__ptext103                  text103      00B
-__ptext104                  text104      077
-__ptext105                  text105      09C
-__ptext106                  text106      0BC
-__ptext107                  text107      044
-__ptext108                  text108      000
+__pmaintext                 maintext     2BE
+__pswtext1                  swtext1      47A
+__ptext669                  text669      000
+__ptext670                  text670      3C3
+__ptext671                  text671      40D
+__ptext672                  text672      3FC
+__ptext673                  text673      41B
+__ptext674                  text674      428
+__ptext675                  text675      31A
+__ptext676                  text676      3EA
+__ptext677                  text677      3D7
+__ptext678                  text678      00F
+__ptext679                  text679      247
+__ptext680                  text680      38F
+__ptext681                  text681      355
+__ptext682                  text682      470
+__ptext683                  text683      43E
+__ptext684                  text684      447
+__ptext685                  text685      450
+__ptext686                  text686      459
+__ptext687                  text687      12E
+__ptext688                  text688      46A
+__ptext689                  text689      475
+__ptext690                  text690      000
 __size_of_CLR_RAM_EveryBank (abs)        000
 __size_of_GPIO_Init         (abs)        000
 __size_of_System_Init       (abs)        000
+__size_of___lmul            (abs)        000
+__size_of_adc_init          (abs)        000
 __size_of_delay_ms          (abs)        000
+__size_of_key_scan          (abs)        000
+__size_of_led1_on           (abs)        000
+__size_of_led2_on           (abs)        000
+__size_of_led3_on           (abs)        000
+__size_of_led4_on           (abs)        000
+__size_of_led_all_off       (abs)        000
+__size_of_led_refresh       (abs)        000
+__size_of_led_status_handle (abs)        000
 __size_of_main              (abs)        000
 __size_of_myIsr             (abs)        000
+__size_of_pen_pwr_off       (abs)        000
+__size_of_pen_pwr_on        (abs)        000
 __size_of_timer1_init       (abs)        000
 __size_of_timer3_init       (abs)        000
-_delay_ms                   text103      00B
-_exit                       init         00A
-_flag_is_led_show_enable    bitbssCOMMON 3E0
-_flag_led_1_on              bitbssCOMMON 3E1
-_flag_led_2_on              bitbssCOMMON 3E2
-_flag_led_3_on              bitbssCOMMON 3E3
-_flag_led_4_on              bitbssCOMMON 3E4
-_main                       maintext     062
-_myIsr                      text107      044
-_timer1_init                text102      0AE
-_timer3_init                text101      08A
+__size_of_user_init         (abs)        000
+_adc_enable                 bitbssCOMMON 3E0
+_adc_init                   text674      428
+_adc_sta                    bitbssCOMMON 3E1
+_adc_val                    bssBANK0     020
+_adc_val_cnt                bssBANK0     02A
+_adc_val_sum                bssBANK0     039
+_bat_vol                    bssBANK0     022
+_bat_vol_tmp                bssBANK0     024
+_charge_anim_phase          bssBANK0     02B
+_charge_fully_cnt           bssBANK0     026
+_click_cnt                  bssBANK0     02C
+_click_delay_cnt            bssBANK0     02D
+_cur_key_id                 bssBANK0     02E
+_delay_ms                   text675      31A
+_exit                       init         00E
+_filter_cnt                 bssBANK0     02F
+_filter_key_id              bssBANK0     030
+_flag_is_charge_begin       bitbssBANK0  270
+_flag_is_dev_working        bitbssCOMMON 3E2
+_flag_is_in_charging        bitbssCOMMON 3E3
+_flag_is_led_show_enable    bitbssCOMMON 3E4
+_flag_led_1_on              bitbssCOMMON 3E5
+_flag_led_2_on              bitbssCOMMON 3E6
+_flag_led_3_on              bitbssCOMMON 3E7
+_flag_led_4_on              bitbssCOMMON 3E8
+_into_low_power_cnt         bssBANK0     031
+_key_scan                   text679      247
+_last_key_id                bssBANK0     032
+_last_vibration_sensor_lev  bitbssCOMMON 3E9
+_led1_on                    text686      459
+_led2_on                    text685      450
+_led3_on                    text684      447
+_led4_on                    text683      43E
+_led_all_off                text688      46A
+_led_refresh                text680      38F
+_led_sta_refresh_cnt        bssBANK0     033
+_led_status_handle          text687      12E
+_main                       maintext     2BE
+_myIsr                      text678      00F
+_pen_pwr_off                text689      475
+_pen_pwr_on                 text682      470
+_press_cnt                  bssBANK0     034
+_pwr_off_cnt                bssBANK0     028
+_timer1_init                text673      41B
+_timer3_init                text672      3FC
+_user_init                  text670      3C3
 btemp                       (abs)        07E
-delay_ms@i                  cstackCOMMON 07A
-delay_ms@xms                cstackCOMMON 072
-end_of_initialization       cinit        0CA
+clear_ram                   clrtext      462
+delay_ms@i                  cstackBANK0  04C
+delay_ms@xms                cstackBANK0  044
+end_of_initialization       cinit        43C
 interrupt_function          intentry     004
 intlevel0                   functab      000
 intlevel1                   functab      000
@@ -297,9 +466,12 @@ intlevel2                   functab      000
 intlevel3                   functab      000
 intlevel4                   functab      000
 intlevel5                   functab      000
-led_refresh@sta             bssCOMMON    07D
+led_refresh@sta             bssBANK0     035
+myIsr@cnt_dest_100ms        bssBANK0     036
+myIsr@cnt_dest_10ms         bssBANK0     037
+myIsr@is_not_charge_cnt     bssBANK0     038
 reset_vec                   reset_vec    000
 saved_w                     (abs)        07E
-start                       init         00A
-start_initialization        cinit        0C8
+start                       init         00E
+start_initialization        cinit        434
 wtemp0                      (abs)        07E
