@@ -22,11 +22,11 @@
 #define CHARGE_PIN           PA5 // 充电检测引脚
 #define VIBRATION_SENSOR_PIN PA7 // 振动传感器检测脚
 
-#define BAT_VOL_DEAD_ZONE (50)        // 电池电压检测死区
+// #define BAT_VOL_DEAD_ZONE (50)        // 电池电压检测死区
 #define BAT_VOL_OFF       (2900)      // 关机电压
 #define BAT_VOL_LOW       (3200)      // 低电量提示电压
 #define BAT_VOL_NEAR_FULL (4100)      // 接近满电的电压
-#define BAT_VOL_FULL      (4200 - 20) // 满电电压
+#define BAT_VOL_FULL      (4200 - 50) // 满电电压
 #if (PRODUCT_TYPE == PRODUCT_TYPE_P004_JW ||                                   \
      PRODUCT_TYPE == PRODUCT_TYPE_P004_DW ||                                   \
      PRODUCT_TYPE == PRODUCT_TYPE_P004_DS)

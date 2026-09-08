@@ -230,7 +230,9 @@ void key_scan(void)
                 flag_led_3_on = 0;
                 flag_led_4_on = 0;
 #elif 1
-#error "PRODUCT_TYPE error"
+// 这里提示报错，只作为未来预留的代码，需要添加对应的功能
+// 如果有三个指示灯，并且是单击开关机的产品：
+#error "PRODUCT_TYPE error" 
                 // #elif (PRODUCT_TYPE == 只有三个指示灯的设备对应的宏)
 
                 // 如果只有三个指示灯

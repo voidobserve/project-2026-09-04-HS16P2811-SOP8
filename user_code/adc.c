@@ -7,7 +7,7 @@ void adc_init(void)
     ADR = 0;          // adc 时钟源 == Fcpu / 16
     ADM |= 0x0C << 0; // AIN 通道选择 1/4 VDD
     GCHS = 1;         // 使能 AIN 通道
-    VREFH = 0;        // 使能内部参考电压，参考电压选择 内部0.2V
+    VREFH = 0;        // 使能内部参考电压，参考电压选择 内部 2.0 V
     ADENB = 1;        // 使能 adc
     ADCIF = 0;        // 清除 adc 中断标志
     ADCIE = 1;        // 使能 adc 中断

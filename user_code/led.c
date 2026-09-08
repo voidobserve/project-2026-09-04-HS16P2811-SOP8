@@ -176,8 +176,7 @@ void led_refresh(void)
  * 
  */
 void led_status_handle(void)
-{
-    // TODO 待适配
+{ 
     led_sta_refresh_cnt++;
     if (led_sta_refresh_cnt >= LED_STA_REFRESH_TIME) {
         led_sta_refresh_cnt = 0;
@@ -186,23 +185,20 @@ void led_status_handle(void)
 
             // 如果刚进入充电，执行跑马灯动画，到对应的电压后停止
             if (flag_is_charge_begin) {
+                // TODO  待整理充电判断逻辑
                 if (bat_vol < BAT_VOL_1) {
-                    flag_is_charge_begin = 0;
-                    /**
-                     *  退出刚开始充电的动画之后，需要立即进入对应的处理
-                     *  这里给计数值恢复成 500 ms 
-                     */
-                    led_sta_refresh_cnt = LED_STA_REFRESH_TIME;
-                } else if (bat_vol < BAT_VOL_2 && charge_anim_phase == 0) {
+                    // 退出刚开始充电的动画，直接进入充电闪烁指示灯的动画
+                    flag_is_charge_begin = 0; 
+                } else if (bat_vol >= BAT_VOL_1 && charge_anim_phase == 0) {
                     flag_led_1_on = 1;
                     charge_anim_phase = 1;
-                } else if (bat_vol < BAT_VOL_3 && charge_anim_phase == 1) {
+                } else if (bat_vol >= BAT_VOL_1 && charge_anim_phase == 1) {
                     flag_led_2_on = 1;
                     charge_anim_phase = 2;
-                } else if (bat_vol < BAT_VOL_FULL && charge_anim_phase == 2) {
+                } else if (bat_vol >= BAT_VOL_2 && charge_anim_phase == 2) {
                     flag_led_3_on = 1;
                     charge_anim_phase = 3;
-                } else if (bat_vol < BAT_VOL_FULL && charge_anim_phase == 3) {
+                } else if (bat_vol >= BAT_VOL_3 && charge_anim_phase == 3) {
                     flag_led_4_on = 1;
                     charge_anim_phase = 4;
                 } else {
@@ -313,19 +309,15 @@ void led_status_handle(void)
             // 如果刚进入充电，执行跑马灯动画，到对应的电压后停止
             if (flag_is_charge_begin) {
                 if (bat_vol < BAT_VOL_1) {
-                    flag_is_charge_begin = 0;
-                    /**
-                     *  退出刚开始充电的动画之后，需要立即进入对应的处理
-                     *  这里给计数值恢复成 500 ms 
-                     */
-                    led_sta_refresh_cnt = LED_STA_REFRESH_TIME;
-                } else if (bat_vol < BAT_VOL_2 && charge_anim_phase == 0) {
+                    // 退出刚开始充电的动画，直接进入充电闪烁指示灯的动画
+                    flag_is_charge_begin = 0; 
+                } else if (bat_vol >= BAT_VOL_1 && charge_anim_phase == 0) {
                     flag_led_2_on = 1;
                     charge_anim_phase = 1;
-                } else if (bat_vol < BAT_VOL_FULL && charge_anim_phase == 1) {
+                } else if (bat_vol >= BAT_VOL_1 && charge_anim_phase == 1) {
                     flag_led_3_on = 1;
                     charge_anim_phase = 2;
-                } else if (bat_vol < BAT_VOL_FULL && charge_anim_phase == 2) {
+                } else if (bat_vol >= BAT_VOL_2 && charge_anim_phase == 2) {
                     flag_led_4_on = 1;
                     charge_anim_phase = 3;
                 } else {
