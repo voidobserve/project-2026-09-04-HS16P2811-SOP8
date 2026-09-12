@@ -647,7 +647,7 @@ PA6 = 0;
 
 void pen_pwr_off(void)
 {
-PAHCON &= ~(0x01 << 6);
-PADCON &= ~(0x01 << 6);
+PAHCON |= (0x01 << 6);
+PADCON |= (0x01 << 6);
 TRISA |= (0x01 << 6);
 }

@@ -1316,12 +1316,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pen_pwr_ctl.c: 11: {
 [e :U _pen_pwr_off ]
 [f ]
-[; ;pen_pwr_ctl.c: 12: PAHCON &= ~(0x01 << 6);
+[; ;pen_pwr_ctl.c: 12: PAHCON |= (0x01 << 6);
 "12
-[e =& _PAHCON -> ~ << -> 1 `i -> 6 `i `uc ]
-[; ;pen_pwr_ctl.c: 13: PADCON &= ~(0x01 << 6);
+[e =| _PAHCON -> << -> 1 `i -> 6 `i `uc ]
+[; ;pen_pwr_ctl.c: 13: PADCON |= (0x01 << 6);
 "13
-[e =& _PADCON -> ~ << -> 1 `i -> 6 `i `uc ]
+[e =| _PADCON -> << -> 1 `i -> 6 `i `uc ]
 [; ;pen_pwr_ctl.c: 14: TRISA |= (0x01 << 6);
 "14
 [e =| _TRISA -> << -> 1 `i -> 6 `i `uc ]

@@ -6,7 +6,7 @@
   <config-values count="20">0d20 0006 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 </config-values>
   <type>ccs</type>
   <clean-ram>false</clean-ram>
-  <OPT>space</OPT>
+  <OPT>all</OPT>
   <output-dir>
   </output-dir>
   <folder>
@@ -24,7 +24,7 @@
   </folder>
   <properies />
   <record />
-  <compile-config>Debug</compile-config>
+  <compile-config>Release</compile-config>
   <stack>8</stack>
   <limit_value>0</limit_value>
   <limit_value_enable>false</limit_value_enable>

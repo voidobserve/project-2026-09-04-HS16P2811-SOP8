@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC Macro Assembler V9.83 build 10920 
-                                                                                                           Mon Sep 07 17:55:42 2026
+                                                                                                           Fri Sep 11 17:17:13 2026
 
 
      1                           
@@ -41,7 +41,7 @@ HI-TECH Software PIC Macro Assembler V9.83 build 10920
                                  P8\user_code\pen_pwr_ctl.c \
     26                           	; D:\project\2026-09-04-∆’¡Ë-µÁ»›± ÷˜øÿ-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SO
                                  P8\user_code\adc.c \
-    27                           	; --OPT=debug
+    27                           	; --OPT=all
     28                           	;
     29                           
     30                           
@@ -96,12 +96,12 @@ HI-TECH Software PIC Macro Assembler V9.83 build 10920
     79  000E                     _exit
     80                           	psect	end_init
     81                           	global start_initialization
-    82  000E  2C34               	ljmp start_initialization	;jump to C runtime clear & initialization
+    82  000E  2B78               	ljmp start_initialization	;jump to C runtime clear & initialization
 
 
 HI-TECH Software PICC Macro Assembler V9.83 build 10920 
-Symbol Table                                                                                               Mon Sep 07 17:55:42 2026
+Symbol Table                                                                                               Fri Sep 11 17:17:13 2026
 
-               _main 02BE                 _exit 000E                 start 000E  start_initialization 0434  
+               _main 0239                 _exit 000E                 start 000E  start_initialization 0378  
            intlevel0 0000             intlevel1 0000             intlevel2 0000             intlevel3 0000  
            intlevel4 0000             intlevel5 0000             reset_vec 0000  

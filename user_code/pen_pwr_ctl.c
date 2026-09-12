@@ -9,7 +9,7 @@ void pen_pwr_on(void)
 
 void pen_pwr_off(void)
 {
-    PAHCON &= ~(0x01 << 6); // 不使能内部上拉
-    PADCON &= ~(0x01 << 6); // 不使能内部下拉
-    TRISA |= (0x01 << 6);   // 输入模式
+    PAHCON |= (0x01 << 6); // 不使能内部上拉
+    PADCON |= (0x01 << 6); // 不使能内部下拉
+    TRISA |= (0x01 << 6);  // 输入模式
 }

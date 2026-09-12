@@ -1,8 +1,8 @@
-[p PRO_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F685 ]
-"339 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+"346 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
 [v F891 `(v  1 t 0 ]
 "674 D:\project\参考文档和资料\苏州华芯微电子\HSIDE_v2.1.16_2026.07.07\include\hs16p2811.h
 [e E809 . `uc
@@ -38,13 +38,13 @@ KEY_ID_VALID 1
 [v _delay_ms `(v  1 e 0 0 ]
 "229
 [v _user_init `(v  1 e 0 0 ]
-"252
+"254
 [v _main `(v  1 e 0 0 ]
-"339
+"346
 [v _myIsr `I(v  1 e 0 0 ]
 "5 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\adc.c
 [v _adc_init `(v  1 e 0 0 ]
-"26 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+"25 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
 [v _key_scan `(v  1 e 0 0 ]
 "13 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c
 [v _led_all_off `(v  1 e 0 0 ]
@@ -183,7 +183,7 @@ KEY_ID_VALID 1
 "12
 [v _click_cnt `VEuc  1 s 1 click_cnt ]
 "13
-[v _cur_key_id `VEuc  1 e 1 0 ]
+[v _cur_key_id `VEuc  1 s 1 cur_key_id ]
 "4 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c
 [v _flag_led_1_on `VEb  1 e 0 0 ]
 "5
@@ -1040,15 +1040,15 @@ KEY_ID_VALID 1
 [v _FVR1 `VEb  1 e 0 @3321 ]
 "674
 [v _FVR0 `VEb  1 e 0 @3320 ]
-"252 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
+"254 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\main.c
 [v _main `(v  1 e 0 0 ]
 {
-"331
+"338
 } 0
 "229
 [v _user_init `(v  1 e 0 0 ]
 {
-"249
+"251
 } 0
 "61
 [v _System_Init `(v  1 e 0 0 ]
@@ -1089,21 +1089,23 @@ KEY_ID_VALID 1
 {
 "164
 } 0
-"339
+"346
 [v _myIsr `I(v  1 e 0 0 ]
 {
-"373
-[v myIsr@cnt_dest_10ms `VEuc  1 s 1 cnt_dest_10ms ]
-"374
-[v myIsr@cnt_dest_100ms `VEuc  1 s 1 cnt_dest_100ms ]
 "383
+[v myIsr@cnt_dest_10ms `VEuc  1 s 1 cnt_dest_10ms ]
+"384
+[v myIsr@cnt_dest_100ms `VEuc  1 s 1 cnt_dest_100ms ]
+"393
 [v myIsr@is_not_charge_cnt `VEuc  1 s 1 is_not_charge_cnt ]
-"515
+"536
 } 0
-"26 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
+"25 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
 [v _key_scan `(v  1 e 0 0 ]
 {
-"141
+"54
+[v key_scan@settle_cnt `uc  1 a 1 0 ]
+"156
 } 0
 "79 D:\project\2026-09-04-普凌-电容笔主控-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.c
 [v _led_refresh `(v  1 e 0 0 ]
@@ -1150,7 +1152,7 @@ KEY_ID_VALID 1
 "179
 [v _led_status_handle `(v  1 e 0 0 ]
 {
-"295
+"291
 } 0
 "13
 [v _led_all_off `(v  1 e 0 0 ]

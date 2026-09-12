@@ -10,8 +10,7 @@ static volatile u8 filter_key_id = KEY_ID_NONE; // 按键消抖时使用的变�
 // 按键短按松开之后，记录时间，用于判断这段时间内是否有再次按下
 static volatile u8 click_delay_cnt = 0;
 static volatile u8 click_cnt = 0; // 记录按键连击的次数
-volatile u8 cur_key_id = KEY_ID_NONE;
-
+static volatile u8 cur_key_id = KEY_ID_NONE;
 
 #if ((PRODUCT_TYPE == PRODUCT_TYPE_P004_JW) ||                                 \
      (PRODUCT_TYPE == PRODUCT_TYPE_P003_JW))
@@ -37,16 +36,32 @@ void key_scan(void)
     }
 
     led_all_off();
-    // 按键检测引脚配置  
-    PAHCON &= ~(0x01 << 0); // 上拉电阻  
+    // 按键检测引脚配置
+    PAHCON &= ~(0x01 << 0); // 上拉电阻
     TRISA |= (0x01 << 0);   // 输入模式
+
+    /*
+        PA0 既是按键检测脚，也是 LED 的公共端：
+        led_refresh() 为了点亮 led1，会周期性地把 PA0 驱动成输出低电平，
+        这个低电平和“按键按下”在电气上是完全一样的。
+        所以采样前必须先关掉 LED 驱动（led_all_off），
+        再等上拉电阻把 PA0 拉回高电平，然后才做采样；
+        否则会把 LED 驱动残留的低电平误判成按键按下：
+        flag_led_1_on 被再次置 1 -> PA0 继续被拉低 -> 形成自锁，
+        表现为“按下再松手后，指示灯 1 熄灭不了”。
+    */
+    {
+        u8 settle_cnt = KEY_PIN_SETTLE_CNT;
+        while (settle_cnt--) {
+            _NOP();
+        }
+    }
 
     if (1 == KEY_SCAN_PIN) {
         cur_key_id = KEY_ID_NONE;
     } else {
         // 按键按下
         cur_key_id = KEY_ID_VALID;
-
         // 有按键按下，清空自动关机、自动进入低功耗的计时
         pwr_off_cnt = 0;
         into_low_power_cnt = 0;
@@ -68,14 +83,14 @@ void key_scan(void)
 
     // 滤波/消抖完成后，执行到这里
     if (last_key_id != cur_key_id) {
-        // last_key_id 为有效键值，而 cur_key_id
-        // 为无效键值，说明按键刚开始松开
+        // last_key_id 为有效键值，
+        // 而 cur_key_id 为无效键值，说明按键刚开始松开
         if (cur_key_id == KEY_ID_NONE) {
             // 开始计时，等待下次按键按下，最后判断有没有按键连击
             click_delay_cnt = 0;
-        } else // cur_key_id 为有效键值，而 last_key_id
-               // 为无效键值，说明按键刚按下
-        {
+        } else {
+            // cur_key_id 为有效键值，而 last_key_id
+            // 为无效键值，说明按键刚按下
             press_cnt = 0; // 重置按键按下时间计数
             click_cnt++;
         }
@@ -83,7 +98,8 @@ void key_scan(void)
         if (click_cnt == 2) {
             // click_cnt == 2 // 双击
             // 客户说开关机的速度太慢，改成按键双击的第二下刚按下不久，就处理该事件
-            flag_is_dev_working = ~flag_is_dev_working;
+            // 实际上是低功耗唤醒之后，延时时间比较长，导致开机速度慢
+            flag_is_dev_working = !flag_is_dev_working;
 
             if (flag_is_dev_working) {
                 pen_pwr_on();
@@ -126,10 +142,9 @@ void key_scan(void)
                     }
                 }
             }
-        }
-        // cur_key_id == last_key_id && cur_key_id !=
-        // KEY_ID_NONE，说明按键按下未松开
-        else {
+        } else {
+            // cur_key_id == last_key_id &&
+            // cur_key_id != KEY_ID_NONE，说明按键按下未松开
             // 如果按键按住不放
             if (press_cnt < 255) {
                 press_cnt++;
@@ -163,10 +178,23 @@ void key_scan(void)
         return;
     }
 
-    led_all_off(); 
-    // 按键检测引脚配置  
-    PAHCON &= ~(0x01 << 0); // 上拉电阻  
+    led_all_off();
+    // 按键检测引脚配置
+    PAHCON &= ~(0x01 << 0); // 上拉电阻
     TRISA |= (0x01 << 0);   // 输入模式
+
+    /*
+        PA0 既是按键检测脚，也是 LED 的公共端：
+        采样前必须等 LED 驱动关断、PA0 被上拉拉高之后再采样，
+        否则会把 LED 驱动的低电平误判成按键按下。
+    */
+    {
+        u8 settle_cnt = KEY_PIN_SETTLE_CNT;
+
+        while (settle_cnt--) {
+            _NOP();
+        }
+    }
 
     if (1 == KEY_SCAN_PIN) {
         cur_key_id = KEY_ID_NONE;
@@ -213,7 +241,7 @@ void key_scan(void)
                 客户说开关机的速度太慢，
                 改成按键刚按下，就处理该事件
             */
-            flag_is_dev_working = ~flag_is_dev_working;
+            flag_is_dev_working = !flag_is_dev_working;
 
             if (flag_is_dev_working) {
                 pen_pwr_on();
@@ -232,7 +260,7 @@ void key_scan(void)
 #elif 1
 // 这里提示报错，只作为未来预留的代码，需要添加对应的功能
 // 如果有三个指示灯，并且是单击开关机的产品：
-#error "PRODUCT_TYPE error" 
+#error "PRODUCT_TYPE error"
                 // #elif (PRODUCT_TYPE == 只有三个指示灯的设备对应的宏)
 
                 // 如果只有三个指示灯
@@ -278,4 +306,4 @@ void key_scan(void)
     last_key_id = cur_key_id;
 }
 
-#endif  
+#endif

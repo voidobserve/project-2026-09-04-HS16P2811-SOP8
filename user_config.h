@@ -23,10 +23,11 @@
 #define VIBRATION_SENSOR_PIN PA7 // 振动传感器检测脚
 
 // #define BAT_VOL_DEAD_ZONE (50)        // 电池电压检测死区
-#define BAT_VOL_OFF       (2900)      // 关机电压
-#define BAT_VOL_LOW       (3200)      // 低电量提示电压
-#define BAT_VOL_NEAR_FULL (4100)      // 接近满电的电压
-#define BAT_VOL_FULL      (4200 - 50) // 满电电压
+#define BAT_VOL_OFF       (2900) // 关机电压
+#define BAT_VOL_LOW       (3200) // 低电量提示电压
+#define BAT_VOL_NEAR_FULL (4100) // 接近满电的电压
+// 满电电压(4200：实际测试在4.15V，不同板子、不同电池，可能会有些偏差)
+#define BAT_VOL_FULL (4200)
 #if (PRODUCT_TYPE == PRODUCT_TYPE_P004_JW ||                                   \
      PRODUCT_TYPE == PRODUCT_TYPE_P004_DW ||                                   \
      PRODUCT_TYPE == PRODUCT_TYPE_P004_DS)
@@ -53,7 +54,7 @@
 #define BAT_VOL_1 (3670) // 1挡电压
 #define BAT_VOL_2 (3770) // 2挡电压
 #define BAT_VOL_3 (3870) // 3挡电压
- 
+
 #elif (PRODUCT_TYPE == PRODUCT_TYPE_P003_JW)
 // 有三个指示灯的产品
 

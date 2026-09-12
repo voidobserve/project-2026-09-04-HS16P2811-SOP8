@@ -213,13 +213,13 @@ void led_status_handle(void)
                 // 如果不是刚进入充电，而是正在充电，根据电池电量档位来控制指示灯闪烁
 
                 if (bat_vol < BAT_VOL_1) {
-                    flag_led_1_on = ~flag_led_1_on;
+                    flag_led_1_on = !flag_led_1_on;
                 } else if (bat_vol < BAT_VOL_2) {
-                    flag_led_2_on = ~flag_led_2_on;
+                    flag_led_2_on = !flag_led_2_on;
                 } else if (bat_vol < BAT_VOL_3) {
-                    flag_led_3_on = ~flag_led_3_on;
+                    flag_led_3_on = !flag_led_3_on;
                 } else {
-                    flag_led_4_on = ~flag_led_4_on;
+                    flag_led_4_on = !flag_led_4_on;
                 }
 
                 if (bat_vol >= BAT_VOL_1) {
@@ -243,7 +243,7 @@ void led_status_handle(void)
 
             if (bat_vol < BAT_VOL_LOW) {
                 // 低电量，指示灯闪烁
-                flag_led_1_on = ~flag_led_1_on;
+                flag_led_1_on = !flag_led_1_on;
             } else {
                 flag_led_1_on = 1;
             }
@@ -332,11 +332,11 @@ void led_status_handle(void)
                 // 如果不是刚进入充电，而是正在充电，根据电池电量档位来控制指示灯闪烁
 
                 if (bat_vol < BAT_VOL_1) {
-                    flag_led_2_on = ~flag_led_2_on;
+                    flag_led_2_on = !flag_led_2_on;
                 } else if (bat_vol < BAT_VOL_2) {
-                    flag_led_3_on = ~flag_led_3_on;
+                    flag_led_3_on = !flag_led_3_on;
                 } else if (bat_vol < BAT_VOL_FULL) {
-                    flag_led_4_on = ~flag_led_4_on;
+                    flag_led_4_on = !flag_led_4_on;
                 }
 
                 if (bat_vol >= BAT_VOL_1) {
@@ -355,7 +355,7 @@ void led_status_handle(void)
             // 放电时，控制指示灯常亮(低电量提示时闪烁)
             if (bat_vol < BAT_VOL_LOW) {
                 // 低电量提示
-                flag_led_2_on = ~flag_led_2_on;
+                flag_led_2_on = !flag_led_2_on;
             } else {
                 flag_led_2_on = 1;
             }

@@ -860,7 +860,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "12 D:\project\2026-09-04-ÆÕÁè-µçÈİ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
 [v _click_cnt `Vuc  1 s ]
 "13 D:\project\2026-09-04-ÆÕÁè-µçÈİ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\key.c
-[v _cur_key_id `Vuc  1 e ]
+[v _cur_key_id `Vuc  1 s ]
 "33 D:\project\2026-09-04-ÆÕÁè-µçÈİ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_include.h
 [v _flag_is_in_charging `Vb  0 e ]
 "17 D:\project\2026-09-04-ÆÕÁè-µçÈİ±ÊÖ÷¿Ø-P00X-XX-HS16P2811-SOP8\code\project-2026-09-04-HS16P2811-SOP8\user_code\led.h
@@ -890,7 +890,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;key.h: 6: KEY_ID_NONE = 0x00,
 [; ;key.h: 7: KEY_ID_VALID,
 [; ;key.h: 8: };
-[; ;key.h: 17: void key_scan(void);
+[; ;key.h: 24: void key_scan(void);
 [; ;hs16p2811.h: 39: typedef signed char s8;
 [; ;hs16p2811.h: 40: typedef signed int s16;
 [; ;hs16p2811.h: 41: typedef signed long s32;
@@ -1384,267 +1384,288 @@ Version 3.2 HI-TECH Software Intermediate Code
 [i _cur_key_id
 -> . `E1 0 `uc
 ]
-[; ;key.c: 13: volatile u8 cur_key_id = KEY_ID_NONE;
-"26
+[; ;key.c: 13: static volatile u8 cur_key_id = KEY_ID_NONE;
+"25
 [v _key_scan `(v  1 ef ]
 {
-[; ;key.c: 25: void key_scan(void)
-[; ;key.c: 26: {
+[; ;key.c: 24: void key_scan(void)
+[; ;key.c: 25: {
 [e :U _key_scan ]
 [f ]
-[; ;key.c: 27: if (flag_is_in_charging) {
-"27
+[; ;key.c: 26: if (flag_is_in_charging) {
+"26
 [e $ ! _flag_is_in_charging 2  ]
 {
-[; ;key.c: 29: last_key_id = 0;
-"29
+[; ;key.c: 28: last_key_id = 0;
+"28
 [e = _last_key_id -> -> 0 `i `uc ]
-[; ;key.c: 30: press_cnt = 0;
-"30
+[; ;key.c: 29: press_cnt = 0;
+"29
 [e = _press_cnt -> -> 0 `i `uc ]
-[; ;key.c: 31: filter_cnt = 0;
-"31
+[; ;key.c: 30: filter_cnt = 0;
+"30
 [e = _filter_cnt -> -> 0 `i `uc ]
-[; ;key.c: 32: filter_key_id = 0;
-"32
+[; ;key.c: 31: filter_key_id = 0;
+"31
 [e = _filter_key_id -> -> 0 `i `uc ]
-[; ;key.c: 33: click_delay_cnt = 0;
-"33
+[; ;key.c: 32: click_delay_cnt = 0;
+"32
 [e = _click_delay_cnt -> -> 0 `i `uc ]
-[; ;key.c: 34: click_cnt = 0;
-"34
+[; ;key.c: 33: click_cnt = 0;
+"33
 [e = _click_cnt -> -> 0 `i `uc ]
-[; ;key.c: 35: cur_key_id = 0;
-"35
+[; ;key.c: 34: cur_key_id = 0;
+"34
 [e = _cur_key_id -> -> 0 `i `uc ]
-[; ;key.c: 36: return;
-"36
+[; ;key.c: 35: return;
+"35
 [e $UE 1  ]
-"37
+"36
 }
 [e :U 2 ]
-[; ;key.c: 37: }
-[; ;key.c: 39: led_all_off();
-"39
+[; ;key.c: 36: }
+[; ;key.c: 38: led_all_off();
+"38
 [e ( _led_all_off ..  ]
-[; ;key.c: 41: PAHCON &= ~(0x01 << 0);
-"41
+[; ;key.c: 40: PAHCON &= ~(0x01 << 0);
+"40
 [e =& _PAHCON -> ~ << -> 1 `i -> 0 `i `uc ]
-[; ;key.c: 42: TRISA |= (0x01 << 0);
-"42
+[; ;key.c: 41: TRISA |= (0x01 << 0);
+"41
 [e =| _TRISA -> << -> 1 `i -> 0 `i `uc ]
-[; ;key.c: 44: if (1 == PA0) {
-"44
-[e $ ! == -> 1 `i -> _PA0 `i 3  ]
-{
-[; ;key.c: 45: cur_key_id = KEY_ID_NONE;
-"45
-[e = _cur_key_id -> . `E1 0 `uc ]
-"46
-}
-[; ;key.c: 46: } else {
-[e $U 4  ]
-[e :U 3 ]
-{
-[; ;key.c: 48: cur_key_id = KEY_ID_VALID;
-"48
-[e = _cur_key_id -> . `E1 1 `uc ]
-[; ;key.c: 51: pwr_off_cnt = 0;
-"51
-[e = _pwr_off_cnt -> -> 0 `i `ui ]
-[; ;key.c: 52: into_low_power_cnt = 0;
-"52
-[e = _into_low_power_cnt -> -> 0 `i `uc ]
+[; ;key.c: 53: {
 "53
-}
-[e :U 4 ]
-[; ;key.c: 53: }
-[; ;key.c: 55: if (cur_key_id != filter_key_id) {
+{
+"54
+[v _settle_cnt `uc  1 a ]
+[; ;key.c: 54: u8 settle_cnt = ((u8)100);
+[e = _settle_cnt -> -> 100 `i `uc ]
+[; ;key.c: 55: while (settle_cnt--) {
 "55
-[e $ ! != -> _cur_key_id `i -> _filter_key_id `i 5  ]
+[e $U 3  ]
+[e :U 4 ]
 {
-[; ;key.c: 57: filter_cnt = 0;
+[; ;key.c: 56: asm("NOP");
+"56
+[; NOP ;#
 "57
-[e = _filter_cnt -> -> 0 `i `uc ]
-[; ;key.c: 58: filter_key_id = cur_key_id;
-"58
-[e = _filter_key_id _cur_key_id ]
-[; ;key.c: 59: return;
-"59
-[e $UE 1  ]
-"60
 }
+[e :U 3 ]
+"55
+[e $ != -> -- _settle_cnt -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 4  ]
 [e :U 5 ]
-[; ;key.c: 60: }
-[; ;key.c: 62: if (filter_cnt < (3)) {
+"58
+}
+[; ;key.c: 57: }
+[; ;key.c: 58: }
+[; ;key.c: 60: if (1 == PA0) {
+"60
+[e $ ! == -> 1 `i -> _PA0 `i 6  ]
+{
+[; ;key.c: 61: cur_key_id = KEY_ID_NONE;
+"61
+[e = _cur_key_id -> . `E1 0 `uc ]
 "62
-[e $ ! < -> _filter_cnt `i -> 3 `i 6  ]
-{
-[; ;key.c: 65: filter_cnt++;
-"65
-[e ++ _filter_cnt -> -> 1 `i `uc ]
-[; ;key.c: 66: return;
-"66
-[e $UE 1  ]
-"67
 }
+[; ;key.c: 62: } else {
+[e $U 7  ]
 [e :U 6 ]
-[; ;key.c: 67: }
-[; ;key.c: 70: if (last_key_id != cur_key_id) {
-"70
-[e $ ! != -> _last_key_id `i -> _cur_key_id `i 7  ]
 {
-[; ;key.c: 73: if (cur_key_id == KEY_ID_NONE) {
-"73
-[e $ ! == -> _cur_key_id `i -> . `E1 0 `i 8  ]
-{
-[; ;key.c: 75: click_delay_cnt = 0;
-"75
-[e = _click_delay_cnt -> -> 0 `i `uc ]
-"76
+[; ;key.c: 64: cur_key_id = KEY_ID_VALID;
+"64
+[e = _cur_key_id -> . `E1 1 `uc ]
+[; ;key.c: 66: pwr_off_cnt = 0;
+"66
+[e = _pwr_off_cnt -> -> 0 `i `ui ]
+[; ;key.c: 67: into_low_power_cnt = 0;
+"67
+[e = _into_low_power_cnt -> -> 0 `i `uc ]
+"68
 }
-[; ;key.c: 76: } else
-[e $U 9  ]
-[e :U 8 ]
-[; ;key.c: 78: {
-"78
+[e :U 7 ]
+[; ;key.c: 68: }
+[; ;key.c: 70: if (cur_key_id != filter_key_id) {
+"70
+[e $ ! != -> _cur_key_id `i -> _filter_key_id `i 8  ]
 {
-[; ;key.c: 79: press_cnt = 0;
-"79
-[e = _press_cnt -> -> 0 `i `uc ]
-[; ;key.c: 80: click_cnt++;
+[; ;key.c: 72: filter_cnt = 0;
+"72
+[e = _filter_cnt -> -> 0 `i `uc ]
+[; ;key.c: 73: filter_key_id = cur_key_id;
+"73
+[e = _filter_key_id _cur_key_id ]
+[; ;key.c: 74: return;
+"74
+[e $UE 1  ]
+"75
+}
+[e :U 8 ]
+[; ;key.c: 75: }
+[; ;key.c: 77: if (filter_cnt < (3)) {
+"77
+[e $ ! < -> _filter_cnt `i -> 3 `i 9  ]
+{
+[; ;key.c: 80: filter_cnt++;
 "80
-[e ++ _click_cnt -> -> 1 `i `uc ]
+[e ++ _filter_cnt -> -> 1 `i `uc ]
+[; ;key.c: 81: return;
 "81
+[e $UE 1  ]
+"82
 }
 [e :U 9 ]
-[; ;key.c: 81: }
-[; ;key.c: 83: if (click_cnt == 2) {
-"83
-[e $ ! == -> _click_cnt `i -> 2 `i 10  ]
+[; ;key.c: 82: }
+[; ;key.c: 85: if (last_key_id != cur_key_id) {
+"85
+[e $ ! != -> _last_key_id `i -> _cur_key_id `i 10  ]
 {
-[; ;key.c: 86: flag_is_dev_working = ~flag_is_dev_working;
-"86
-[e = _flag_is_dev_working ! _flag_is_dev_working ]
-[; ;key.c: 88: if (flag_is_dev_working) {
+[; ;key.c: 88: if (cur_key_id == KEY_ID_NONE) {
 "88
-[e $ ! _flag_is_dev_working 11  ]
+[e $ ! == -> _cur_key_id `i -> . `E1 0 `i 11  ]
 {
-[; ;key.c: 89: pen_pwr_on();
-"89
-[e ( _pen_pwr_on ..  ]
-[; ;key.c: 91: led_sta_refresh_cnt = ((u8)(500 / 100));
+[; ;key.c: 90: click_delay_cnt = 0;
+"90
+[e = _click_delay_cnt -> -> 0 `i `uc ]
 "91
-[e = _led_sta_refresh_cnt -> / -> 500 `i -> 100 `i `uc ]
-"92
 }
-[; ;key.c: 92: } else {
+[; ;key.c: 91: } else {
 [e $U 12  ]
 [e :U 11 ]
 {
-[; ;key.c: 94: pen_pwr_off();
+[; ;key.c: 94: press_cnt = 0;
 "94
-[e ( _pen_pwr_off ..  ]
-[; ;key.c: 98: flag_led_1_on = 0;
-"98
-[e = _flag_led_1_on -> -> 0 `i `b ]
-[; ;key.c: 99: flag_led_2_on = 0;
-"99
-[e = _flag_led_2_on -> -> 0 `i `b ]
-[; ;key.c: 100: flag_led_3_on = 0;
-"100
-[e = _flag_led_3_on -> -> 0 `i `b ]
-[; ;key.c: 101: flag_led_4_on = 0;
-"101
-[e = _flag_led_4_on -> -> 0 `i `b ]
-"107
+[e = _press_cnt -> -> 0 `i `uc ]
+[; ;key.c: 95: click_cnt++;
+"95
+[e ++ _click_cnt -> -> 1 `i `uc ]
+"96
 }
 [e :U 12 ]
-[; ;key.c: 107: }
-[; ;key.c: 110: click_cnt = 0;
+[; ;key.c: 96: }
+[; ;key.c: 98: if (click_cnt == 2) {
+"98
+[e $ ! == -> _click_cnt `i -> 2 `i 13  ]
+{
+[; ;key.c: 102: flag_is_dev_working = !flag_is_dev_working;
+"102
+[e = _flag_is_dev_working ! _flag_is_dev_working ]
+[; ;key.c: 104: if (flag_is_dev_working) {
+"104
+[e $ ! _flag_is_dev_working 14  ]
+{
+[; ;key.c: 105: pen_pwr_on();
+"105
+[e ( _pen_pwr_on ..  ]
+[; ;key.c: 107: led_sta_refresh_cnt = ((u8)(500 / 100));
+"107
+[e = _led_sta_refresh_cnt -> / -> 500 `i -> 100 `i `uc ]
+"108
+}
+[; ;key.c: 108: } else {
+[e $U 15  ]
+[e :U 14 ]
+{
+[; ;key.c: 110: pen_pwr_off();
 "110
-[e = _click_cnt -> -> 0 `i `uc ]
-"111
-}
-[e :U 10 ]
-"112
-}
-[; ;key.c: 111: }
-[; ;key.c: 112: } else {
-[e $U 13  ]
-[e :U 7 ]
-{
-[; ;key.c: 117: if (cur_key_id == KEY_ID_NONE) {
+[e ( _pen_pwr_off ..  ]
+[; ;key.c: 114: flag_led_1_on = 0;
+"114
+[e = _flag_led_1_on -> -> 0 `i `b ]
+[; ;key.c: 115: flag_led_2_on = 0;
+"115
+[e = _flag_led_2_on -> -> 0 `i `b ]
+[; ;key.c: 116: flag_led_3_on = 0;
+"116
+[e = _flag_led_3_on -> -> 0 `i `b ]
+[; ;key.c: 117: flag_led_4_on = 0;
 "117
-[e $ ! == -> _cur_key_id `i -> . `E1 0 `i 14  ]
-{
-[; ;key.c: 118: if (click_cnt > 0) {
-"118
-[e $ ! > -> _click_cnt `i -> 0 `i 15  ]
-{
-[; ;key.c: 119: if (click_delay_cnt >= ((u8)((u16)300 / 10))) {
-"119
-[e $ ! >= -> _click_delay_cnt `i -> -> / -> -> 300 `i `ui -> -> 10 `i `ui `uc `i 16  ]
-{
-[; ;key.c: 121: click_cnt = 0;
-"121
-[e = _click_cnt -> -> 0 `i `uc ]
-"122
-}
-[; ;key.c: 122: } else {
-[e $U 17  ]
-[e :U 16 ]
-{
-[; ;key.c: 123: if (click_delay_cnt < 255) {
+[e = _flag_led_4_on -> -> 0 `i `b ]
 "123
-[e $ ! < -> _click_delay_cnt `i -> 255 `i 18  ]
-{
-[; ;key.c: 125: click_delay_cnt++;
-"125
-[e ++ _click_delay_cnt -> -> 1 `i `uc ]
-"126
-}
-[e :U 18 ]
-"127
-}
-[e :U 17 ]
-"128
 }
 [e :U 15 ]
-"129
-}
-[; ;key.c: 126: }
-[; ;key.c: 127: }
-[; ;key.c: 128: }
-[; ;key.c: 129: }
-[e $U 19  ]
-"132
-[e :U 14 ]
-[; ;key.c: 132: else {
-{
-[; ;key.c: 134: if (press_cnt < 255) {
-"134
-[e $ ! < -> _press_cnt `i -> 255 `i 20  ]
-{
-[; ;key.c: 135: press_cnt++;
-"135
-[e ++ _press_cnt -> -> 1 `i `uc ]
-"136
-}
-[e :U 20 ]
-"137
-}
-[e :U 19 ]
-"138
+[; ;key.c: 123: }
+[; ;key.c: 126: click_cnt = 0;
+"126
+[e = _click_cnt -> -> 0 `i `uc ]
+"127
 }
 [e :U 13 ]
-[; ;key.c: 136: }
-[; ;key.c: 137: }
-[; ;key.c: 138: }
-[; ;key.c: 140: last_key_id = cur_key_id;
-"140
-[e = _last_key_id _cur_key_id ]
-[; ;key.c: 141: }
+"128
+}
+[; ;key.c: 127: }
+[; ;key.c: 128: } else {
+[e $U 16  ]
+[e :U 10 ]
+{
+[; ;key.c: 133: if (cur_key_id == KEY_ID_NONE) {
+"133
+[e $ ! == -> _cur_key_id `i -> . `E1 0 `i 17  ]
+{
+[; ;key.c: 134: if (click_cnt > 0) {
+"134
+[e $ ! > -> _click_cnt `i -> 0 `i 18  ]
+{
+[; ;key.c: 135: if (click_delay_cnt >= ((u8)((u16)300 / 10))) {
+"135
+[e $ ! >= -> _click_delay_cnt `i -> -> / -> -> 300 `i `ui -> -> 10 `i `ui `uc `i 19  ]
+{
+[; ;key.c: 137: click_cnt = 0;
+"137
+[e = _click_cnt -> -> 0 `i `uc ]
+"138
+}
+[; ;key.c: 138: } else {
+[e $U 20  ]
+[e :U 19 ]
+{
+[; ;key.c: 139: if (click_delay_cnt < 255) {
+"139
+[e $ ! < -> _click_delay_cnt `i -> 255 `i 21  ]
+{
+[; ;key.c: 141: click_delay_cnt++;
 "141
+[e ++ _click_delay_cnt -> -> 1 `i `uc ]
+"142
+}
+[e :U 21 ]
+"143
+}
+[e :U 20 ]
+"144
+}
+[e :U 18 ]
+"145
+}
+[; ;key.c: 142: }
+[; ;key.c: 143: }
+[; ;key.c: 144: }
+[; ;key.c: 145: } else {
+[e $U 22  ]
+[e :U 17 ]
+{
+[; ;key.c: 149: if (press_cnt < 255) {
+"149
+[e $ ! < -> _press_cnt `i -> 255 `i 23  ]
+{
+[; ;key.c: 150: press_cnt++;
+"150
+[e ++ _press_cnt -> -> 1 `i `uc ]
+"151
+}
+[e :U 23 ]
+"152
+}
+[e :U 22 ]
+"153
+}
+[e :U 16 ]
+[; ;key.c: 151: }
+[; ;key.c: 152: }
+[; ;key.c: 153: }
+[; ;key.c: 155: last_key_id = cur_key_id;
+"155
+[e = _last_key_id _cur_key_id ]
+[; ;key.c: 156: }
+"156
 [e :UE 1 ]
 }

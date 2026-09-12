@@ -1585,364 +1585,361 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;led.c: 179: {
 [e :U _led_status_handle ]
 [f ]
-[; ;led.c: 181: led_sta_refresh_cnt++;
-"181
+[; ;led.c: 180: led_sta_refresh_cnt++;
+"180
 [e ++ _led_sta_refresh_cnt -> -> 1 `i `uc ]
-[; ;led.c: 182: if (led_sta_refresh_cnt >= ((u8)(500 / 100))) {
-"182
+[; ;led.c: 181: if (led_sta_refresh_cnt >= ((u8)(500 / 100))) {
+"181
 [e $ ! >= -> _led_sta_refresh_cnt `i -> -> / -> 500 `i -> 100 `i `uc `i 21  ]
 {
-[; ;led.c: 183: led_sta_refresh_cnt = 0;
-"183
+[; ;led.c: 182: led_sta_refresh_cnt = 0;
+"182
 [e = _led_sta_refresh_cnt -> -> 0 `i `uc ]
-[; ;led.c: 184: if (flag_is_in_charging) {
-"184
+[; ;led.c: 183: if (flag_is_in_charging) {
+"183
 [e $ ! _flag_is_in_charging 22  ]
 {
-[; ;led.c: 188: if (flag_is_charge_begin) {
-"188
+[; ;led.c: 187: if (flag_is_charge_begin) {
+"187
 [e $ ! _flag_is_charge_begin 23  ]
 {
 [; ;led.c: 189: if (bat_vol < (3670)) {
 "189
 [e $ ! < _bat_vol -> -> 3670 `i `ui 24  ]
 {
-[; ;led.c: 190: flag_is_charge_begin = 0;
-"190
+[; ;led.c: 191: flag_is_charge_begin = 0;
+"191
 [e = _flag_is_charge_begin -> -> 0 `i `b ]
-[; ;led.c: 195: led_sta_refresh_cnt = ((u8)(500 / 100));
-"195
-[e = _led_sta_refresh_cnt -> / -> 500 `i -> 100 `i `uc ]
-"196
+"192
 }
-[; ;led.c: 196: } else if (bat_vol < (3770) && charge_anim_phase == 0) {
+[; ;led.c: 192: } else if (bat_vol >= (3670) && charge_anim_phase == 0) {
 [e $U 25  ]
 [e :U 24 ]
-[e $ ! && < _bat_vol -> -> 3770 `i `ui == -> _charge_anim_phase `i -> 0 `i 26  ]
+[e $ ! && >= _bat_vol -> -> 3670 `i `ui == -> _charge_anim_phase `i -> 0 `i 26  ]
 {
-[; ;led.c: 197: flag_led_1_on = 1;
-"197
+[; ;led.c: 193: flag_led_1_on = 1;
+"193
 [e = _flag_led_1_on -> -> 1 `i `b ]
-[; ;led.c: 198: charge_anim_phase = 1;
-"198
+[; ;led.c: 194: charge_anim_phase = 1;
+"194
 [e = _charge_anim_phase -> -> 1 `i `uc ]
-"199
+"195
 }
-[; ;led.c: 199: } else if (bat_vol < (3870) && charge_anim_phase == 1) {
+[; ;led.c: 195: } else if (bat_vol >= (3670) && charge_anim_phase == 1) {
 [e $U 27  ]
 [e :U 26 ]
-[e $ ! && < _bat_vol -> -> 3870 `i `ui == -> _charge_anim_phase `i -> 1 `i 28  ]
+[e $ ! && >= _bat_vol -> -> 3670 `i `ui == -> _charge_anim_phase `i -> 1 `i 28  ]
 {
-[; ;led.c: 200: flag_led_2_on = 1;
-"200
+[; ;led.c: 196: flag_led_2_on = 1;
+"196
 [e = _flag_led_2_on -> -> 1 `i `b ]
-[; ;led.c: 201: charge_anim_phase = 2;
-"201
+[; ;led.c: 197: charge_anim_phase = 2;
+"197
 [e = _charge_anim_phase -> -> 2 `i `uc ]
-"202
+"198
 }
-[; ;led.c: 202: } else if (bat_vol < (4200 - 20) && charge_anim_phase == 2) {
+[; ;led.c: 198: } else if (bat_vol >= (3770) && charge_anim_phase == 2) {
 [e $U 29  ]
 [e :U 28 ]
-[e $ ! && < _bat_vol -> - -> 4200 `i -> 20 `i `ui == -> _charge_anim_phase `i -> 2 `i 30  ]
+[e $ ! && >= _bat_vol -> -> 3770 `i `ui == -> _charge_anim_phase `i -> 2 `i 30  ]
 {
-[; ;led.c: 203: flag_led_3_on = 1;
-"203
+[; ;led.c: 199: flag_led_3_on = 1;
+"199
 [e = _flag_led_3_on -> -> 1 `i `b ]
-[; ;led.c: 204: charge_anim_phase = 3;
-"204
+[; ;led.c: 200: charge_anim_phase = 3;
+"200
 [e = _charge_anim_phase -> -> 3 `i `uc ]
-"205
+"201
 }
-[; ;led.c: 205: } else if (bat_vol < (4200 - 20) && charge_anim_phase == 3) {
+[; ;led.c: 201: } else if (bat_vol >= (3870) && charge_anim_phase == 3) {
 [e $U 31  ]
 [e :U 30 ]
-[e $ ! && < _bat_vol -> - -> 4200 `i -> 20 `i `ui == -> _charge_anim_phase `i -> 3 `i 32  ]
+[e $ ! && >= _bat_vol -> -> 3870 `i `ui == -> _charge_anim_phase `i -> 3 `i 32  ]
 {
-[; ;led.c: 206: flag_led_4_on = 1;
-"206
+[; ;led.c: 202: flag_led_4_on = 1;
+"202
 [e = _flag_led_4_on -> -> 1 `i `b ]
-[; ;led.c: 207: charge_anim_phase = 4;
-"207
+[; ;led.c: 203: charge_anim_phase = 4;
+"203
 [e = _charge_anim_phase -> -> 4 `i `uc ]
-"208
+"204
 }
-[; ;led.c: 208: } else {
+[; ;led.c: 204: } else {
 [e $U 33  ]
 [e :U 32 ]
 {
-[; ;led.c: 209: flag_is_charge_begin = 0;
-"209
+[; ;led.c: 205: flag_is_charge_begin = 0;
+"205
 [e = _flag_is_charge_begin -> -> 0 `i `b ]
-[; ;led.c: 214: led_sta_refresh_cnt = ((u8)(500 / 100));
-"214
+[; ;led.c: 210: led_sta_refresh_cnt = ((u8)(500 / 100));
+"210
 [e = _led_sta_refresh_cnt -> / -> 500 `i -> 100 `i `uc ]
-"215
+"211
 }
 [e :U 33 ]
 [e :U 31 ]
 [e :U 29 ]
 [e :U 27 ]
 [e :U 25 ]
-"216
+"212
 }
-[; ;led.c: 215: }
-[; ;led.c: 216: } else {
+[; ;led.c: 211: }
+[; ;led.c: 212: } else {
 [e $U 34  ]
 [e :U 23 ]
 {
-[; ;led.c: 219: if (bat_vol < (3670)) {
-"219
+[; ;led.c: 215: if (bat_vol < (3670)) {
+"215
 [e $ ! < _bat_vol -> -> 3670 `i `ui 35  ]
 {
-[; ;led.c: 220: flag_led_1_on = ~flag_led_1_on;
-"220
+[; ;led.c: 216: flag_led_1_on = !flag_led_1_on;
+"216
 [e = _flag_led_1_on ! _flag_led_1_on ]
-"221
+"217
 }
-[; ;led.c: 221: } else if (bat_vol < (3770)) {
+[; ;led.c: 217: } else if (bat_vol < (3770)) {
 [e $U 36  ]
 [e :U 35 ]
 [e $ ! < _bat_vol -> -> 3770 `i `ui 37  ]
 {
-[; ;led.c: 222: flag_led_2_on = ~flag_led_2_on;
-"222
+[; ;led.c: 218: flag_led_2_on = !flag_led_2_on;
+"218
 [e = _flag_led_2_on ! _flag_led_2_on ]
-"223
+"219
 }
-[; ;led.c: 223: } else if (bat_vol < (3870)) {
+[; ;led.c: 219: } else if (bat_vol < (3870)) {
 [e $U 38  ]
 [e :U 37 ]
 [e $ ! < _bat_vol -> -> 3870 `i `ui 39  ]
 {
-[; ;led.c: 224: flag_led_3_on = ~flag_led_3_on;
-"224
+[; ;led.c: 220: flag_led_3_on = !flag_led_3_on;
+"220
 [e = _flag_led_3_on ! _flag_led_3_on ]
-"225
+"221
 }
-[; ;led.c: 225: } else {
+[; ;led.c: 221: } else {
 [e $U 40  ]
 [e :U 39 ]
 {
-[; ;led.c: 226: flag_led_4_on = ~flag_led_4_on;
-"226
+[; ;led.c: 222: flag_led_4_on = !flag_led_4_on;
+"222
 [e = _flag_led_4_on ! _flag_led_4_on ]
-"227
+"223
 }
 [e :U 40 ]
 [e :U 38 ]
 [e :U 36 ]
-[; ;led.c: 227: }
-[; ;led.c: 229: if (bat_vol >= (3670)) {
-"229
+[; ;led.c: 223: }
+[; ;led.c: 225: if (bat_vol >= (3670)) {
+"225
 [e $ ! >= _bat_vol -> -> 3670 `i `ui 41  ]
 {
-[; ;led.c: 230: flag_led_1_on = 1;
-"230
+[; ;led.c: 226: flag_led_1_on = 1;
+"226
 [e = _flag_led_1_on -> -> 1 `i `b ]
-"231
+"227
 }
 [e :U 41 ]
-[; ;led.c: 231: }
-[; ;led.c: 233: if (bat_vol >= (3770)) {
-"233
+[; ;led.c: 227: }
+[; ;led.c: 229: if (bat_vol >= (3770)) {
+"229
 [e $ ! >= _bat_vol -> -> 3770 `i `ui 42  ]
 {
-[; ;led.c: 234: flag_led_2_on = 1;
-"234
+[; ;led.c: 230: flag_led_2_on = 1;
+"230
 [e = _flag_led_2_on -> -> 1 `i `b ]
-"235
+"231
 }
 [e :U 42 ]
-[; ;led.c: 235: }
-[; ;led.c: 237: if (bat_vol >= (3870)) {
-"237
+[; ;led.c: 231: }
+[; ;led.c: 233: if (bat_vol >= (3870)) {
+"233
 [e $ ! >= _bat_vol -> -> 3870 `i `ui 43  ]
 {
-[; ;led.c: 238: flag_led_3_on = 1;
-"238
+[; ;led.c: 234: flag_led_3_on = 1;
+"234
 [e = _flag_led_3_on -> -> 1 `i `b ]
-"239
+"235
 }
 [e :U 43 ]
-[; ;led.c: 239: }
-[; ;led.c: 241: if (bat_vol >= (4200 - 20)) {
-"241
-[e $ ! >= _bat_vol -> - -> 4200 `i -> 20 `i `ui 44  ]
+[; ;led.c: 235: }
+[; ;led.c: 237: if (bat_vol >= (4200)) {
+"237
+[e $ ! >= _bat_vol -> -> 4200 `i `ui 44  ]
 {
-[; ;led.c: 242: flag_led_4_on = 1;
-"242
+[; ;led.c: 238: flag_led_4_on = 1;
+"238
 [e = _flag_led_4_on -> -> 1 `i `b ]
-"243
+"239
 }
 [e :U 44 ]
-"244
+"240
 }
 [e :U 34 ]
-"245
+"241
 }
-[; ;led.c: 243: }
-[; ;led.c: 244: }
-[; ;led.c: 245: } else if (flag_is_dev_working) {
+[; ;led.c: 239: }
+[; ;led.c: 240: }
+[; ;led.c: 241: } else if (flag_is_dev_working) {
 [e $U 45  ]
 [e :U 22 ]
 [e $ ! _flag_is_dev_working 46  ]
 {
-[; ;led.c: 248: if (bat_vol < (3200)) {
-"248
+[; ;led.c: 244: if (bat_vol < (3200)) {
+"244
 [e $ ! < _bat_vol -> -> 3200 `i `ui 47  ]
 {
-[; ;led.c: 250: flag_led_1_on = ~flag_led_1_on;
-"250
+[; ;led.c: 246: flag_led_1_on = !flag_led_1_on;
+"246
 [e = _flag_led_1_on ! _flag_led_1_on ]
-"251
+"247
 }
-[; ;led.c: 251: } else {
+[; ;led.c: 247: } else {
 [e $U 48  ]
 [e :U 47 ]
 {
-[; ;led.c: 252: flag_led_1_on = 1;
-"252
+[; ;led.c: 248: flag_led_1_on = 1;
+"248
 [e = _flag_led_1_on -> -> 1 `i `b ]
-"253
+"249
 }
 [e :U 48 ]
-[; ;led.c: 253: }
-[; ;led.c: 255: if (bat_vol >= (3670)) {
-"255
+[; ;led.c: 249: }
+[; ;led.c: 251: if (bat_vol >= (3670)) {
+"251
 [e $ ! >= _bat_vol -> -> 3670 `i `ui 49  ]
 {
-[; ;led.c: 256: flag_led_2_on = 1;
-"256
+[; ;led.c: 252: flag_led_2_on = 1;
+"252
 [e = _flag_led_2_on -> -> 1 `i `b ]
-"257
+"253
 }
-[; ;led.c: 257: } else {
+[; ;led.c: 253: } else {
 [e $U 50  ]
 [e :U 49 ]
 {
-[; ;led.c: 258: flag_led_2_on = 0;
-"258
+[; ;led.c: 254: flag_led_2_on = 0;
+"254
 [e = _flag_led_2_on -> -> 0 `i `b ]
-"259
+"255
 }
 [e :U 50 ]
-[; ;led.c: 259: }
-[; ;led.c: 261: if (bat_vol >= (3770)) {
-"261
+[; ;led.c: 255: }
+[; ;led.c: 257: if (bat_vol >= (3770)) {
+"257
 [e $ ! >= _bat_vol -> -> 3770 `i `ui 51  ]
 {
-[; ;led.c: 262: flag_led_3_on = 1;
-"262
+[; ;led.c: 258: flag_led_3_on = 1;
+"258
 [e = _flag_led_3_on -> -> 1 `i `b ]
-"263
+"259
 }
-[; ;led.c: 263: } else {
+[; ;led.c: 259: } else {
 [e $U 52  ]
 [e :U 51 ]
 {
-[; ;led.c: 264: flag_led_3_on = 0;
-"264
+[; ;led.c: 260: flag_led_3_on = 0;
+"260
 [e = _flag_led_3_on -> -> 0 `i `b ]
-"265
+"261
 }
 [e :U 52 ]
-[; ;led.c: 265: }
-[; ;led.c: 267: if (bat_vol >= (3870)) {
-"267
+[; ;led.c: 261: }
+[; ;led.c: 263: if (bat_vol >= (3870)) {
+"263
 [e $ ! >= _bat_vol -> -> 3870 `i `ui 53  ]
 {
-[; ;led.c: 268: flag_led_4_on = 1;
-"268
+[; ;led.c: 264: flag_led_4_on = 1;
+"264
 [e = _flag_led_4_on -> -> 1 `i `b ]
-"269
+"265
 }
-[; ;led.c: 269: } else {
+[; ;led.c: 265: } else {
 [e $U 54  ]
 [e :U 53 ]
 {
-[; ;led.c: 270: flag_led_4_on = 0;
-"270
+[; ;led.c: 266: flag_led_4_on = 0;
+"266
 [e = _flag_led_4_on -> -> 0 `i `b ]
-"271
+"267
 }
 [e :U 54 ]
-"272
+"268
 }
-[; ;led.c: 271: }
-[; ;led.c: 272: } else {
+[; ;led.c: 267: }
+[; ;led.c: 268: } else {
 [e $U 55  ]
 [e :U 46 ]
 {
-[; ;led.c: 274: flag_led_1_on = 0;
-"274
+[; ;led.c: 270: flag_led_1_on = 0;
+"270
 [e = _flag_led_1_on -> -> 0 `i `b ]
-[; ;led.c: 275: flag_led_2_on = 0;
-"275
+[; ;led.c: 271: flag_led_2_on = 0;
+"271
 [e = _flag_led_2_on -> -> 0 `i `b ]
-[; ;led.c: 276: flag_led_3_on = 0;
-"276
+[; ;led.c: 272: flag_led_3_on = 0;
+"272
 [e = _flag_led_3_on -> -> 0 `i `b ]
-[; ;led.c: 277: flag_led_4_on = 0;
-"277
+[; ;led.c: 273: flag_led_4_on = 0;
+"273
 [e = _flag_led_4_on -> -> 0 `i `b ]
-"278
+"274
 }
 [e :U 55 ]
 [e :U 45 ]
-"279
+"275
 }
 [e :U 21 ]
-[; ;led.c: 278: }
-[; ;led.c: 279: }
-[; ;led.c: 281: if (flag_is_in_charging && 0 == flag_is_charge_begin) {
-"281
+[; ;led.c: 274: }
+[; ;led.c: 275: }
+[; ;led.c: 277: if (flag_is_in_charging && 0 == flag_is_charge_begin) {
+"277
 [e $ ! && _flag_is_in_charging == -> 0 `i -> _flag_is_charge_begin `i 56  ]
 {
-[; ;led.c: 283: if (bat_vol >= (4200 - 20)) {
-"283
-[e $ ! >= _bat_vol -> - -> 4200 `i -> 20 `i `ui 57  ]
+[; ;led.c: 279: if (bat_vol >= (4200)) {
+"279
+[e $ ! >= _bat_vol -> -> 4200 `i `ui 57  ]
 {
-[; ;led.c: 284: flag_led_4_on = 1;
-"284
+[; ;led.c: 280: flag_led_4_on = 1;
+"280
 [e = _flag_led_4_on -> -> 1 `i `b ]
-"285
+"281
 }
 [e :U 57 ]
-[; ;led.c: 285: }
-[; ;led.c: 287: if (bat_vol >= (4100)) {
-"287
+[; ;led.c: 281: }
+[; ;led.c: 283: if (bat_vol >= (4100)) {
+"283
 [e $ ! >= _bat_vol -> -> 4100 `i `ui 58  ]
 {
-[; ;led.c: 288: if (charge_fully_cnt < ((u16)((u32)13 * 60 * 1000 / 100))) {
-"288
+[; ;led.c: 284: if (charge_fully_cnt < ((u16)((u32)13 * 60 * 1000 / 100))) {
+"284
 [e $ ! < _charge_fully_cnt -> / * * -> -> 13 `i `ul -> -> -> 60 `i `l `ul -> -> -> 1000 `i `l `ul -> -> -> 100 `i `l `ul `ui 59  ]
 {
-[; ;led.c: 289: charge_fully_cnt++;
-"289
+[; ;led.c: 285: charge_fully_cnt++;
+"285
 [e ++ _charge_fully_cnt -> -> 1 `i `ui ]
-"290
+"286
 }
-[; ;led.c: 290: } else {
+[; ;led.c: 286: } else {
 [e $U 60  ]
 [e :U 59 ]
 {
-[; ;led.c: 291: flag_led_4_on = 1;
-"291
+[; ;led.c: 287: flag_led_4_on = 1;
+"287
 [e = _flag_led_4_on -> -> 1 `i `b ]
-"292
+"288
 }
 [e :U 60 ]
-"293
+"289
 }
 [e :U 58 ]
-"294
+"290
 }
 [e :U 56 ]
-[; ;led.c: 292: }
-[; ;led.c: 293: }
-[; ;led.c: 294: }
-[; ;led.c: 295: }
-"295
+[; ;led.c: 288: }
+[; ;led.c: 289: }
+[; ;led.c: 290: }
+[; ;led.c: 291: }
+"291
 [e :UE 20 ]
 }

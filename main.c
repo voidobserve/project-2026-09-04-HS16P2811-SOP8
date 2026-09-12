@@ -241,11 +241,13 @@ void user_init(void)
     timer1_init();
     timer3_init();
     GIE = 1;
-    delay_ms(10);
+
+    delay_ms(1);// 这里等待adc稳定
+    adc_enable = 1; // 使能adc采集、处理
+    delay_ms(10); //
 
     // EOC = 0; // 表示adc转换结束
-    // ADS = 1; // 开始 adc 转换
-    adc_enable = 1; // 使能adc采集、处理
+    // ADS = 1; // 开始 adc 转换    
 }
 
 void main(void)
@@ -253,9 +255,13 @@ void main(void)
     System_Init();
     user_init();
 
+    flag_is_led_show_enable = 1;
+
     into_low_power_cnt = (u8)((u16)2000 / 10); // 确保一上电就进入低功耗
     while (1) {
         // CLRWDT();
+
+#if 1
         /*
             如果不在充电，并且到了关机的时间
 
@@ -275,9 +281,9 @@ void main(void)
             T3REN = 0; // 不使能定时器
 
             ADCIE = 0;           // 屏蔽 adc 中断
-            ADM &= ~(0x0F << 0); // AIN 通道选择 PA0
+            ADM &= ~(0x0F << 0); // AIN 通道选择 PA0(选择非1/4VDD的通道)
             GCHS = 0;            // 不使能 AIN 通道
-            ADENB = 0;           // 不使能adc
+            ADENB = 0;           // 不使能 adc
 
             // PA 端口 所有引脚配置为输入模式，关闭上下拉
             TRISA = 0xFF; // 所有引脚配置为输入模式
@@ -314,12 +320,12 @@ void main(void)
              * bit 1: 0:运行内部高速振荡器
              * bit 0: 0: 普通模式，高速时钟作为系统时钟 
              */
-            OSCM = 0x01 << 6;
+            OSCM = (0x01 << 6);
 
             System_Init();
             user_init();
 
-            delay_ms(10);
+            // delay_ms(10);
             flag_is_led_show_enable = 1; // 确保电池电量更新后，再使能led显示
 
             if (CHARGE_PIN == 0 && bat_vol <= BAT_VOL_OFF) {
@@ -327,6 +333,7 @@ void main(void)
                 goto label_low_power_in;
             }
         }
+#endif
     }
 }
 
@@ -344,6 +351,8 @@ void interrupt myIsr(void)
         T1TH = (0xFFFF - TIMER1_CNT) / 256; // 初值高8位
         led_refresh();
 
+        // TEST ONLY 测试时屏蔽
+#if 1
         if (adc_enable) {
             if (0 == adc_sta) {
                 adc_sta = 1;
@@ -351,6 +360,7 @@ void interrupt myIsr(void)
                 ADS = 1; // 开始 adc 转换
             }
         }
+#endif
 
 #if (PRODUCT_TYPE == PRODUCT_TYPE_P004_DS)
         // 如果检测到的振动传感器传来的信号，当前检测脚的电平跟上次的不一样
@@ -385,6 +395,8 @@ void interrupt myIsr(void)
             cnt_dest_10ms = 0;
             // 每 10ms 进入一次
 
+            // TEST ONLY 测试时屏蔽
+#if 1
             /*
                 充电检测
                 REVIEW
@@ -429,8 +441,12 @@ void interrupt myIsr(void)
                 }
             }
 
+#endif
+
             key_scan();
 
+// TEST ONLY 测试时屏蔽
+#if 1
             // 低电量关机
             if (flag_is_dev_working && bat_vol < BAT_VOL_OFF) {
                 pen_pwr_off();           // 断开笔头的供电
@@ -446,8 +462,10 @@ void interrupt myIsr(void)
             } else {
                 into_low_power_cnt = 0;
             }
+#endif
         }
 
+#if 1
         cnt_dest_100ms++;
         if (cnt_dest_100ms >= 100) {
             cnt_dest_100ms = 0;
@@ -470,8 +488,10 @@ void interrupt myIsr(void)
                 pwr_off_cnt = 0;
             }
         }
+#endif
     }
 
+#if 1
     if (ADCIF) {
         ADCIF = 0;
         adc_sta = 0; // 表示adc完成了一次转换
@@ -512,4 +532,5 @@ void interrupt myIsr(void)
     // if (PAIF) {
     //     PAIF = 0;
     // }
+#endif
 }
